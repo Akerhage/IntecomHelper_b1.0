@@ -1,0 +1,92 @@
+{
+  "section_title": "BASFAKTA – Körkortsteori, Mitt Körkort",
+  "source_info": "Information om hur vår mobilapp \"Mitt Körkort\" fungerar samt allmän information om teori.",
+  "app_info": {
+    "title": "Mitt Körkort – Vår mobilapp med teori för AM, B och MC",
+    "description": "I appen Mitt Körkort får du all teori du behöver online -och bara så länge du behöver det! Det är det bästa och billigaste sättet att bli en mästare på teori! Körkortsteori-appen ‘Mitt Körkort’ är skapad av My Driving Academy och erbjuder ett 2-delat omfattande teoripaket för dig som lär dig att köra bil, moped klass 1 (AM) och MC i Sverige."
+  },
+  "theory_functionality": {
+    "title": "Hur fungerar teorin i vår mobilapp Mitt Körkort?",
+    "question_bank": "Appen för körkortsteori – Mitt Körkort – innehåller över 1000 teorifrågor med korta förklaringar. Dessa frågor är bra för din inlärning oavsett om du använder dem som din enda/främsta studiemetod eller för att förankra det du har studerat genom ’Plugga’ portalen. Frågorna är paketerade i test som efterliknar teoriprovet. Varje körkortsfråga har fyra valmöjligheter. Vissa valmöjligheter kan kännas självklara men ibland kan det kännas som om att flera svar skulle kunna vara det rätta. Då är det extra viktigt att noga läsa igenom vad frågan är. Det finns bara ett rätt svar för varje fråga, precis som när du utför Trafikverkets kunskapsprov. Oavsett om du ger rätt eller fel svar på en fråga så går vi igenom det rätta svaret samt förklarar lite mer ingående vad som gäller för just den specifika frågan innan du går vidare till nästa fråga.",
+    "question_categories": {
+      "intro": "Precis som ditt teoriprov är frågorna i vårt testprov fördelade efter olika kategorier:",
+      "categories": [
+        {
+          "name": "Trafikregler",
+          "description": "Detta är den största kategorin inom körkortsteori och majoriteten av frågorna som ställs både för våra testprov och för kunskapsprovet kommer härifrån. Precis som kategorinamnet antyder handlar det om regler i trafiken. Vi tar upp olika situationer som kan uppstå när du kör och där du behöver ta hänsyn till en eller flera regler."
+        },
+        {
+          "name": "Trafiksäkerhet",
+          "description": "Detta är den näst största kategorin inom körkortsteorin och här ingår frågor som berör säkerheten i trafiken. De kan handla om olika riskfaktorer, exempelvis hög hastighet, droger, trötthet eller slarv. De kan även handla om din bedömningsförmåga, exempelvis hur du gör för att köra om ett fordon under vintern."
+        },
+        {
+          "name": "Fordonskännedom och manövrering",
+          "description": "Att känna sitt fordon är viktigt. I denna kategori inom körkortsteori ingår frågor som har med fordonet att göra och hur du förhåller dig till ditt fordon. Om du till exempel upplever att bilen börjar ändra riktning på egen hand, vad innebär detta och vad gör du?"
+        },
+        {
+          "name": "Miljö",
+          "description": "Detta är en kategori inom körkortsteorin som behandlar miljöaspekten av att köra bil. Det är trots allt något som påverkar miljön och omgivningen en hel del, både kortsiktigt och långsiktigt. Frågorna från den här kategorin kan handla om hur olika typer av motorer och bränslen påverkar miljön. De kan även handla om Eco-drivning."
+        },
+        {
+          "name": "Personliga förutsättningar",
+          "description": "Kategorin ”Personliga förutsättningar” handlar om dig, din bedömningsförmåga och ditt beteende. Frågor som tas upp i denna kategori handlar om grupptryck, temperament, självkännedom och risker. Det kan även handla om statistik, exempelvis att det är mer troligt att unga män är med om olyckor jämfört med andra grupper."
+        }
+      ]
+    }
+  },
+  "theory_package": {
+    "title": "Teoripaketet har 3 delar:",
+    "parts": [
+      {
+        "name": "Plugga-portalen",
+        "description": "I “Plugga”-portalen har du tillgång till en komplett plattform för körkortsteori, uppdelad i roliga och interaktiva kapitel. Bemästra din körkortskunskap genom frågesporter, spel och övningar. Var som helst, när som helst."
+      },
+      {
+        "name": "Skyltar",
+        "description": "I ”Skyltar” kan du träna på 300 frågor om vägmärken för att bli proffs på vad som gäller längst vägarna!"
+      },
+      {
+        "name": "Teori/Prov-portalen",
+        "description": "I ”Teori/Prov”-portalen kan du öva på över 1 000 teorifrågor för bil eller mc och 750 frågor för moped som är kvalitetssäkrade av våra licensierade trafiklärare samt anpassade för att efterlikna det slutliga Trafikverket testet."
+      }
+    ]
+  },
+  "app_features": {
+    "title": "Andra funktioner i appen Mitt Körkort",
+    "features": [
+      "Chatta direkt med din trafiklärare eller Supportteamet på My Driving Academy.",
+      "Köpa lektioner och paket direkt i appen via Klarna.",
+      "Boka och omboka dina lektioner själv! (Se vår av/ombokningspolicy).",
+      "Läsa feedback från dina lektioner du kört.",
+      "Få överblick av vad som finns kvar av ditt köpta paket.",
+      "Leta lediga tider för olika behörigheter såsom Bil, MC, AM-kurser, Riskutbildningar, introduktionskurser osv."
+    ]
+  },
+  "private_theory_lessons": {
+    "title": "Privata teorilektioner med en lärare.",
+    "question": "Privata teorilektioner?",
+    "answer": "Om du föredrar att lära dig med hjälp av en privatlärare så går det att lösa! Våra trafiklärare erbjuder privata teorilektioner på alla våra lokalkontor. Priser syns på vår bokningswidget. För digital privat teorilektion för körkort – chatta med oss så berättar vi hur du kan boka!"
+  },
+  "success_rate": {
+    "title": "90% godkända!",
+    "text": "En av de stora fördelarna med My Driving Academy är att vi har våra egna teoriappar som ger dig körkortsteori av högsta kvalitet i din mobiltelefon. Våra elever som använder My Driving Academy Online samt ”Bemästrar”(=svarar rätt 2 ggr i rad) 900 av de 1000 teorifrågorna i Mitt Körkort klarar till 90% teoriprovet på första försöket!"
+  },
+  "real_test_info": {
+    "title": "Så här går det riktiga provet till",
+    "prerequisites": "Förutsättningarna för kunskapsprovet är samma som för testproven, med undantaget att du måste befinna dig i en provlokal. Du har 50 minuter på dig att svara på 65 frågor. Kopiering är inte tillåtet.",
+    "test_day": "På dagen för ditt Teoriprov ska du komma till provcentret i god tid före din bokade tid. Detta ger dig tid att samla dig och hantera eventuella oförutsedda problem.",
+    "check_in": "Du måste checka in och visa upp giltig legitimation. Din bokning kommer att verifieras.",
+    "environment": "Du kommer att hänvisas till en datorterminal i ett tyst provrum. Du kommer att få information om hur provsystemet fungerar.",
+    "format": "Provet görs på en dator. Frågorna är vanligtvis flervalsfrågor, ofta åtföljda av bilder, diagram eller korta videoklipp som visar trafiksituationer.",
+    "question_count": "Provet består vanligtvis av 65 frågor. Fem av dessa frågor är dock ”testfrågor” som inte räknas in i ditt slutbetyg. Du vet inte vilka fem frågor som är testfrågor. Du måste därför svara på alla 65 frågor på allvar.",
+    "passing_score": "För att bli godkänd måste du svara rätt på minst 52 av de 60 poängsatta frågorna.",
+    "time_limit": "Du får en viss tid på dig att genomföra provet, vanligtvis 50 minuter. Det brukar räcka om du kan materialet och hanterar din tid effektivt.",
+    "language_options": "Provet finns på svenska och flera andra språk. Du väljer önskat språk när du bokar eller i början av provet.",
+    "taking_the_test": "Läs varje fråga och alla svarsalternativ noggrant innan du väljer ditt svar. Skynda dig inte. Om du är osäker på en fråga kan du ofta markera den för granskning och återkomma till den senare innan du skickar in provet."
+  },
+  "mastery_feature": {
+    "intro": "Med Mitt Körkorts mobilapp kan du plugga teori och träna kunskapsprov var som helst, när som helst!",
+    "goal": "”Bemästrar” du 900 frågor? Då klarar 90% teoriprovet på första försöket!",
+    "explanation": "Vår körkortsteori app håller koll på vilka frågor du svarat rätt på 1 gång (”klarat”) och vilka frågor du svarat rätt på två gånger i rad (”bemästrat”). Om du har ”bemästrat” 900 av de 1000 frågorna så vet vi av erfarenhet att du är redo för ditt teoriprov, den första delen av ditt körkortsprov. Det är omöjligt att ta reda på exakt vilka frågor som kommer på provet i körkortsteori. Vi på My Driving Academy har dock utvecklat våra testprov genom att använda samma kategorier och upplägg som kunskapsprovet."
+  }
+}

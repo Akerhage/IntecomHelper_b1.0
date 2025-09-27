@@ -1,0 +1,36 @@
+{
+  "id": "my_driving_academy_vasteras",
+  "name": "My Driving Academy – Västerås",
+  "brand": "My Driving Academy",
+  "city": "Västerås",
+  "description": "När du tar ditt körkort i Västerås kan du känna dig trygg med att du lär dig från de mest passionerade, vänliga och bästa lärarna i stan.",
+  "contact": {
+    "phone": "010-20 70 775 (centralsupporten)",
+    "email": "hej@mydrivingacademy.com",
+    "address": "Norra Ringvägen 47, 722 18 Västerås"
+  },
+  "opening_hours": [
+    { "days": "Info", "hours": "Ingen bemannad reception, ring, chatta eller mejla centralsupporten." }
+  ],
+  "services_offered": ["AM", "Bil"],
+  "languages": ["svenska", "engelska"],
+  "prices": [
+    { "service_name": "AM-kurs", "price": 4499, "currency": "SEK" },
+    { "service_name": "Körlektion BIL", "price": 1299, "currency": "SEK" },
+    { "service_name": "Privat teorilektion BIL", "price": 1299, "currency": "SEK" },
+    { "service_name": "Testlektion BIL", "price": 799, "currency": "SEK" },
+    { "service_name": "Prova-På-Uppkörning BIL", "price": 1249, "currency": "SEK" },
+    { "service_name": "Körbedömning för sökande till Trafiklärarutbildningen BIL", "price": 1000, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 10499, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 15999, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 20999, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 6199, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 11999, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 17999, "currency": "SEK" },
+    { "service_name": "Intensivutbildning (2 veckor) BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 349, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 899, "currency": "SEK" },
+    { "service_name": "Risk 2 Kurs BIL", "price": 2399, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}

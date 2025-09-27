@@ -1,0 +1,71 @@
+{
+  "section_title": "BASFAKTA - Introduktionskurs/Handledarkurs BIL",
+  "source_info": "Information om introduktionskurs/handledarkurs för privat övningskörning krävs för att övningsköra privat med någon. Både elev och handledare måste gå kursen om de inte gått tidigare (inom 5 år)",
+  "private_driving_process": {
+    "title": "Hur går jag till väga om jag vill köra privat?",
+    "steps": "För att få lov att köra privat ska både handledare och elev först och främst gå på en introduktionsutbildning/handledarkurs och därefter ansöka om ett handledarskap."
+  },
+  "course_registration": {
+    "title": "Hur anmäler jag mig till introduktionskurs/handledarkurs",
+    "instructions": "Handledarkursen anordnas av oss på MTS/MDA och bokning görs via vår hemsida under rubriken kurser. Där Ser du lediga kurser och bokar själv in antalet deltagare (handledare + elev) samt betalning görs i samband med bokning. Vid frågor kontakta ett av våra kontor på 010-333 32 31."
+  },
+  "course_details": {
+    "title": "Introduktionskurs/handledarkurs",
+    "general_info": "Om du under din körkortsutbildning vill kunna övningsköra privat måste både du och din handledare gå handledarutbildningen. Kursen är 3 timmar lång och obligatorisk. Boka kursen hos oss så garanterar vi de bästa konferenslokalerna i stan och en fantastisk kursledare.",
+    "after_course": {
+      "title": "Efter din introduktionskurs/handledarkurs",
+      "procedure": "Efter att ni båda har gått handledarutbildningen går du som handledare in på Transportstyrelsens hemsida och ansöker om ett handledarbevis! Det tar i normalfallet en vecka från att du ansöker tills dess att du får ditt handledarbevis. Ansökan om handledarskap kostar inget extra. Det går även att ansöka om handledarbevis innan man gått kursen.",
+      "booking_info": "På vår bokningssida kan du se exakt när vi håller kurserna i just din stad samt vad kursen kostar per person. Du kan även se mer detaljer om din stad under ”Här finns vi” i menyn."
+    },
+    "what_it_is": {
+      "title": "Vad är introduktionskurs/handledarkurs?",
+      "certification": "My Driving Academy är certifierade av Transportstyrelsen att arrangera handledarutbildningar.",
+      "schedule": "Vi håller dem oftast kvällstid så att elever och handledare ska kunna gå efter sitt arbete eller skola.",
+      "pricing": "Priset för en handledarutbildning skiljer sig något åt mellan olika städer och gäller per person.",
+      "attendance": "Eleven och handledaren behöver inte gå kursen samtidigt, utan huvudsaken är att båda blivit registrerade av oss innan ni ansöker om handledarbeviset.",
+      "description": "En handledarutbildning (eller introduktionsutbildning som det också kallas) är en obligatorisk kurs för dig som vill kunna övningsköra personbil privat. Både du som ska ta körkort och din handledare (tex mamma, pappa, partner) behöver gå och bli godkända på en handledarutbildning. En handledarkurs är cirka tre och en halv timme (inklusive pauser) där du och din handledare tillsammans med flera andra elever och handledare får lära er om körkortsutbildningen, hur den är upplagd och vad som är bra att öva på när ni övningskör privat. Under kursen hjälper vi även till med planeringen och struktureringen av den privata övningskörningen för att göra den så effektiv som möjligt. Kursen hålls av någon av våra erfarna trafiklärare i centrala och moderna konferenslokaler och vi bjuder på te och kaffe så att deltagarna orkar hålla koncentrationen under hela kursen.",
+      "exclusions": [
+        "Du behöver INTE gå handledarutbildningen om du enbart ska övningsköra på trafikskola.",
+        "Du behöver INTE heller gå handledarutbildning om du ska övningsköra andra fordon än personbil privat."
+      ],
+      "age_requirement": "Du behöver vara över 15 år och 9 månader för att kunna gå kursen."
+    }
+  },
+  "supervisor_requirements": {
+    "title": "För dig som ska bli handledare",
+    "course_obligation": "Handledarkursen är obligatorisk även för dig som ska vara handledare åt någon som ska börja övningsköra.",
+    "must_meet": {
+      "title": "Krav som måste uppfyllas",
+      "criteria": [
+        "Du ska ha fyllt 24 år",
+        "Du ska ha ett giltigt och svenskt körkort alternativt ett körkort från ett EES-land",
+        "Du ska ha haft B-körkort i minst fem år"
+      ]
+    },
+    "cannot_be": {
+      "title": "Däremot kan du INTE bli handledare:",
+      "criteria": [
+        "Om ditt körkort varit återkallat mer än tre månader under de senaste tre åren på grund av att du brutit mot en viktig trafikregel, exempelvis fortkörning eller kört mot rött ljus.",
+        "Om ditt körkort varit återkallat någon gång under de senaste tre åren på grund av rattfylleri, opålitlighet ur nykterhetssynpunkt eller grova brott.",
+        "Om ditt körkort under de senaste tre åren gällt med villkor om alkolås.",
+        "Om du redan registrerats som handledare för 15 elever."
+      ]
+    }
+  },
+  "supervisor_certificate": {
+    "title": "Hur får jag mitt handledarbevis?",
+    "process": "När en handledare och sin elev har genomfört och blivit godkänd på handledarkursen hos oss går vi in och registrerar detta hos Transportstyrelsen. Detta gör vi normalt 1–2 arbetsdagar efter genomförd kurs. Handledaren och eleven behöver inte gå kursen samtidigt, men båda måste ha gått innan ni kan ansöka om ett handledarbevis. Efter att ni båda har gått handledarutbildningen går du som handledare in på Transportstyrelsens hemsida och ansöker om ett handledarbevis.",
+    "application_requirements": {
+      "title": "Det enda du behöver för att ansöka om handledarbevis är:",
+      "items": [
+        "Ditt personnummer.",
+        "Ditt telefonnummer.",
+        "Din email-adress.",
+        "Elevens personnummer som BÅDE har gått handledarutbildningen.",
+        "Ett godkänt körkortstillstånd."
+      ]
+    },
+    "timeline_cost_validity": "Det tar i normalfallet en vecka från att du ansöker tills dess att du får ditt handledarbevis. Ansökan om handledarskap kostar inget extra. En Handledarutbildning är giltig i 5 år så om du ska ansöka om ett nytt handledarbevis inom denna tidsperiod behöver du INTE gå kursen på nytt.",
+    "important_note": "OBS! Handledarbeviset och handledarens körkort ska ALLTID finnas med i bilen när ni övningskör."
+  }
+}

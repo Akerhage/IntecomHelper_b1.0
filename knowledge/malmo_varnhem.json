@@ -1,0 +1,88 @@
+{
+  "id": "martenssons_trafikskola_malmo_varnhem",
+  "name": "Mårtenssons Trafikskola - Malmö – Värnhem",
+  "brand": "Mårtenssons Trafikskola",
+  "city": "Malmö",
+  "description": "Välkommen till Mårtenssons Trafikskola Värnhem! Dags för körkort eller en ny behörighet? Välkommen till Mårtenssons Trafikskola i Malmö! Våra erfarna lärare och personal ser till att din resa blir smidig och lärorik.",
+  "contact": {
+    "phone": "040-18 35 18",
+    "email": "malmo.varnhem@trafikskolan.com",
+    "address": "Föreningsgatan 48, 212 14 Malmö"
+  },
+  "opening_hours": [
+    {
+      "days": "Mån – Tors",
+      "hours": "08:30– 17:00"
+    },
+    {
+      "days": "Fredag",
+      "hours": "08:00 – 14:00"
+    }
+  ],
+  "services_offered": [
+    "Bil"
+  ],
+  "languages": [
+    "svenska",
+    "bosniska",
+    "kroatiska",
+    "engelska"
+  ],
+  "prices": [
+    {
+      "service_name": "Körlektion BIL",
+      "price": 1149,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 9999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 14999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 5549,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 10599,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 15999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Introduktionskurs/Handledarkurs BIL",
+      "price": 299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs BIL",
+      "price": 799,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

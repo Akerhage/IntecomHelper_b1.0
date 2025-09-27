@@ -1,0 +1,44 @@
+{
+  "id": "martenssons_trafikskola_ystad",
+  "name": "Mårtenssons Trafikskola – Ystad",
+  "brand": "Mårtenssons Trafikskola",
+  "city": "Ystad",
+  "description": "Välkommen till Mårtenssons Trafikskola i Ystad! Tänk dig att kunna resa utan att anpassa dig efter tidtabeller eller vänta i regn och kyla. Med körkortet i handen sätter du dig bara i bilen och kör – snabbt, smidigt och på dina egna villkor!",
+  "contact": {
+    "phone": "041 – 121 17 20",
+    "email": "ystad@trafikskolan.com",
+    "address": "Munkgatan 8, 271 41 Ystad"
+  },
+  "opening_hours": [
+    { "days": "Måndag", "hours": "08:30– 17:00" },
+    { "days": "Tisdag", "hours": "13:00-17:00" },
+    { "days": "Onsdag", "hours": "13:00-17:00" },
+    { "days": "Torsdag", "hours": "08:30-17:00" },
+    { "days": "Fredag", "hours": "Stängt" }
+  ],
+  "services_offered": ["AM", "Bil", "MC", "Släp"],
+  "languages": ["Svenska", "Engelska"],
+  "prices": [
+    { "service_name": "AM-kurs", "price": 4499, "currency": "SEK" },
+    { "service_name": "Körlektion BIL", "price": 1199, "currency": "SEK" },
+    { "service_name": "Privat teorilektion BIL", "price": 999, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 10299, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 15399, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 20499, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 5699, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 11099, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 16499, "currency": "SEK" },
+    { "service_name": "Intensivutbildning (2 veckor) BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 349, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 799, "currency": "SEK" },
+    { "service_name": "BE Paket", "price": 5999, "currency": "SEK" },
+    { "service_name": "B96 Paket", "price": 4199, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 MC", "price": 13999, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 MC", "price": 19999, "currency": "SEK" },
+    { "service_name": "Körlektion MC", "price": 1349, "currency": "SEK" },
+    { "service_name": "Lektionspaket 5 MC", "price": 6499, "currency": "SEK" },
+    { "service_name": "Lektionspaket 10 MC", "price": 12799, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs MC", "price": 799, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}

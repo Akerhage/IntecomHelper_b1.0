@@ -1,0 +1,88 @@
+{
+  "section_title": "BASFAKTA - Instruktioner för chattbotten samt projektet",
+  "source_description": "Denna Excel fil samlar den enda information som skall användas för att ge svar i Intercom på de frågor som våra elever/kunder ställer.",
+  "rules": {
+    "data_integrity": "Mycket viktigt att inte ändra något här utan bevara alla siffror och text som det står nu. Inga gissningar eller feltolkad information när filen sen normaliseras.",
+    "ai_behavior": {
+      "source_reliance": "AI-botten skall endast utgå från den här filen när den skall svara på frågor och ge exakta priser utan att gissa sig fram.",
+      "functionality": "AI-botten är ett Chrome-tillägg som skall tolka och analysera frågorna som våra kunder ställer, den skall hämta svaret från den JSON-fil som vi nu skall bygga upp med endast den informationen jag ger.",
+      "response_formulation": "AI-botten skall sen formulera ett bra och trevligt, kundbemötande svar och ge kunden information från denna fil endast.",
+      "no_fabrication": "Dvs, botten skall aldrig hitta på, hallucinera eller gissa sig fram till ett svar.",
+      "fallback_response": "Då skall den säga \"Jag har tyvärr ingen information att ge dig om detta\" eller liknande bra svar.",
+      "priority": "Detta är SUPERVIKTIGT och min absoluta prioritet."
+    }
+  },
+  "information_sources": {
+    "primary": "Faktan och informationen kommer endast från vår hemsida och Transportstyrelsens sida via denna fil.",
+    "content_overview": "Denna fil innehåller information som krävs för chatt-botten att ex svara på frågor om ålder för olika körkort, vad som gäller för att skaffa körkortstillstånd eller för att köra moped klass 1 (AM) osv. Det kommer också ha information från vårt företag med alla kontors priser för de tjänster som det kontoret erbjuder. Också kontaktuppgifter och bokningslänkar som AI-botten kan skicka om någon kund frågar vart man bokar lektioner i Eslöv och vad en AM-kurs eller MC-lektion kostar där."
+  },
+  "structuring_instructions": {
+    "order": "Lägg in basfaktan först, därefter strukturerar du kontoren och bygger upp fält för varje kontor så att du sen kan mata in priser och information om öppettider, telefonnummer etcetera",
+    "booking_links": {
+      "description": "Varje kontor har upp till 3 fält med bokningslänkar för bil, MC och AM. Då inte alla kontor har alla tjänster kommer vissa kontor endast ha ex bil och moped, eller bil och mc eller bara bil osv. Dessa bokningslänkar går direkt till det kontoret och väljer då antingen bil, mc eller AM så att eleven inte behöver klicka sig fram själv. Eleven kommer då direkt komma till sidan där den sen kan välja tjänst för vald fordonstyp.",
+      "price_source": "Priserna i denna bokningswidget är de priser som denna fil innehåller. De priserna kan komma att ändras och då skall det vara enkelt att göra det manuellt."
+    }
+  },
+  "office_list": {
+    "title": "Våra 41st kontor i landet",
+    "offices": [
+      "Mårtenssons Trafikskola – Eslöv",
+      "My Driving Academy – Gävle",
+      "My Driving Academy - Göteborg – Högsbo",
+      "My Driving Academy - Göteborg – Mölndal",
+      "My Driving Academy - Göteborg – Mölnlycke",
+      "My Driving Academy - Göteborg - Västra Frölunda",
+      "My Driving Academy - Göteborg – Ullevi",
+      "Mårtenssons Trafikskola - Helsingborg – City",
+      "Mårtenssons Trafikskola - Helsingborg – Hälsobacken",
+      "Mårtenssons Trafikskola – Hässleholm",
+      "Mårtenssons Trafikskola – Höllviken",
+      "Mårtenssons Trafikskola - Kalmar",
+      "Mårtenssons Trafikskola – Kristianstad",
+      "My Driving Academy – Kungsbacka",
+      "Mårtenssons Trafikskola – Landskrona",
+      "My Driving Academy – Linköping",
+      "Mårtenssons Trafikskola - Lund – Katedral",
+      "Mårtenssons Trafikskola - Lund – Södertull",
+      "Mårtenssons Trafikskola - Malmö – Bulltofta",
+      "Mårtenssons Trafikskola - Malmö – City",
+      "Mårtenssons Trafikskola - Malmö – Limhamn",
+      "Mårtenssons Trafikskola - Malmö – Södervärn",
+      "Mårtenssons Trafikskola - Malmö – Triangeln",
+      "Mårtenssons Trafikskola - Malmö – Värnhem",
+      "Mårtenssons Trafikskola - Malmö - Västra Hamnen",
+      "My Driving Academy - Stockholm – Djursholm",
+      "My Driving Academy - Stockholm – Enskededalen",
+      "My Driving Academy - Stockholm – Kungsholmen - Lindhagsplan",
+      "My Driving Academy - Stockholm – Solna",
+      "My Driving Academy - Stockholm – Södermalm",
+      "My Driving Academy - Stockholm – Östermalm",
+      "My Driving Academy - Stockholm – Österåker",
+      "Mårtenssons Trafikskola – Trelleborg",
+      "My Driving Academy – Umeå",
+      "My Driving Academy – Uppsala",
+      "My Driving Academy – Varberg",
+      "Mårtenssons Trafikskola – Vellinge",
+      "My Driving Academy – Västerås",
+      "Mårtenssons Trafikskola – Växjö",
+      "Mårtenssons Trafikskola – Ystad",
+      "Mårtenssons Trafikskola - Ängelholm"
+    ]
+  },
+  "service_information": {
+    "car_lessons": "Samtliga kontor har billektioner att erbjuda, både automat och manuell bil.",
+    "other_services": "De flesta kontoren har också AM-kurser och många kontor erbjuder MC, BE och B96. Vi erbjuder också lastbilsutbildning på några orter och taxi samt YKB och buss.",
+    "lesson_packages": "För MC och Bil säljer vi lektioner styckvis, i lektionspaket och i Totalpaket.",
+    "lesson_duration": "Alla våra körlektioner är på 80 minuter om inget annat anges.",
+    "car_lesson_types": "Vi har olika typer av körlektioner för bil som säljs styckvis. Om någon köper lektionspaket eller Totalpaket för bil är det vanliga körlektioner i de paketen.",
+    "supervisor_courses": "Vi har introduktionskurser/handledarkurser på de flesta kontoren. Ofta är dessa kurser ca 3 timmar och 30min långa med en liten rast.",
+    "risk_training": "Vi har också riskutbildningar på de flesta kontor. Risktvåor finns oftast på ställen i de större städerna där vi inte har eget kontor utan vi skickar våra elever dit."
+  },
+  "chatbot_behavior": {
+    "clarification": "Om chattbotten inte förstår det direkt från texten måste den ta reda på det först för att sen svara korrekt.",
+    "no_guessing": "Den skall aldrig gissa eller skriva ett generellt pris utan den skall veta vad priset är exakt annars säga något i stil med \"du hittar alla priser på vår hemsida eller på vår bokningswidget\"",
+    "information_sourcing": "Alla kontor byggs upp med information om deras tjänster, priser, kontaktinformation, öppettider samt lite beskrivande text som jag plockar från vår hemsida. Det är endast den texten som får användas för att förklara det kontoret, ingen annan information får ges, inga andra priser eller info får ges.",
+    "future_content": "Det kommer komma information från vår hemsida gällande handledarutbildning, riskettan, risktvåan, körkortsteori, B96, BE, Lastbil, YKB, Automatkörkort, Taxikörkort, AM-utbildning, A, A1 och A2 för MC-utbildning. Det kommer också information från Transportstyrelsens sida om detta.",
+    "deduplication": "Viss information kan finnas fler gånger om samma information har stått på vår hemsida som på Transportstyrelsens hemsida. Då är det okej att inte ta med samma information två gånger."
+  }
+}

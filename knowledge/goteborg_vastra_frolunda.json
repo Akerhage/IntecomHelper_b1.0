@@ -1,0 +1,101 @@
+{
+  "id": "my_driving_academy_goteborg_vastra_frolunda",
+  "name": "My Driving Academy - Göteborg - Västra Frölunda",
+  "brand": "My Driving Academy",
+  "city": "Göteborg",
+  "description": "Övningskör på vår körskola på Frölunda Torg! Vår startpunkt för körlektioner är Näverlursgatan 11 (i Resecentrum) och alla kurser hålls i vår lokal i Högsbo! Att lära sig köra bil har aldrig varit enklare!",
+  "contact": {
+    "phone": "031456763",
+    "email": "vastra.frolunda@trafikskolan.com",
+    "address": "Näverlursgatan 11, 421 44 Västra Frölunda"
+  },
+  "opening_hours": [
+    {
+      "days": "Mån – Tors",
+      "hours": "08:30-17:00"
+    },
+    {
+      "days": "Fredag",
+      "hours": "08:00 – 14:00"
+    }
+  ],
+  "services_offered": [
+    "Bil"
+  ],
+  "languages": [
+    "svenska",
+    "engelska"
+  ],
+  "prices": [
+    {
+      "service_name": "Testlektion Bil",
+      "price": 999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion Bil",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Prova-på-uppkörning Bil",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Privat Teorilektion Bil",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körbedömning för sökande till Trafiklärarutbildningen BIL",
+      "price": 1000,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 10999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 16999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 22499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 6499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 12799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 18899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs BIL",
+      "price": 2399,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

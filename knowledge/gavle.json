@@ -1,0 +1,107 @@
+{
+  "id": "my_driving_academy_gavle",
+  "name": "My Driving Academy – Gävle",
+  "brand": "My Driving Academy",
+  "city": "Gävle",
+  "description": "Vägen till ditt körkort kommer bli effektivare och billigare, vi ger dig alla verktyg du behöver för att träna och utvecklas hemma såväl som hos oss! Kom och säg ”hej!” till vår trafikskola Gävle på Ruddammsgatan 46!",
+  "contact": {
+    "phone": "010-20 70 775 (Centralsupporten)",
+    "email": "hej@mydrivingacademy.se",
+    "address": "Ruddammsgatan 46 803 11 Gävle"
+  },
+  "opening_hours": [
+    {
+      "days": "Info",
+      "hours": "Finns ingen reception."
+    }
+  ],
+  "services_offered": [
+    "Bil"
+  ],
+  "languages": [
+    "svenska",
+    "engelska"
+  ],
+  "prices": [
+    {
+      "service_name": "Testlektion BIL",
+      "price": 899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Prova-på-uppkörning BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Privat Teorilektion BIL",
+      "price": 1999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körbedömning för sökande till Trafiklärarutbildningen BIL",
+      "price": 1000,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 10999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 16999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 22499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 8499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 12799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 18899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 BIL",
+      "price": 799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 BIL",
+      "price": 2249,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Introduktionskurs/Handledarkurs BIL",
+      "price": 349,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "section_title": "BASFAKTA - Lektioner och Paket BIL",
+  "general_info": {
+    "package_consistency": "Skolorna/kontoren i landet erbjuder samma paket för den tjänst de erbjuder, ex om ett kontor har AM, Bil och MC så erbjuder de AM-kurs, samtliga biltjänster och MC-tjänster.",
+    "price_difference": "Skillnaden är olika priser i landet.",
+    "lesson_duration": "Lektionerna är 80min långa om inget annat anges."
+  },
+  "lesson_types": [
+    {
+      "name": "Körlektion BIL",
+      "description": "För dig som behöver en vanlig körlektion för att träna på något specifikt. Denna lektion ingår i våra paket också. Körlektion är en \"normal\" lektion och är samma för bil, MC, BE, B96, Lastbil osv."
+    },
+    {
+      "name": "Testlektion BIL",
+      "description": "For dig som vill ha hjälp med en planering hela vägen fram till proven tillsammans med oss. Du ska inte boka denna lektion om du vill ha en snabb tillsammans med oss. Denna lektion kan bokas en gång per elev. Endast för bil."
+    },
+    {
+      "name": "Prova-på-uppkörning BIL",
+      "description": "För dig som har ett körprov snart och vill kolla av dina kunskaper. Boka den här om du vill ha en snabb körlektion innan ditt körprov! Endast för bil"
+    },
+    {
+      "name": "Privat Teorilektion BIL",
+      "description": "En privat teorilektion for dig som vill ha extra hjälp med teorin, total längd 80 minuter. Här kan man sitta med en trafiklärare och få extra hjälp med de teorifrågor man har svårt för."
+    },
+    {
+      "name": "Körbedömning för sökande till Trafiklärarutbildningen BIL",
+      "description": "För dig som ska söka till trafiklärarutbildningen. Bedömningen består av Manövrering, körning i olika trafikmiljöer, körning i speciella sammanhang och personliga förutsättningar samt dokumentation av läraren. Denna lektion är 80min också."
+    }
+  ],
+  "total_packages": [
+    {
+      "name": "Totalpaket 5 BIL",
+      "contents": [
+        "5st körlektioner",
+        "Risk 1",
+        "Risk 2",
+        "Digital teori (Mitt Körkort-mobilapp)"
+      ]
+    },
+    {
+      "name": "Totalpaket 10 BIL",
+      "contents": [
+        "10st körlektioner",
+        "Risk 1",
+        "Risk 2",
+        "Digital teori (Mitt Körkort-mobilapp)"
+      ]
+    },
+    {
+      "name": "Totalpaket 15 BIL",
+      "contents": [
+        "15st körlektioner",
+        "Risk 1",
+        "Risk 2",
+        "Digital teori (Mitt Körkort-mobilapp)"
+      ]
+    }
+  ],
+  "lesson_packages": [
+    {
+      "name": "Minipaket BIL",
+      "description": "5st körlektioner för bil. Eleven kan boka ut sitt paket efter köp i appen Mitt Körkort eller på hemsidan."
+    },
+    {
+      "name": "Mellanpaket BIL",
+      "description": "10st körlektioner för bil. Eleven kan boka ut sitt paket efter köp i appen Mitt Körkort eller på hemsidan."
+    },
+    {
+      "name": "Baspaket BIL",
+      "description": "15st körlektioner för bil. Eleven kan boka ut sitt paket efter köp i appen Mitt Körkort eller på hemsidan."
+    }
+  ],
+  "intensive_course": {
+    "name": "Intensivutbildning (2 veckor) BIL",
+    "description": "Intensivutbildningen innehåller 16st körlektioner + Risk 1 + Risk 2 + Digitalt Teori. OBS! Intensivutbildningen bokas in under 2 veckor och är INTE avbokningsbar. Besök vår skola eller kontakta oss på 010-20 70 775 eller mejla hej@mydrivingacademy.se"
+  },
+  "driving_test_service": {
+    "name": "Uppvärmning & Lån av bil vid körprov på Trafikverket",
+    "description": "Denna tjänst säljer vi till de elever som vi bokar körprov åt på Trafikverket. Proven skall då vara godkända från läraren och eleven betalar för att få värma upp och låna bil inför förarprovet på Trafikverket, Läraren följer med eleven dit och kör också hem eleven till skolan igen efter provet. För bil är uppvärmningen ca 40min."
+  },
+  "courses": [
+    {
+      "name": "Introduktionskurs/Handledarkurs BIL",
+      "description": "Kurslängd: Ca 3 timmar 30 minuter. En kurs för både handledare och elev där vi går igenom olika delmoment och hur en handledare kan bli ett bra stöd för eleven vid privat övningskörning. Giltig i 5 år. OBS Både handledare och elev behöver gå kursen, giltig 5 år."
+    },
+    {
+      "name": "Risk 1 Kurs BIL",
+      "description": "Kurslängd: ca 3 timmar 30 minuter. Teorikurs om alkohol, droger, trötthet i trafiken. Kräver inget körkortstillstånd för att gå riskutbildning. Giltig 5 år."
+    },
+    {
+      "name": "Risk 2 Kurs BIL",
+      "description": "Kurslängd: ca 4-5 timmar. Praktisk del med halkkörning. Kräver inget körkortstillstånd för att gå riskutbildning. Giltig 5 år."
+    }
+  ]
+}

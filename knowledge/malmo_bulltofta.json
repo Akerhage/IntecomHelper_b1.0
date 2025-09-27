@@ -1,0 +1,42 @@
+{
+  "id": "martenssons_trafikskola_malmo_bulltofta",
+  "name": "Mårtenssons Trafikskola - Malmö – Bulltofta",
+  "brand": "Mårtenssons Trafikskola",
+  "city": "Malmö",
+  "description": "Välkommen till Mårtenssons Trafikskola Bulltofta! Alldeles intill Bulltoftabanan i Malmö utbildar vi på Motorcykel vid vårt kontor på Stekelgatan.",
+  "contact": {
+    "phone": "010 – 333 32 31",
+    "email": "bulltofta@trafikskolan.com",
+    "address": "Stekelgatan 1, 212 23 Malmö"
+  },
+  "opening_hours": [
+    { "days": "Mån – Tors", "hours": "08:30– 17:00" },
+    { "days": "Fredag", "hours": "08:00 – 14:00" }
+  ],
+  "services_offered": ["AM", "Bil", "MC", "Släp"],
+  "languages": ["Svenska", "English"],
+  "prices": [
+    { "service_name": "AM-kurs", "price": 4499, "currency": "SEK" },
+    { "service_name": "Privat Teorilektion BIL", "price": 999, "currency": "SEK" },
+    { "service_name": "Körlektion BIL", "price": 1149, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 9999, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 14999, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 5549, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 10599, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 15999, "currency": "SEK" },
+    { "service_name": "Intensivutbildning (2 veckor) BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 299, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 799, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 MC", "price": 13499, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 MC", "price": 19199, "currency": "SEK" },
+    { "service_name": "Körlektion MC", "price": 1299, "currency": "SEK" },
+    { "service_name": "Lektionspaket 5 MC", "price": 6199, "currency": "SEK" },
+    { "service_name": "Lektionspaket 10 MC", "price": 12199, "currency": "SEK" },
+    { "service_name": "Intensivvecka MC", "price": 20999, "currency": "SEK" },
+    { "service_name": "Risk 1 MC", "price": 799, "currency": "SEK" },
+    { "service_name": "B96 Paket", "price": 3999, "currency": "SEK" },
+    { "service_name": "BE Paket", "price": 5799, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}

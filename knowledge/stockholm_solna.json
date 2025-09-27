@@ -1,0 +1,121 @@
+{
+  "id": "my_driving_academy_stockholm_solna",
+  "name": "My Driving Academy - Stockholm - Solna",
+  "brand": "My Driving Academy",
+  "city": "Stockholm",
+  "description": "Välkommen till vår trafikskola i Solna! Vill du ta körkort i Solna börjar vi våra körningar från Fabege co working på Pyramidvägen 7, men vill du bli hämtad eller lämnad i närheten så prata med din lärare så löser hon/han det. Vi erbjuder handledarkurser och Riskettan på flera av våra trafikskolor i Stockholm!",
+  "contact": {
+    "phone": "010-20 70 775 (centralsupporten)",
+    "email": "hej@mydrivingacademy.com",
+    "address": "Mötesplats Pyramidvägen 7"
+  },
+  "opening_hours": [
+    {
+      "days": "Info",
+      "hours": "Ingen bemannad reception, ring, chatta eller mejla centralsupporten."
+    }
+  ],
+  "services_offered": [
+    "AM",
+    "Bil",
+    "Släp"
+  ],
+  "languages": [
+    "svenska",
+    "engelska",
+    "arabiska",
+    "kurdiska"
+  ],
+  "prices": [
+    {
+      "service_name": "AM-Kurs",
+      "price": 4499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Testlektion BIL",
+      "price": 699,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Prova-på-uppkörning BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Privat Teorilektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 10799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 16499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 21999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 6599,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 13199,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 19299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Introduktionskurs/Handledarkurs BIL",
+      "price": 299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs BIL",
+      "price": 899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs BIL",
+      "price": 2249,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "B96 Paket",
+      "price": 6999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "BE Paket",
+      "price": 7999,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

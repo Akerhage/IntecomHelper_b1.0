@@ -1,0 +1,115 @@
+{
+  "id": "my_driving_academy_stockholm_enskededalen",
+  "name": "My Driving Academy - Stockholm – Enskededalen",
+  "brand": "My Driving Academy",
+  "city": "Stockholm",
+  "description": "Vill ta ditt körkort i Kärrtorp, Dalen eller Enskede? Då kan vår trafikskola i Enskededalen hjälpa dig! Våra fantastiska lärare erbjuder inspirerande och roliga utbildningar. Du är välkommen att besöka oss på Sofielundsvägen 12 – vi erbjuder även hämtning/lämning i hela området! När det är dags för kurser eller teori så håller vi också till i våra härliga miljöer här på Sofielundsvägen 12!",
+  "contact": {
+    "phone": "010-20 70 775 (centralsupporten)",
+    "email": "hej@mydrivingacademy.com",
+    "address": "Sofielundsvägen 14"
+  },
+  "opening_hours": [
+    {
+      "days": "Info",
+      "hours": "Ingen bemannad reception, ring, chatta eller mejla centralsupporten."
+    }
+  ],
+  "services_offered": [
+    "Bil",
+    "Släp"
+  ],
+  "languages": [
+    "svenska",
+    "engelska",
+    "arabiska",
+    "kurdiska"
+  ],
+  "prices": [
+    {
+      "service_name": "Testlektion BIL",
+      "price": 699,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Prova-på-uppkörning BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Privat Teorilektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 10799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 16499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 21999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 6599,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 13199,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 19299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Introduktionskurs/Handledarkurs BIL",
+      "price": 299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs BIL",
+      "price": 899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs BIL",
+      "price": 2249,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "B96 Paket",
+      "price": 6999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "BE Paket",
+      "price": 7999,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

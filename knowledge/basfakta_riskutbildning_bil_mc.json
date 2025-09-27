@@ -1,0 +1,150 @@
+{
+  "section_title": "BASFAKTA - Riskutbildning Bil och MC",
+  "source_info": "Information om Risk 1 Kurs och Risk 2 Kurs, informationen kommer från Transportstyrelsens hemsida samt från vår hemsida.",
+  "personal_requirements": {
+    "title": "Personliga krav som ställs, från Transportstyrelsens sida nedan",
+    "general": "Den som vill ha ett körkort måste vara lämplig med tanke på de personliga omständigheterna. Det kan till exempel innebära att vi tar in uppgifter från andra myndigheter. Om vi bedömer att man inte är lämplig kan man få ett avslag på sin ansökan.",
+    "sobriety_reliability": {
+      "title": "Pålitlighet när det gäller alkohol och narkotika",
+      "check_period": "Vi kontrollerar olika register för de senaste fem åren samt gör en bedömning av om den som ansöker är pålitlig i nykterhetshänseende.",
+      "considerations": [
+        "Om man har omhändertagits av polisen enligt lagen om omhändertagande av berusade personer med mera (LOB).",
+        "Uppgifter från till exempel en dom om att den som ansöker använt alkohol på ett sätt som vi bedömer kan påverka trafiksäkerheten.",
+        "Om man gjort sig skyldig till narkotikabrott eller om det finns andra uppgifter om att den som ansöker använt narkotika."
+      ]
+    },
+    "criminality": {
+      "title": "Brottslighet som kan påverka",
+      "check_period": "Vi kontrollerar om man är misstänkt för eller gjort sig skyldig till något brott de senaste tre åren (fem år vid rattfylleri). Även andra brott än trafikbrott kan påverka möjligheten att få körkortstillstånd.",
+      "examples": [
+        "Olovlig körning.",
+        "Våld eller hot mot tjänsteman.",
+        "Vissa upprepade brott som misshandel.",
+        "Grova brott som rån eller dråp."
+      ],
+      "assessment": "Vi gör en helhetsbedömning av om den som ansöker kan antas respektera trafikreglerna och visa hänsyn, omdöme och ansvar i trafiken."
+    },
+    "unsuitability_consequences": {
+      "title": "Vad händer om man inte anses lämplig?",
+      "outcome": "Om vi bedömer att man inte bör ha körkort på grund av tidigare brott eller för att man inte är pålitlig när det gäller nykterhet kan man få avslag på sin ansökan om körkortstillstånd. Får man avslag på sin ansökan får man en spärrtid. Det innebär att vi bestämmer en tidsperiod då man inte kan få ett körkort. Spärrtiden kan variera, men kan högst bli tre år."
+    }
+  },
+  "nollvisionen": {
+    "title": "Nollvisionen",
+    "description": "I Sverige strävar vi mot något som kallas för nollvisionen. Nollvisionen är en strävan mot att ingen ska dödas eller skadas allvarligt i trafiken. Sedan nollvisionen beslutades år 1997 har vi aldrig haft så låga dödssiffror. Vad som lett till säkrare trafik är bland annat lägre hastigheter och en omfattande utbildning."
+  },
+  "risk_education_info": {
+    "title": "Vad innebär riskutbildningarna?",
+    "description": "Riskutbildningar är obligatoriska moment som du som körkortstagare måste genomföra för att kunna slutföra din utbildning. Dem består av en teoretisk kurs samt en praktisk. Den teoretiska kursen (riskettan) är på 3 timmar och kräver inga förkunskaper utan är ett förberedande moment inför din körning. Den praktiska (risktvåan) även kallad halkkörning är en övning där du ensam manövrerar bilen och följer de direktiv som ges av kursledaren.",
+    "validity_check": {
+      "title": "Hur vet jag att mina riskutbildningar är giltiga?",
+      "method": "Riskutbildningarna är giltiga i 5 år från genomfört datum och genom att kontakta transportstyrelsen på 0771-81 81 81 kan du få giltighetstiden för båda utbildningarna bekräftade om du är osäker."
+    }
+  },
+  "risk_education_car": {
+    "title": "Riskutbildning – 1 & 2 BIL",
+    "description": "För att förbättra nyblivna körkortstagares attityd i trafiken, måste alla elever genomgå en obligatorisk riskutbildning. Den är uppdelad i en teoretisk del, Riskettan, som handlar om alkohol, droger och trötthet. Samt en praktisk del, Halka, som handlar om hastighet, säkerhet och körning under särskilda förhållanden. Den ligger i slutet av din utbildningsplan då det ställs höga krav på manövrering. Längden på körutbildningen, antalet körlektioner och den totala kostnaden varierar mellan olika personer. Vissa har tränat privat, somliga kombinerar privat körning med övning på trafikskola och andra gör hela utbildningen på skolan. För att förbättra nyblivna körkortstagares attityd i trafiken, måste alla elever genomgå en obligatorisk riskutbildning. Den är uppdelad i en teoretisk del, Riskettan, som handlar om alkohol, droger och trötthet. Samt en praktisk del, Halka, som handlar om hastighet, säkerhet och körning under särskilda förhållanden. Den ligger i slutet av din utbildningsplan då det ställs höga krav på manövrering. Längden på körutbildningen, antalet körlektioner och den totala kostnaden varierar mellan olika personer. Vissa har tränat privat, somliga kombinerar privat körning med övning på trafikskola och andra gör hela utbildningen på skolan.",
+    "risk1": {
+      "title": "Risk 1 Kurs",
+      "general": "Riskettan är den första och teoretiska delen av den obligatoriska riskutbildningen. Riskettan är 3 timmar lång och du går i grupp med maximalt 16 deltagare. Boka Riskettan hos oss så garanterar vi stans bästa konferenslokaler och en erfaren kursledare.",
+      "purpose": "Riskettan är starten på din resa mot körkortet Precis som namnet antyder handlar riskutbildningen om att lära ut vilka risker som finns i trafiken, speciellt med hänsyn till ditt eget agerande. Riskutbildning 1 är den teoretiska delen av riskutbildningen och är en obligatorisk del av din körkortsutbildning. Det är en kurs där du får lära dig om riskerna med alkohol, droger, trötthet och andra saker som kan försämra eller påverka din körförmåga.",
+      "content_summary": "Riskettan är den teoretiska delen av utbildningen. Här får du lära dig mer om: Risker och konsekvenser. Påverkan på kroppen. Regler för rattfylleri. Regler för trötthet. Vilka faktorer som kan påverka dig (telefoner, andra passagerare) I kombination med din övningskörning och teoridelen kommer du få lära dig mycket viktigt under både Riskettan och Risktvåan. Allt handlar om att du ska bli en så säker och trygg förare som möjligt när du väl ger dig ut på vägarna.",
+      "approval_requirements": {
+        "title": "Hur blir jag godkänd på Risk 1 kursen?",
+        "knowledge_prerequisites": "Det behövs inga förkunskaper för att klara av kursen. Du behöver inte heller körkortstillstånd. Du kan boka upp dig på riskettan när som helst men vi rekommenderar att du börjar med att ta några körlektioner och får lite körvana först.",
+        "participation": "Våra föreläsare försöker göra kursen så inspirerande och lärorik som möjligt men det är minst lika viktigt att varje deltagare tar in informationen, engagerar sig i diskussionerna och kopplar det till sina egna erfarenheter för att kursen som ska upplevas som mest givande. För att bli godkänd på riskutbildning 1 måste du vara aktiv och delaktig i diskussionerna och föreläsningen. Det finns inga speciella förkunskapskrav eller krav på förberedelser, men vi rekommenderar att man har gjort de första momenten i utbildningsplanen innan man går riskettan."
+      },
+      "learning_outcomes": {
+        "title": "Detta ska du ha lärt dig efter riskutbildning 1",
+        "main_topics": "Efter riskutbildning del 1 ska du känna till hur alkohol, droger och trötthet påverkar din kropp och din körförmåga. Du ska veta vilka konsekvenserna kan bli om du kör påverkad och hur du kan undvika eller hindra andra från att ta onödiga risker i trafiken.",
+        "additional_topics": [
+          "Olika lagar och regler",
+          "vilka grupper som statistiskt sett tar större risker i trafiken",
+          "hur stress, mobilprat eller pratande passagerare kan påverka din körförmåga."
+        ]
+      },
+      "post_course": {
+        "title": "Vad händer efter riskutbildning 1?",
+        "next_steps": "Du måste ha genomgått hela riskutbildningen (Riskettan + Risktvåan) innan du utför teoriprovet och uppkörningen. När du får godkänt på riskettan är den giltig i fem år, vilket innebär att du har fem år på dig att ta körkortet innan du måste gå kursen igen."
+      },
+      "course_procedure": {
+        "title": "Hur går Risk 1-kursen till?",
+        "availability": "Vi erbjuder Riskutbildning del 1 i samtliga städer där vi har verksamhet.",
+        "experience": "Hos oss har man inte tråkigt och kursen som enligt lag ta minst 180 minuter (3 timmar), kommer flyta på så du knappt märkt att tiden går. Vi arbetar med aktivt deltagande och ni kommer i grupper få hitta information och diskutera olika ämnen."
+      }
+    },
+    "risk2": {
+      "title": "Risk 2 Kurs BIL – Halkbanan",
+      "general": "Risktvåan, även kallad Halkbana, är den andra delen av den obligatoriska riskutbildningen och är ett praktiskt moment. Diskutera med din trafiklärare när du är redo för kursen och boka Risktvåan i appen ’Mitt Körkort’ eller klicka på knappen nedan.",
+      "purpose": "Vad är Risk 2 Kurs för BIL? Risktvåan är ett obligatoriskt moment som du måste klara för att ta körkort. Syftet med att göra riskutbildning 2 är för att du ska lära dig mer om hur du bäst hanterar allvarliga och farliga situationer, när du tappar kontrollen över bilen. I Sverige och Norden får vi räkna med förrädiskt halt vägunderlag under vintern, med andra ord kommer du förmodligen någon gång råka ut för att bilen får sladd på vägen. Då gäller det att veta vad du ska göra. När du övningskör hos My Driving Academy hjälper vi dig klara körkortet. Din trafiklärare berättar för dig när du är redo för halkbanan, då kan du boka smidigt direkt i appen ‘Mitt Körkort’ eller på hemsidan. För att du ska vara så förberedd som möjligt behöver du kunna mer än att köra bilen, du behöver ha förståelse för beteende, vägunderlag och hur bilen fungerar.",
+      "mandatory": "Risk 2 är en obligatorisk kurs. Risktvåan är en obligatorisk kurs som du måste få godkänt i innan vi kan boka in dig på uppkörningen och Trafikverkets slutprov. När du kör hos oss kommer vi enkelt kunna se när du är redo och peppa dig inför kursen.",
+      "faq": {
+        "title": "Vanliga frågor om Risk 2 BIL",
+        "questions": [
+          {
+            "question": "Är det farligt, läskigt, roligt eller svårt?",
+            "answer": "Det är många frågor som cirkulerar i huvudet inför Halkbanan. Kanske har du hört rykten eller bildat dig en uppfattning om vad halkbanan är för något? Du behöver inte oroa dig. Halkan är helt säker och görs tillsammans med godkända utbildare. Riskutbildning 2 tar cirka 3 – 4 timmar."
+          },
+          {
+            "question": "Behöver jag ha körkortstillstånd?",
+            "answer": "Nej, inget körkortstillstånd krävs och du behöver heller inte ha klarat Riskettan innan. Kurserna kan du göra i vilken ordning du vill."
+          },
+          {
+            "question": "Får jag genomföra Halkbanan med en vän?",
+            "answer": "Halkbanan genomför vanligtvis i mindre grupper. För att utföra Risktvåan med en kompis kan du skriva en kommentar om det när du bokar, då bör det inte vara några problem."
+          },
+          {
+            "question": "Får jag köra med den vanliga bilen?",
+            "answer": "Du får inte köra med din vanliga bil. Men beroende på stad du utbildar dig i, kan du få använda trafikskolans bil. På Halkbanan tillhandahålls annars de bilar som är utrustade för att simulera en halkig vägbana."
+          },
+          {
+            "question": "Hur länge gäller Riskutbildning 2?",
+            "answer": "Om du får godkänt på Riskutbildning del 2 är utbildningen giltig i hela 5 år. Med andra ord kommer du ha gott om tid att klara både uppkörningen och teoriprovet därefter."
+          },
+          {
+            "question": "Vad kostar Risk 2 Kurs?",
+            "answer": "På vår bokningssida kan du se exakt när vi håller kurserna i just din stad samt vad det kostar per person att göra halkbanan. Du kan även se mer detaljer om din stad under ”Här finns vi” i menyn."
+          },
+          {
+            "question": "Behöver jag ha med mig något särskilt till Halkbanan?",
+            "answer": "Du behöver legitimera dig, ta med dig ID-kort eller pass samt betalning. Oftast går det bra att betala med kort på plats."
+          },
+          {
+            "question": "Finns det bara manuell bil?",
+            "answer": "Nej, du kan göra Risktvåan både med automat/manuell bil. Ofta behöver du anmäla i förväg om du vill köra med automatväxlad bil."
+          }
+        ]
+      },
+      "preparations": {
+        "title": "Förberedelser Risk 2 BIL",
+        "recommendations": "Det bästa sättet att förbereda dig på inför halkbanan är att övningsköra mycket. När vi bokar in dig på Risktvåan har vi gjort en bedömning där du är tillräckligt skicklig bakom ratten. Du har också glädje av att ha studerat körkortsteorin som rör bromssträckor.",
+        "facility_variations": "Risktvåor kan se lite olika ut beroende på anläggning. En del anläggningar har välutvecklade säkerhetshallar med tippbilar som du kan få prova att hänga upp och ner i, en våg som visar vad du väger i olika hastigheter om du krockar och så vidare. Andra anläggningar kan vara lite mindre och luta sig mer på föreläsningsmaterial.",
+        "experience_description": "Vad alla anläggningar har är en körbana där du kommer få uppleva fart och kontroll eller ja…. snarare bristen på kontroll. Några känner sig nervösa inför riskutbildning 2 men det behöver du inte vara. Det finns egentligen inga tydliga förkunskapskrav inför utbildningen men du bör kunna hantera ett fordon utan problem. Klarar du inte av att komma upp i rätt hastighet så kommer du inte bli godkänd på kursen. Du kommer få åka eller köra i olika hastigheter och uppleva fordonet beteende vid kraftiga inbromsningar beroende på om underlaget ska simuleras som torrt eller halt. Risktvåan är en av de två delarna i riskutbildningen. Förutom den behöver du även göra Riskettan."
+      },
+      "get_started": {
+        "title": "Kom i gång med riskutbildning 2",
+        "call_to_action": "Ta saken i egna händer och skaffa ditt körkort! Vill du få professionellt stöd i din resa mot körkortet så kontakta oss så hjälper vi dig.",
+        "test_lesson_offer": "Hos My Driving Academy kan du boka en testlektion till ett kraftigt rabatterat pris. Då får du både en bedömning av när du bör vara redo för Risktvåan/halkbanan samt en uppskattning på hur din fortsatta utbildning bör se ut baserat på just dina förutsättningar, tidsplan samt möjlighet till privat övningskörning."
+      }
+    }
+  },
+  "risk_education_motorcycle": {
+    "title": "Separata Riskutbildningar för motorcykelkörkort.",
+    "requirement": "Även blivande mc-förare måste genomgå riskettan och risktvåan för att få ett körkort, vilket innebär att du måste genomgå dem även om du tidigare har gjort riskettan och risktvåan för personbil. Olycksrisken för motorcykel är betydligt högre och annorlunda än för personbil och därför är även innehållet i riskutbildningarna annorlunda.",
+    "transportstyrelsen_info": {
+      "title": "Riskutbildning för Motorcykel (A, A1, A2) från Transportstyrelsens sida nedan.",
+      "general": "Du måste göra två riskutbildningar innan du gör kunskaps- och körprovet. Utbildningen består av två delar: Del 1 handlar om alkohol och droger, trötthet i trafiken och andra riskfyllda beteenden. Del 2 handlar bland annat om hastighet, säkerhet och körning vid olika väg- och väderförhållanden. Manöverbana ingår i den här delen. Riskutbildningen gäller till den dag du tar ditt körkort eller i högst fem år. Tänk på att utbildningen för personbil inte gäller för motorcykel.",
+      "equipment_requirements": {
+        "title": "Krav på motorcykel och skyddsutrustning",
+        "motorcycle_type": "Under de praktiska momenten under del 2 ska motorcykeln du kör vara tvåhjulig.",
+        "a1_specs": "Om du ska ta behörighet A1 ska du använda en motorcykel vars motor har en nettoeffekt av högst 11 kW. Om motorcykeln drivs av en förbränningsmotor ska den ha en cylindervolym på minst 120 cm³ och högst 125 cm³. Om motorcykeln drivs av en elektrisk motor ska förhållandet mellan nettoeffekt och tjänstevikt vara minst 0,08 kW/kg och högst 0,1 kW/kg.",
+        "a2_a_specs": "Om du ska ta behörighet A2 och A ska du använda en motorcykel vars motor har en nettoeffekt av minst 20 kW. Om motorcykeln drivs av en förbränningsmotor ska den ha en cylindervolym på minst 245 cm³. Om motorcykeln drivs av en elektrisk motor ska förhållandet nettoeffekt och tjänstevikt vara minst 0,15 kW/kg.",
+        "protective_gear": "När du kör måste du ha hjälm och skyddsutrustning för motorcykelkörning. Utrustningen ska bestå av skyddskläder av skinn eller något annat kraftigt material samt skyddsglasögon eller motsvarande, kraftiga stövlar eller kängor, handskar och ryggskydd. Hjälmen och utrustningen ska vara fri från skador."
+      },
+      "additional_a_license": {
+        "title": "Om jag ska ta en ytterligare A-behörighet",
+        "rule": "Du som har ett körkort för motorcykel och har gått riskutbildningen för motorcykel, behöver inte gå någon ny riskutbildning när du ska göra körprov för en högre motorcykelbehörighet. Riskutbildning för personbil gäller däremot inte för motorcykel."
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "my_driving_academy_linkoping",
+  "name": "My Driving Academy – Linköping",
+  "brand": "My Driving Academy",
+  "city": "Linköping",
+  "description": "Välkommen till vårt kontor i Linköping!Historien börjar redan 1929, då Martin Fransson grundade stadens första trafikskola. 1966 tog Ingemar Samuelsson över Israelsons Trafikskola och några år senare, 1971, slogs den samman med Franssons Trafikskola. Tillsammans bildade de Fransson & Israelsons Trafikskola AB – ett starkt namn inom körkortsutbildning i Linköping. År 2025 togs nästa steg i utvecklingen, när Fransson & Israelsons blev en del av My Driving Academy.",
+  "contact": {
+    "phone": "010-20 70 775 (centralsupport)",
+    "email": "hej@mydrivingacademy.com",
+    "address": "Apotekaregatan 3, 582 27 Linköping"
+  },
+  "opening_hours": [
+    { "days": "Info", "hours": "Finns ingen bemannad reception." }
+  ],
+  "services_offered": ["AM", "Bil", "MC", "Släp"],
+  "languages": ["svenska", "engelska", "bosniska", "serbiska", "kroatiska", "persiska"],
+  "prices": [
+    { "service_name": "AM-kurs", "price": 4499, "currency": "SEK" },
+    { "service_name": "Testlektion BIL", "price": 699, "currency": "SEK" },
+    { "service_name": "Körlektion BIL", "price": 1249, "currency": "SEK" },
+    { "service_name": "Prova-på-uppkörning BIL", "price": 1349, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 10799, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 16499, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 21999, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 6599, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 13199, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 19299, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 349, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 999, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 MC", "price": 17999, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 MC", "price": 21999, "currency": "SEK" },
+    { "service_name": "Körlektion MC", "price": 1799, "currency": "SEK" },
+    { "service_name": "Lektionspaket 5 MC", "price": 8499, "currency": "SEK" },
+    { "service_name": "Lektionspaket 10 MC", "price": 16999, "currency": "SEK" },
+    { "service_name": "Risk 1 MC", "price": 999, "currency": "SEK" },
+    { "service_name": "B96 Paket", "price": 4000, "currency": "SEK" },
+    { "service_name": "BE Paket", "price": 4849, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}

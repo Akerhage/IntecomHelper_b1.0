@@ -1,0 +1,169 @@
+{
+  "id": "my_driving_academy_goteborg_molnlycke",
+  "name": "My Driving Academy - Göteborg – Mölnlycke",
+  "brand": "My Driving Academy",
+  "city": "Göteborg",
+  "description": "Välkommen till vår trafikskola i Mölnlycke! Vi börjar våra körningar på Hönekullavägen 7. Prata med din lärare om du önskar bli hämtad eller lämnad i närheten så löser han eller hon det! Ta ditt körkort i Göteborg hos oss!",
+  "contact": {
+    "phone": "031885880",
+    "email": "molnlycke@trafikskolan.com",
+    "address": "Hönekullavägen 7, 435 44 Mölnlycke"
+  },
+  "opening_hours": [
+    {
+      "days": "Mån – Tors",
+      "hours": "08:30-17:00"
+    },
+    {
+      "days": "Fredag",
+      "hours": "08:00 – 14:00"
+    }
+  ],
+  "services_offered": [
+    "AM",
+    "Bil",
+    "MC",
+    "Släp"
+  ],
+  "languages": [
+    "svenska",
+    "engelska"
+  ],
+  "prices": [
+    {
+      "service_name": "AM-Kurs",
+      "price": 4499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Testlektion BIL",
+      "price": 999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Prova-på-uppkörning BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Privat Teorilektion BIL",
+      "price": 1349,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körbedömning för sökande till Trafiklärarutbildningen BIL",
+      "price": 1000,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 10999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 16999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 22499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 6499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 12799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 18899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs BIL",
+      "price": 899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs BIL",
+      "price": 2399,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Introduktionskurs/Handledarkurs BIL",
+      "price": 299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 MC",
+      "price": 14499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 MC",
+      "price": 20499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivvecka MC",
+      "price": 21999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs MC",
+      "price": 899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs MC",
+      "price": 3399,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion MC",
+      "price": 1649,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Lektionspaket 5 MC",
+      "price": 7999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Lektionspaket 10 MC",
+      "price": 15799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "B96 Paket",
+      "price": 5449,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "BE Paket",
+      "price": 7299,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

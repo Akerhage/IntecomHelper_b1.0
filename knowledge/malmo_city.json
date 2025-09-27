@@ -1,0 +1,35 @@
+{
+  "id": "martenssons_trafikskola_malmo_city",
+  "name": "Mårtenssons Trafikskola - Malmö – City",
+  "brand": "Mårtenssons Trafikskola",
+  "city": "Malmö",
+  "description": "Välkommen till Mårtenssons Trafikskola Malmö City! Vi finns i centrala Malmö, mitt emot Malmö Latinskola!",
+  "contact": {
+    "phone": "040 – 64 39 535",
+    "email": "malmo.city@trafikskolan.com",
+    "address": "Amiralsgatan 3, 211 41 Malmö"
+  },
+  "opening_hours": [
+    { "days": "Mån – Tors", "hours": "08:30– 17:00" },
+    { "days": "Fredag", "hours": "08:00 – 14:00" }
+  ],
+  "services_offered": ["AM", "Bil", "Släp"],
+  "languages": ["svenska", "kinesiska", "albanska", "phasto", "engelska"],
+  "prices": [
+    { "service_name": "AM-kurs", "price": 4499, "currency": "SEK" },
+    { "service_name": "Privat Teorilektion BIL", "price": 999, "currency": "SEK" },
+    { "service_name": "Körlektion BIL", "price": 1149, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 9999, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 14999, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 5549, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 10599, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 15999, "currency": "SEK" },
+    { "service_name": "Intensivutbildning (2 veckor) BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 299, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 799, "currency": "SEK" },
+    { "service_name": "B96 Paket", "price": 3999, "currency": "SEK" },
+    { "service_name": "BE Paket", "price": 5799, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}

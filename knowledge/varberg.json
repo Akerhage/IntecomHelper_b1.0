@@ -1,0 +1,34 @@
+{
+  "id": "my_driving_academy_varberg",
+  "name": "My Driving Academy – Varberg",
+  "brand": "My Driving Academy",
+  "city": "Varberg",
+  "description": "Vi är en trafikskola i Varberg där du gör mer hemma och mindre hos oss. Därmed blir ditt körkort billigare samtidigt som du får bästa möjliga kvalitet. Du hittar oss vid Östra Vallgatan 28. Skaffa ditt körkort i Varberg hos oss!",
+  "contact": {
+    "phone": "010-20 70 775 (centralsupporten)",
+    "email": "hej@mydrivingacademy.com",
+    "address": "Östra Vallgatan 28, 432 41 Varberg"
+  },
+  "opening_hours": [
+    { "days": "Info", "hours": "Ingen bemannad reception, ring, chatta eller mejla centralsupporten." }
+  ],
+  "services_offered": ["Bil"],
+  "languages": ["svenska", "engelska"],
+  "prices": [
+    { "service_name": "Körlektion BIL", "price": 1349, "currency": "SEK" },
+    { "service_name": "Privat teorilektion BIL", "price": 1349, "currency": "SEK" },
+    { "service_name": "Testlektion BIL", "price": 999, "currency": "SEK" },
+    { "service_name": "Prova-På-Uppkörning BIL", "price": 1349, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 10799, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 16299, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 22099, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 6199, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 12199, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 17999, "currency": "SEK" },
+    { "service_name": "Intensivutbildning (2 veckor) BIL", "price": 19999, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 299, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 799, "currency": "SEK" },
+    { "service_name": "Risk 2 Kurs BIL", "price": 2399, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "my_driving_academy_stockholm_osteraker",
+  "name": "My Driving Academy - Stockholm - Österåker",
+  "brand": "My Driving Academy",
+  "city": "Stockholm",
+  "description": "Bor du i Österåker, Åkersberga eller närliggande områden? Välkommen till vår trafikskola i Österåker! Du hittar oss på Centralvägen 29, 184 32 Åkersberga, mitt i hjärtat av Österåker och nära goda kommunikationer.",
+  "contact": {
+    "phone": "010-20 70 775 (centralsupporten)",
+    "email": "hej@mydrivingacademy.com",
+    "address": "Mötesplats Pyramidvägen 7"
+  },
+  "opening_hours": [
+    {
+      "days": "Info",
+      "hours": "Ingen bemannad reception, ring, chatta eller mejla centralsupporten."
+    }
+  ],
+  "services_offered": [
+    "AM",
+    "Bil",
+    "MC"
+  ],
+  "languages": [
+    "svenska",
+    "engelska",
+    "arabiska",
+    "kurdiska"
+  ],
+  "prices": [
+    {
+      "service_name": "AM-kurs",
+      "price": 5799,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion BIL",
+      "price": 1399,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Privat teorilektion BIL",
+      "price": 1399,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Prova-På-Uppkörning BIL",
+      "price": 1399,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 BIL",
+      "price": 10899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 BIL",
+      "price": 16499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 15 BIL",
+      "price": 21999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Minipaket BIL",
+      "price": 6699,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Mellanpaket BIL",
+      "price": 13199,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Baspaket BIL",
+      "price": 19299,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Intensivutbildning (2 veckor) BIL",
+      "price": 19599,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Introduktionskurs/Handledarkurs BIL",
+      "price": 499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs BIL",
+      "price": 499,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs BIL",
+      "price": 2249,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 5 MC",
+      "price": 14999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Totalpaket 10 MC",
+      "price": 20999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 1 Kurs MC",
+      "price": 899,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Risk 2 Kurs MC",
+      "price": 2999,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Körlektion MC",
+      "price": 1599,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Lektionspaket 5 MC",
+      "price": 7599,
+      "currency": "SEK"
+    },
+    {
+      "service_name": "Lektionspaket 10 MC",
+      "price": 14999,
+      "currency": "SEK"
+    }
+  ],
+  "booking_links": {
+    "car": null,
+    "mc": null,
+    "am": null
+  }
+}

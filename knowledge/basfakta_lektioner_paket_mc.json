@@ -1,0 +1,115 @@
+{
+  "section_title": "BASFAKTA - Lektioner och paket MC",
+  "general_info": {
+    "package_consistency": "De kontor som har MC-verksamhet har också samma typ av lektioner och paket, fast med olika priser.",
+    "list_description": "Nedan listas de lektioner och paket som alla kontoren erbjuder.",
+    "risk2_availability": "Risk 2 kurs för MC finns inte på alla kontoren utan på ett fåtal platser.",
+    "lesson_duration": "Körlektionerna är 80 minuter långa om inget annat anges.",
+    "gothenburg_duo_lessons": "Göteborg har även DUO-lektioner som är 100 minuter långa där man då är två elever och en lärare.",
+    "total_package_inclusions": "I våra MC Totalpaket ingår lån av MC och uppvärmning inför körprovet till skillnad från Totalpaketen för bil där det inte ingår lån av bil.",
+    "total_package_disclaimer": "OBS ett Totalpaket innebär inte att man är redo för prov . Antal lektioner som krävs är alltid individuellt.",
+    "lesson_estimation": "Grovt räknat behövs oftast mellan 15st-20st körlektioner för bil och MC innan en elev är redo för ett prov bokat av oss."
+  },
+  "total_packages": [
+    {
+      "name": "Totalpaket 5 MC",
+      "contents": [
+        "5st körlektioner MC",
+        "Riskettan & Risktvåan MC",
+        "Digital Teori i appen Mitt Körkort",
+        "Uppvärmning & lån av MC vid körprov",
+        "(Trafikverkets avgifter ingår EJ)"
+      ]
+    },
+    {
+      "name": "Totalpaket 10 MC",
+      "contents": [
+        "10st körlektioner MC",
+        "Riskettan & Risktvåan MC",
+        "Digital Teori i appen Mitt Körkort",
+        "Uppvärmning & lån av MC vid körprov",
+        "(Trafikverkets avgifter ingår EJ)"
+      ]
+    }
+  ],
+  "lesson_packages": [
+    {
+      "name": "Körlektion MC",
+      "contents": [
+        "1st Körlektion MC"
+      ]
+    },
+    {
+      "name": "Lektionspaket 5 MC",
+      "contents": [
+        "5st Körlektioner MC"
+      ]
+    },
+    {
+      "name": "Lektionspaket 10 MC",
+      "contents": [
+        "10st Körlektioner MC"
+      ]
+    }
+  ],
+  "driving_test_service": {
+    "name": "Uppvärmning & Lån av MC vid körprov på Trafikverket",
+    "description": "Denna tjänst säljer vi till de elever som vi bokar körprov åt på Trafikverket. Proven skall då vara godkända från läraren och eleven betalar för att få värma upp och låna MC inför förarprovet på Trafikverket. Det ingår då uppvärmning på manöverbana och gemensam färd med andra elever till Trafikverket och tillbaka."
+  },
+  "courses": [
+    {
+      "name": "Risk 1 Kurs MC",
+      "description": "Teoretisk kurs, kurslängd ca 3h 30min."
+    },
+    {
+      "name": "Risk 2 Kurs MC",
+      "description": "Praktisk kurs, kurslängd ca 4h, finns endast på ett fåtal kontor och platser i landet. Fråga oss!"
+    }
+  ],
+  "other_services": {
+    "title": "Övriga tjänster som finns på vissa kontor endast",
+    "services": [
+      {
+        "name": "Digital Teori (i appen Mitt Körkort) BIL, AM, MC",
+        "description": "Innehåller 3st delar, Plugga, Skyltar och Prov som innehåller allt man behöver lära sig för att klara teoriprovet för MC, Bil och Moped Klass 1 (AM).",
+        "price": "1800kr (samma pris överallt).",
+        "notes": "Denna tjänst finns även inbakad i våra Totalpaket samt ingår vid köp av AM-kurs. Eleven loggar in med sitt mobilnummer i appen och har fri tillgång till teorin efter köp. Vid köp av Totalpaket räknas denna tjänst som förbrukad direkt vid köp och återbetalas aldrig."
+      },
+      {
+        "name": "B96 Paket",
+        "description": "Innehåller körlektioner och uppvärmning och lån av fordon vid förarprovet på Trafikverket Har olika priser och innehåll på våra skolor. Se aktuell skola för pris där. Går under ”Släp”."
+      },
+      {
+        "name": "BE Paket",
+        "description": "Innehåller körlektioner och uppvärmning och lån av fordon vid förarprovet på Trafikverket Har olika priser och innehåll på våra skolor. Se aktuell skola för pris där. Går under ”Släp”"
+      },
+      {
+        "name": "AM-kurs (Moped Klass 1)",
+        "aliases": "Kan kallas moppe, eu-moppe, moppekurs etc.",
+        "description": "Dessa kurser erbjuds också på många av våra skolor. Oftast är det 2st teoritillfällen på totalt ca 8-9h samt en manöverkörning på ca 3-4h följt av trafikörning på ca 80-160min. När AM-kursen är klar och eleven fått godkänt på alla moment kan eleven själv boka prov på Trafikverkets hemsida.",
+        "inclusions": "I kursavgiften ingår även teorimaterial för att studera i vår mobilapp Mitt Körkort.",
+        "exclusions": "Teoriprovet ingår inte i vår kursavgift, kostar 420kr på Trafikverket.",
+        "price": "Kursavgiften är samma i hela landet, förutom hos Österåkers Trafikskola i Stockholm. 4499kr på alla kontor utom Österåker som tar 5799kr.",
+        "requirements": "Körkortstillstånd krävs för att genomföra kursen."
+      }
+    ]
+  },
+  "license_types": {
+    "title": "Körkortsbehörigheter vi utbildar för runtom i landet",
+    "note": "Vissa behörigheter finns bara på några utvalda skolor, man ser all den informationen på vår bokningswidget för vald skola vad för tjänster som finns just där.",
+    "licenses": [
+      "MC (A, A1, A2)",
+      "B (Personbil, Manuell och Automat)",
+      "B96",
+      "BE",
+      "C",
+      "C1",
+      "CE = Lastbil + Släp",
+      "D = Buss",
+      "YKB",
+      "Handledarutbildning Bil",
+      "Riskutbildning 1 och 2 (För Bil och MC)",
+      "Taxi"
+    ]
+  }
+}

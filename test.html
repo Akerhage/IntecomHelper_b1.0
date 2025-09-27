@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Bot Test-rigg v3.2</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f0f2f5; color: #1c1e21; padding: 20px; max-width: 900px; margin: auto; }
+        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h1, h2 { color: #333; }
+        textarea { width: 100%; box-sizing: border-box; padding: 10px; margin-bottom: 10px; border: 1px solid #dddfe2; border-radius: 6px; font-size: 15px; resize: vertical; }
+        button { background-color: #1877f2; color: white; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: bold; margin-right: 10px; margin-bottom: 10px; transition: background-color 0.2s; }
+        button:hover { background-color: #166fe5; }
+        button:disabled { background-color: #a0a0a0; cursor: not-allowed; }
+        pre { background-color: #f5f5f5; padding: 15px; border: 1px solid #eee; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word; font-family: "Consolas", "Monaco", monospace; font-size: 14px; max-height: 500px; overflow-y: auto; }
+        .test-suites button { background-color: #e4e6eb; color: #050505; }
+        .test-suites button:hover { background-color: #d8dadf; }
+        #randomButton { background-color: #31a24c; color: white; }
+        #randomButton:hover { background-color: #2b8a40; }
+        #copyButton { background-color: #42b72a; }
+        #copyButton:hover { background-color: #36a420; }
+    </style>
+</head>
+<body>
+
+    <h1>Intercom AI Helper - Super Test-rigg v3.2</h1>
+
+    <div class="container test-suites">
+        <h2>Automatiska Test-sviter</h2>
+        <p>Klicka på en knapp för att köra en serie förinställda frågor om ett ämne.</p>
+        <button id="testAmButton">Testa AM-kurs</button>
+        <button id="testIntensiveCarButton">Testa Intensivkurs (Bil)</button>
+        <button id="testIntensiveMcButton">Testa Intensivvecka (MC)</button>
+        <button id="testRiskButton">Testa Riskutbildningar</button>
+        <button id="testPermitButton">Testa Körkortstillstånd</button>
+        <button id="randomButton">Kör 10 Slumpmässiga Frågor</button>
+    </div>
+
+    <div class="container">
+        <h2>Manuell Testning</h2>
+        <textarea id="questionInput" placeholder="Ställ en enskild, manuell fråga här..." rows="3"></textarea>
+        <button id="askButton">Fråga Botten</button>
+    </div>
+
+    <div class="container">
+        <h2>Resultat & Logg</h2>
+        <button id="copyButton">Kopiera Logg</button>
+        <pre id="botResponse">Väntar på fråga...</pre>
+    </div>
+
+    <script>
+        const allButtons = () => document.querySelectorAll('button');
+        const botResponse = document.getElementById('botResponse');
+        const copyButton = document.getElementById('copyButton');
+
+        // --- FRÅGEBANK ---
+        const testSuites = {
+            am_kurs: {
+                name: "AM-kurs",
+                questions: [ "Hej, Jag vill ta moppekort, bor i göteborg. Vad kostar en kurs och hur lång är den?", "Vad har ni för am kurser i Eslöv?", "behöver man körkortstillstånd för moped?", "hur gammal måste man vara för att få köra moppe?", "Vad ingår i en am-kurs hos er?", "Får man övningsköra privat med moppe?" ]
+            },
+            intensivkurs_bil: {
+                name: "Intensivkurs (Bil)",
+                questions: [ "Hur fungerar en intensivkurs för bil hos er?", "Vad kostar en intensivkurs i malmö?", "Är intensivutbildningen för bil avbokningsbar?", "Hur många lektioner ingår i er intensivutbildning på två veckor för bil?" ]
+            },
+             intensivkurs_mc: {
+                name: "Intensivvecka (MC)",
+                questions: [ "Berätta om er intensivvecka för MC", "Vad ingår i en intensivkurs för motorcykel?", "Kan man boka en intensivvecka för hoj i Göteborg?", "Vad är avbokningsreglerna för MC intensivkurs?" ]
+            },
+            riskutbildningar: {
+                name: "Riskutbildningar",
+                questions: [ "Vad är riskettan?", "Måste jag gå riskettan för MC om jag har den för bil?", "Var kan jag köra halkan i Stockholm?", "Hur länge är risktvåan giltig?" ]
+            },
+            körkortstillstånd: {
+                name: "Körkortstillstånd",
+                questions: [ "Hur länge gäller ett körkortstillstånd?", "Vad kostar det att ansöka om lämp?", "Behöver jag ett nytt tillstånd för MC om jag har B-kort?", "Hur lång tid tar det att få körkortstillstånd?" ]
+            }
+        };
+
+        async function askBot(question) {
+            try {
+                const response = await fetch('http://localhost:3000/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question: question })
+                });
+                if (!response.ok) throw new Error(`Servern svarade med status: ${response.status}`);
+                const data = await response.json();
+                return data.answer;
+            } catch (error) {
+                return `Ett fel inträffade:\n\n${error.message}\n\nKontrollera att din server.js är igång i Powershell.`;
+            }
+        }
+        
+        async function runTestSuite(suiteKey) {
+            const suite = testSuites[suiteKey];
+            if (!suite) return;
+
+            allButtons().forEach(b => b.disabled = true);
+            let fullLog = `--- START TEST-SVIT: ${suite.name} ---\n\n`;
+            botResponse.textContent = `Kör test-svit "${suite.name}"...`;
+
+            for (let i = 0; i < suite.questions.length; i++) {
+                const q = suite.questions[i];
+                const progress = `(${i + 1}/${suite.questions.length})`;
+                botResponse.textContent = `Kör test-svit "${suite.name}"...\nStäller fråga ${progress}: "${q}"`;
+                
+                const answer = await askBot(q);
+                fullLog += `Fråga ${progress}: ${q}\nSvar:\n---\n${answer}\n---\n\n`;
+            }
+            fullLog += `--- SLUT TEST-SVIT: ${suite.name} ---`;
+            botResponse.textContent = fullLog;
+            allButtons().forEach(b => b.disabled = false);
+        }
+
+        async function runRandomSuite() {
+            allButtons().forEach(b => b.disabled = true);
+            let fullLog = `--- START SLUMPMÄSSIGT TEST ---\n\n`;
+            botResponse.textContent = `Förbereder slumpmässigt test...`;
+            let allQuestions = [];
+            for (const key in testSuites) { allQuestions.push(...testSuites[key].questions); }
+            const shuffled = allQuestions.sort(() => 0.5 - Math.random());
+            const selectedQuestions = shuffled.slice(0, 10);
+
+            for (let i = 0; i < selectedQuestions.length; i++) {
+                const q = selectedQuestions[i];
+                const progress = `(${i + 1}/${selectedQuestions.length})`;
+                botResponse.textContent = `Kör slumpmässigt test...\nStäller fråga ${progress}: "${q}"`;
+                const answer = await askBot(q);
+                fullLog += `Fråga ${progress}: ${q}\nSvar:\n---\n${answer}\n---\n\n`;
+            }
+            fullLog += `--- SLUT SLUMPMÄSSIGT TEST ---`;
+            botResponse.textContent = fullLog;
+            allButtons().forEach(b => b.disabled = false);
+        }
+        
+        document.getElementById('askButton').addEventListener('click', async () => {
+            const question = document.getElementById('questionInput').value;
+            if (!question) { alert("Skriv en fråga först!"); return; }
+            botResponse.textContent = "Tänker...";
+            allButtons().forEach(b => b.disabled = true);
+            const answer = await askBot(question);
+            botResponse.textContent = `Fråga: ${question}\n\nSvar:\n---\n${answer}`;
+            allButtons().forEach(b => b.disabled = false);
+        });
+
+        document.getElementById('testAmButton').addEventListener('click', () => runTestSuite('am_kurs'));
+        document.getElementById('testIntensiveCarButton').addEventListener('click', () => runTestSuite('intensivkurs_bil'));
+        document.getElementById('testIntensiveMcButton').addEventListener('click', () => runTestSuite('intensivkurs_mc'));
+        document.getElementById('testRiskButton').addEventListener('click', () => runTestSuite('riskutbildningar'));
+        document.getElementById('testPermitButton').addEventListener('click', () => runTestSuite('körkortstillstånd'));
+        document.getElementById('randomButton').addEventListener('click', runRandomSuite);
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(botResponse.textContent)
+                .then(() => alert('Loggen har kopierats!'))
+                .catch(err => alert('Kunde inte kopiera loggen.'));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "am_kurs": [
+    "am", "am-kort", "moped", "moppe", "mopedkörkort", "klass 1", "eu-moped"
+  ],
+  "körkortstillstånd": [
+    "tillstånd", "lämp", "lämpet", "syntest", "synintyg", "hälsodeklaration", "ansöka om att få köra"
+  ],
+  "introduktionskurs": [
+    "handledarkurs", "introkurs", "introduktionsutbildning", "gå med pappa", "övningsköra med mamma"
+  ],
+  "riskettan": [
+    "risk1", "risk 1", "riskettan bil", "riskettan mc"
+  ],
+  "risktvåan": [
+    "risk2", "risk 2", "halkbana", "halkan", "risktvåan bil", "risktvåan mc"
+  ],
+  "avbokningsregler": [
+    "avboka", "omboka", "sjuk", "försent", "avbokning", "ombbokning", "sjukintyg", "avbeställa"
+  ],
+  "automatkörkort": [
+    "automat", "köra automat", "bara automat"
+  ],
+  "intensivkurs_bil": [
+    "intensivkurs bil", "intensivutbildning bil", "snabbkurs bil", "två veckor bil", "intensivt bil"
+  ],
+  "intensivkurs_mc": [
+    "intensivkurs mc", "intensivvecka mc", "intensivkurs hoj", "intensivutbildning motorcykel", "intensivt mc"
+  ]
+}

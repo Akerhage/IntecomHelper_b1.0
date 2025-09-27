@@ -1,0 +1,42 @@
+{
+  "id": "martenssons_trafikskola_landskrona",
+  "name": "Mårtenssons Trafikskola – Landskrona",
+  "brand": "Mårtenssons Trafikskola",
+  "city": "Landskrona",
+  "description": "Välkommen till Mårtenssons Trafikskola i Landskrona! Tänk dig att kunna resa utan att anpassa dig efter tidtabeller eller vänta i regn och kyla. Med körkortet i handen sätter du dig bara i bilen och kör – snabbt, smidigt och på dina egna villkor!",
+  "contact": {
+    "phone": "041 – 833 27 90",
+    "email": "landskrona@trafikskolan.com",
+    "address": "Regeringsgatan 53, 261 36 Landskrona"
+  },
+  "opening_hours": [
+    { "days": "Mån – Tors", "hours": "08:30– 17:00" },
+    { "days": "Fredag", "hours": "08:00 - 14:00" }
+  ],
+  "services_offered": ["AM", "Bil", "MC", "Släp"],
+  "languages": ["svenska", "engelska", "persiska", "bosniska", "serbiska", "kroatiska"],
+  "prices": [
+    { "service_name": "AM-kurs", "price": 4499, "currency": "SEK" },
+    { "service_name": "Privat Teorilektion BIL", "price": 999, "currency": "SEK" },
+    { "service_name": "Körlektion BIL", "price": 1249, "currency": "SEK" },
+    { "service_name": "Körbedömning för sökande till Trafiklärarutbildningen BIL", "price": 1200, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 BIL", "price": 10699, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 BIL", "price": 15999, "currency": "SEK" },
+    { "service_name": "Totalpaket 15 BIL", "price": 20999, "currency": "SEK" },
+    { "service_name": "Minipaket BIL", "price": 5999, "currency": "SEK" },
+    { "service_name": "Mellanpaket BIL", "price": 11699, "currency": "SEK" },
+    { "service_name": "Baspaket BIL", "price": 17299, "currency": "SEK" },
+    { "service_name": "Introduktionskurs/Handledarkurs BIL", "price": 349, "currency": "SEK" },
+    { "service_name": "Risk 1 Kurs BIL", "price": 799, "currency": "SEK" },
+    { "service_name": "Teori i grupp Svenska BIL", "price": 0, "currency": "SEK" },
+    { "service_name": "Totalpaket 5 MC", "price": 13999, "currency": "SEK" },
+    { "service_name": "Totalpaket 10 MC", "price": 19999, "currency": "SEK" },
+    { "service_name": "Körlektion MC", "price": 1349, "currency": "SEK" },
+    { "service_name": "Lektionspaket 5 MC", "price": 6499, "currency": "SEK" },
+    { "service_name": "Lektionspaket 10 MC", "price": 12799, "currency": "SEK" },
+    { "service_name": "Risk 1 MC", "price": 799, "currency": "SEK" },
+    { "service_name": "B96 Paket", "price": 4199, "currency": "SEK" },
+    { "service_name": "BE Paket", "price": 5999, "currency": "SEK" }
+  ],
+  "booking_links": { "car": null, "mc": null, "am": null }
+}
