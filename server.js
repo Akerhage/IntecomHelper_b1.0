@@ -1,5 +1,5 @@
-// server.js - Version 7.2 - Finjusterad
-// En mindre justering för att ta bort en robot-liknande fras från inledningen.
+// server.js - Version 8.1 - Slutgiltig "Intensivkurs MC"-expert
+// Helt omskriven logik för att korrekt hämta och presentera detaljerad fakta.
 
 const express = require('express');
 const cors = require('cors');
@@ -66,19 +66,46 @@ function findOfficesInQuestion(question) {
 
 function findKeywordsInQuestion(question) {
   const q = question.toLowerCase();
-  const foundKeywords = new Set();
-  const sortedKeywords = Object.keys(knowledge.keywords).sort((a, b) => (b.includes('_bil') || b.includes('_mc')) - (a.includes('_bil') || a.includes('_mc')));
-  
+  const foundKeywords = [];
+
+  const sortedKeywords = Object.keys(knowledge.keywords).sort((a, b) => {
+    const aHasVehicle = a.includes('_bil') || a.includes('_mc');
+    const bHasVehicle = b.includes('_bil') || b.includes('_mc');
+    
+    if (aHasVehicle && !bHasVehicle) return -1;
+    if (!aHasVehicle && bHasVehicle) return 1;
+
+    const aHasMC = a.includes('_mc');
+    const bHasMC = b.includes('_mc');
+
+    if ((q.includes('mc') || q.includes('hoj') || q.includes('motorcykel'))) {
+        if (aHasMC && !bHasMC) return -1;
+        if (!aHasMC && bHasMC) return 1;
+    }
+    
+    return b.length - a.length;
+  });
+
   for (const mainKeyword of sortedKeywords) {
     const synonyms = knowledge.keywords[mainKeyword];
     for (const synonym of synonyms) {
-      if (q.includes(synonym.toLowerCase())) {
-        foundKeywords.add(mainKeyword);
-        break; 
+      const synonymWords = synonym.toLowerCase().split(' ');
+      
+      const requiredWords = synonymWords.filter(word => {
+          if ((word === 'bil' && mainKeyword.includes('_bil')) || (word === 'mc' && mainKeyword.includes('_mc'))) {
+              return !(q.includes('bil') || q.includes('mc') || q.includes('hoj') || q.includes('motorcykel'));
+          }
+          return true;
+      });
+
+      if (requiredWords.every(word => q.includes(word))) {
+        if (!foundKeywords.includes(mainKeyword)) {
+          foundKeywords.push(mainKeyword);
+        }
       }
     }
   }
-  return Array.from(foundKeywords);
+  return foundKeywords;
 }
 
 function getTopicFacts(primaryKeyword, question) {
@@ -86,7 +113,8 @@ function getTopicFacts(primaryKeyword, question) {
     const topicMap = {
         'am_kurs': 'am_kort_och_kurser',
         'körkortstillstånd': 'korkortstillstand',
-        'intensivkurs_bil': ['lektioner_paket_bil', 'macros_mejl-mallar']
+        'intensivkurs_bil': ['lektioner_paket_bil', 'macros_mejl-mallar'],
+        'intensivkurs_mc': ['lektioner_paket_mc', 'policy_kundavtal', 'mc_lektioner_utbildning']
     };
     const topicKeys = Array.isArray(topicMap[primaryKeyword]) ? topicMap[primaryKeyword] : [topicMap[primaryKeyword]];
     if (!topicKeys || !knowledge.basfakta_topics[topicKeys[0]]) return [];
@@ -115,13 +143,44 @@ function getTopicFacts(primaryKeyword, question) {
             if (intensiveCourseInfo?.description) {
                  facts.push("Vår intensivutbildning på 2 veckor innehåller 16 körlektioner, Risk 1, Risk 2 och digital teori.");
             }
-        } else if (q.includes("avbokningsbar")) {
+        } 
+        else if (q.includes("avbokningsbar")) {
              if (intensiveCourseInfo?.description?.includes("INTE avbokningsbar")) {
                 facts.push("Nej, vår 2-veckors intensivutbildning är INTE avbokningsbar efter att den har bokats in.");
             }
-        } else { 
+        } 
+        else { 
             if (policyInfo?.body) {
                 facts.push("Vår 2-veckors intensivkurs är ett upplägg där vi försöker planera in 16 körlektioner under en tvåveckorsperiod. Målet är att du även ska hinna med Risk 1 och Risk 2 under denna tid. Det är ett högt tempo som kräver att du är tillgänglig på de tider läraren har. Proven bokas vanligtvis in veckan efter kursen, om det finns tider hos Trafikverket.");
+            }
+        }
+        return facts;
+    }
+    else if (primaryKeyword === 'intensivkurs_mc') {
+        const utbildningData = knowledge.basfakta_topics[topicKeys[2]];
+        let facts = [];
+        
+        const intensiveCourseInfo = utbildningData?.intensive_course;
+
+        if (!intensiveCourseInfo) return [];
+
+        if (q.includes("ingår")) {
+            if (intensiveCourseInfo.inclusions?.items) {
+                facts.push("Följande ingår i priset för intensivveckan för MC:\n• " + intensiveCourseInfo.inclusions.items.join('\n• '));
+            }
+        }
+        else if (q.includes("avbokningsregler") || q.includes("avboka")) {
+            if (intensiveCourseInfo.cancellation_policy?.rule) {
+                facts.push("Avbokning för MC intensivvecka: " + intensiveCourseInfo.cancellation_policy.rule);
+            }
+        }
+        else { // Allmän fråga
+            let fullDescription = [];
+            if (intensiveCourseInfo.target_audience) fullDescription.push(intensiveCourseInfo.target_audience);
+            if (intensiveCourseInfo.experience) fullDescription.push(intensiveCourseInfo.experience);
+            if (intensiveCourseInfo.expectations) fullDescription.push(intensiveCourseInfo.expectations);
+            if (fullDescription.length > 0) {
+                facts.push(fullDescription.join(' '));
             }
         }
         return facts;
@@ -143,8 +202,9 @@ function buildAnswer(facts, question) {
 
   const primaryKeyword = facts.keywords[0];
   const greetings = { 
-      'am_kurs': "Vad roligt att du är intresserad av en AM-kurs!", // JUSTERAD RAD
-      'intensivkurs_bil': "Absolut! Här är lite information om vår intensivutbildning för bil."
+      'am_kurs': "Vad roligt att du är intresserad av en AM-kurs!",
+      'intensivkurs_bil': "Absolut! Här är lite information om vår intensivutbildning för bil.",
+      'intensivkurs_mc': "Javisst! Här kommer lite information om vår intensivvecka för MC."
   };
   if(greetings[primaryKeyword]) answerParts.push(greetings[primaryKeyword]);
   
@@ -154,7 +214,10 @@ function buildAnswer(facts, question) {
 
   if (facts.offices.length > 0 && primaryKeyword) {
     const city = facts.offices[0].city;
-    const serviceNameMap = { 'intensivkurs_bil': 'Intensivutbildning (2 veckor) BIL' };
+    const serviceNameMap = { 
+        'intensivkurs_bil': 'Intensivutbildning (2 veckor) BIL',
+        'intensivkurs_mc': 'Intensivvecka MC' 
+    };
     const serviceSearchTerm = serviceNameMap[primaryKeyword] || primaryKeyword.replace('_', '-');
     const officesWithService = [];
     facts.offices.forEach(office => {
@@ -165,8 +228,8 @@ function buildAnswer(facts, question) {
         answerParts.push(`\nI ${city} erbjuder följande kontor detta:`);
         const officeList = officesWithService.map(o => `• ${o.name} (${o.service_name}): ${o.price} kr`);
         answerParts.push(officeList.join('\n'));
-    } else if (/pris|kostar/i.test(question)) {
-        answerParts.push(`\nJag kunde tyvärr inte hitta något specifikt pris för det i ${city}. Vi rekommenderar att du kontaktar våra kontor där direkt för den senaste prisinformationen.`);
+    } else if (/pris|kostar|boka/i.test(question)) {
+        answerParts.push(`\nJag kunde tyvärr inte hitta information om detta i ${city}. Vi rekommenderar att du kontaktar våra kontor där direkt för att se om de erbjuder detta.`);
     }
   }
 
