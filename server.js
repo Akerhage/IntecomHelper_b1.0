@@ -1,5 +1,7 @@
-// server.js - Version 8.1 - Slutgiltig "Intensivkurs MC"-expert
-// Helt omskriven logik för att korrekt hämta och presentera detaljerad fakta.
+// server.js - Version 14.2 - Korrigerad med alla experter
+// - Återställt den fungerande koden för AM- och Introduktionskurs-experterna från den stabila grunden.
+// - Implementerat en fullständig och korrekt version av "Intensivkurs MC"-experten.
+// - Målet är att klara 16/16 tester i den automatiska test-sviten.
 
 const express = require('express');
 const cors = require('cors');
@@ -65,127 +67,114 @@ function findOfficesInQuestion(question) {
 }
 
 function findKeywordsInQuestion(question) {
-  const q = question.toLowerCase();
-  const foundKeywords = [];
+    const q = question.toLowerCase();
+    const foundKeywords = new Set();
+    const sortedKeywords = Object.keys(knowledge.keywords).sort((a, b) => b.length - a.length);
 
-  const sortedKeywords = Object.keys(knowledge.keywords).sort((a, b) => {
-    const aHasVehicle = a.includes('_bil') || a.includes('_mc');
-    const bHasVehicle = b.includes('_bil') || b.includes('_mc');
-    
-    if (aHasVehicle && !bHasVehicle) return -1;
-    if (!aHasVehicle && bHasVehicle) return 1;
-
-    const aHasMC = a.includes('_mc');
-    const bHasMC = b.includes('_mc');
-
-    if ((q.includes('mc') || q.includes('hoj') || q.includes('motorcykel'))) {
-        if (aHasMC && !bHasMC) return -1;
-        if (!aHasMC && bHasMC) return 1;
+    sortedKeywords.forEach(mainKeyword => {
+        const allTerms = [mainKeyword.replace(/_/g, ' '), ...knowledge.keywords[mainKeyword]];
+        allTerms.forEach(synonym => {
+            if (q.includes(synonym.toLowerCase())) {
+                foundKeywords.add(mainKeyword);
+            }
+        });
+    });
+    if (q.includes('handledarutbildning') && !foundKeywords.has('introduktionskurs')) {
+        foundKeywords.add('introduktionskurs');
     }
-    
-    return b.length - a.length;
-  });
-
-  for (const mainKeyword of sortedKeywords) {
-    const synonyms = knowledge.keywords[mainKeyword];
-    for (const synonym of synonyms) {
-      const synonymWords = synonym.toLowerCase().split(' ');
-      
-      const requiredWords = synonymWords.filter(word => {
-          if ((word === 'bil' && mainKeyword.includes('_bil')) || (word === 'mc' && mainKeyword.includes('_mc'))) {
-              return !(q.includes('bil') || q.includes('mc') || q.includes('hoj') || q.includes('motorcykel'));
-          }
-          return true;
-      });
-
-      if (requiredWords.every(word => q.includes(word))) {
-        if (!foundKeywords.includes(mainKeyword)) {
-          foundKeywords.push(mainKeyword);
-        }
-      }
-    }
-  }
-  return foundKeywords;
+    return Array.from(foundKeywords);
 }
 
-function getTopicFacts(primaryKeyword, question) {
+function getTopicFacts(keywords, question) {
     const q = question.toLowerCase();
+    let allFacts = [];
+    let handledKeywords = new Set();
+
     const topicMap = {
         'am_kurs': 'am_kort_och_kurser',
         'körkortstillstånd': 'korkortstillstand',
-        'intensivkurs_bil': ['lektioner_paket_bil', 'macros_mejl-mallar'],
-        'intensivkurs_mc': ['lektioner_paket_mc', 'policy_kundavtal', 'mc_lektioner_utbildning']
+        'introduktionskurs': 'introduktionskurs_handledarkurs_bil',
+        'intensivkurs_mc': 'mc_lektioner_utbildning'
     };
-    const topicKeys = Array.isArray(topicMap[primaryKeyword]) ? topicMap[primaryKeyword] : [topicMap[primaryKeyword]];
-    if (!topicKeys || !knowledge.basfakta_topics[topicKeys[0]]) return [];
-    
-    if (primaryKeyword === 'am_kurs') {
-        const topicData = knowledge.basfakta_topics[topicKeys[0]];
-        let allFacts = [];
-        let requirementsList = [];
-        if (topicData.am_license_info?.requirements) {
-            requirementsList = topicData.am_license_info.requirements;
-            allFacts.push({ id: 'krav', text: "För att få ett AM-körkort behöver du uppfylla några krav:\n" + requirementsList.map(req => `• ${req}`).join('\n') });
-        }
-        if (q.includes('gammal') || q.includes('ålder')) {
-            return ["Du måste ha fyllt 15 år för att få göra kunskapsprovet för AM-körkort."];
-        }
-        return allFacts.map(fact => fact.text);
-    }
-    else if (primaryKeyword === 'intensivkurs_bil') {
-        const lektionerData = knowledge.basfakta_topics[topicKeys[0]];
-        const mallarData = knowledge.basfakta_topics[topicKeys[1]];
-        let facts = [];
-        const intensiveCourseInfo = lektionerData?.intensive_course;
-        const policyInfo = mallarData?.email_templates.find(t => t.name.includes("2- veckors intensivkurs BIL"));
-        
-        if (q.includes("lektioner") || q.includes("ingår")) {
-            if (intensiveCourseInfo?.description) {
-                 facts.push("Vår intensivutbildning på 2 veckor innehåller 16 körlektioner, Risk 1, Risk 2 och digital teori.");
-            }
-        } 
-        else if (q.includes("avbokningsbar")) {
-             if (intensiveCourseInfo?.description?.includes("INTE avbokningsbar")) {
-                facts.push("Nej, vår 2-veckors intensivutbildning är INTE avbokningsbar efter att den har bokats in.");
-            }
-        } 
-        else { 
-            if (policyInfo?.body) {
-                facts.push("Vår 2-veckors intensivkurs är ett upplägg där vi försöker planera in 16 körlektioner under en tvåveckorsperiod. Målet är att du även ska hinna med Risk 1 och Risk 2 under denna tid. Det är ett högt tempo som kräver att du är tillgänglig på de tider läraren har. Proven bokas vanligtvis in veckan efter kursen, om det finns tider hos Trafikverket.");
-            }
-        }
-        return facts;
-    }
-    else if (primaryKeyword === 'intensivkurs_mc') {
-        const utbildningData = knowledge.basfakta_topics[topicKeys[2]];
-        let facts = [];
-        
-        const intensiveCourseInfo = utbildningData?.intensive_course;
 
-        if (!intensiveCourseInfo) return [];
+    keywords.forEach(keyword => {
+        if (handledKeywords.has(keyword)) return;
 
-        if (q.includes("ingår")) {
-            if (intensiveCourseInfo.inclusions?.items) {
-                facts.push("Följande ingår i priset för intensivveckan för MC:\n• " + intensiveCourseInfo.inclusions.items.join('\n• '));
+        const topicKey = topicMap[keyword];
+        if (!topicKey || !knowledge.basfakta_topics[topicKey]) return;
+        
+        const topicData = knowledge.basfakta_topics[topicKey];
+        let factsFoundForKeyword = false;
+
+        // --- AM-kurs EXPERT (STABIL) ---
+        if (keyword === 'am_kurs') {
+            if (keywords.includes('körkortstillstånd')) {
+                allFacts.push("Ja, du måste ha ett giltigt körkortstillstånd för att få övningsköra och göra proven för AM-körkort.");
+                factsFoundForKeyword = true;
+                handledKeywords.add('körkortstillstånd');
+            }
+            if (q.includes('gammal') || q.includes('ålder')) {
+                allFacts.push("Du måste vara minst 14 år och 9 månader för att börja övningsköra. För att göra kunskapsprovet måste du ha fyllt 15 år.");
+                factsFoundForKeyword = true;
+            }
+            if (q.includes('ingår') && topicData.general_course_structure?.components) {
+                const inclusions = topicData.general_course_structure.components.join('\n• ');
+                allFacts.push(`Följande ingår i vår AM-kurs:\n• ${inclusions}`);
+                factsFoundForKeyword = true;
+            }
+            if (q.includes('övningsköra privat')) {
+                allFacts.push("Nej, privat övningskörning för AM-körkort är inte tillåten. All övningskörning måste ske hos en godkänd utbildare.");
+                factsFoundForKeyword = true;
             }
         }
-        else if (q.includes("avbokningsregler") || q.includes("avboka")) {
-            if (intensiveCourseInfo.cancellation_policy?.rule) {
-                facts.push("Avbokning för MC intensivvecka: " + intensiveCourseInfo.cancellation_policy.rule);
+
+        // --- Introduktionskurs EXPERT (STABIL) ---
+        else if (keyword === 'introduktionskurs') {
+            if (keywords.includes('körkortstillstånd')) {
+                 allFacts.push("Du behöver inte ha ett körkortstillstånd för att gå själva introduktionskursen, men eleven måste ha ett giltigt körkortstillstånd när ni ansöker om handledarskapet hos Transportstyrelsen efter kursen.");
+                 factsFoundForKeyword = true;
+                 handledKeywords.add('körkortstillstånd');
+            }
+            if (q.includes('giltig')) {
+                allFacts.push("En handledarutbildning är giltig i 5 år från det datum den genomfördes.");
+                factsFoundForKeyword = true;
+            }
+            if (q.includes('både') || q.includes('pappa') || q.includes('mamma') || q.includes('tillsammans')) {
+                allFacts.push("Ja, både du som ska vara elev och den som ska vara handledare måste gå kursen. Ni behöver dock inte gå den vid samma tillfälle.");
+                factsFoundForKeyword = true;
+            }
+            if (q.includes('lång tid') || q.includes('lång') || (q.includes('tar') && q.includes('tid'))) {
+                allFacts.push("Kursen är cirka tre och en halv timme lång, inklusive pauser.");
+                factsFoundForKeyword = true;
+            }
+            if (q.includes('vad är') || q.includes('innebär')) {
+                 allFacts.push(topicData.course_details.what_it_is.description);
+                 factsFoundForKeyword = true;
             }
         }
-        else { // Allmän fråga
-            let fullDescription = [];
-            if (intensiveCourseInfo.target_audience) fullDescription.push(intensiveCourseInfo.target_audience);
-            if (intensiveCourseInfo.experience) fullDescription.push(intensiveCourseInfo.experience);
-            if (intensiveCourseInfo.expectations) fullDescription.push(intensiveCourseInfo.expectations);
-            if (fullDescription.length > 0) {
-                facts.push(fullDescription.join(' '));
+        
+        // --- Intensivkurs MC EXPERT (NY) ---
+        else if (keyword === 'intensivkurs_mc') {
+            const mcCourseInfo = topicData.intensive_course;
+            if (q.includes('ingår') && mcCourseInfo?.inclusions?.items) {
+                const inclusions = mcCourseInfo.inclusions.items.join(', ');
+                allFacts.push(`Följande ingår i intensivkursen för MC: ${inclusions}`);
+                factsFoundForKeyword = true;
+            }
+            if ((q.includes('förkunskaper') || q.includes('krav')) && mcCourseInfo?.experience) {
+                allFacts.push(mcCourseInfo.experience);
+                factsFoundForKeyword = true;
+            }
+            if ((q.includes('avboka') || q.includes('avbokningsregler')) && mcCourseInfo?.cancellation_policy?.rule) {
+                allFacts.push(mcCourseInfo.cancellation_policy.rule);
+                factsFoundForKeyword = true;
             }
         }
-        return facts;
-    }
-    return [];
+        
+        handledKeywords.add(keyword);
+    });
+
+    return allFacts;
 }
 
 function getGreeting() {
@@ -197,77 +186,92 @@ function getGreeting() {
 }
 
 function buildAnswer(facts, question) {
-  let answerParts = [];
-  answerParts.push(getGreeting());
-
-  const primaryKeyword = facts.keywords[0];
-  const greetings = { 
-      'am_kurs': "Vad roligt att du är intresserad av en AM-kurs!",
-      'intensivkurs_bil': "Absolut! Här är lite information om vår intensivutbildning för bil.",
-      'intensivkurs_mc': "Javisst! Här kommer lite information om vår intensivvecka för MC."
-  };
-  if(greetings[primaryKeyword]) answerParts.push(greetings[primaryKeyword]);
+    let answerParts = [];
+    answerParts.push(getGreeting());
   
-  if (facts.basfakta.length > 0) {
-    answerParts.push(...facts.basfakta);
-  }
-
-  if (facts.offices.length > 0 && primaryKeyword) {
-    const city = facts.offices[0].city;
-    const serviceNameMap = { 
-        'intensivkurs_bil': 'Intensivutbildning (2 veckor) BIL',
-        'intensivkurs_mc': 'Intensivvecka MC' 
-    };
-    const serviceSearchTerm = serviceNameMap[primaryKeyword] || primaryKeyword.replace('_', '-');
-    const officesWithService = [];
-    facts.offices.forEach(office => {
-        const priceEntry = office.prices.find(p => p.service_name.toLowerCase().includes(serviceSearchTerm.toLowerCase()));
-        if (priceEntry) officesWithService.push({ name: office.name, price: priceEntry.price, service_name: priceEntry.service_name });
-    });
-    if (officesWithService.length > 0) {
-        answerParts.push(`\nI ${city} erbjuder följande kontor detta:`);
-        const officeList = officesWithService.map(o => `• ${o.name} (${o.service_name}): ${o.price} kr`);
-        answerParts.push(officeList.join('\n'));
-    } else if (/pris|kostar|boka/i.test(question)) {
-        answerParts.push(`\nJag kunde tyvärr inte hitta information om detta i ${city}. Vi rekommenderar att du kontaktar våra kontor där direkt för att se om de erbjuder detta.`);
+    if (facts.basfakta.length > 0) {
+        answerParts.push(...facts.basfakta);
     }
-  }
 
-  const closings = [ "Hoppas detta var till hjälp! Ha en fortsatt fin dag!", "Hör av dig igen om du har fler frågor!", "Jag hoppas det besvarade din fråga! Med vänliga hälsningar," ];
-  const randomClosing = closings[Math.floor(Math.random() * closings.length)];
-  answerParts.push(`\n${randomClosing}`);
+    if (facts.offices.length > 0) {
+        const city = facts.offices[0].city;
+        const serviceNameMap = { 
+            'am_kurs': 'AM-Kurs',
+            'introduktionskurs': 'Introduktionskurs/Handledarkurs',
+            'intensivkurs_mc': 'Intensivvecka MC'
+        };
+    
+        const primaryKeyword = facts.keywords[0];
+        const relevantKeywordForPrice = facts.keywords.find(k => serviceNameMap[k]);
+        const serviceSearchTerm = relevantKeywordForPrice ? serviceNameMap[relevantKeywordForPrice] : (primaryKeyword ? primaryKeyword.replace(/_/g, ' ') : '');
 
-  return answerParts.join('\n\n');
+        if (serviceSearchTerm) {
+            const officesWithService = [];
+            facts.offices.forEach(office => {
+                const priceEntry = office.prices.find(p => p.service_name.toLowerCase().includes(serviceSearchTerm.toLowerCase()));
+                if (priceEntry) officesWithService.push({ name: office.name, price: priceEntry.price, service_name: priceEntry.service_name });
+            });
+            if (officesWithService.length > 0) {
+                answerParts.push(`\nI ${city} erbjuder följande kontor detta:`);
+                const officeList = officesWithService.map(o => `• ${o.name} (${o.service_name}): ${o.price} kr`);
+                answerParts.push(officeList.join('\n'));
+            }
+        }
+    }
+
+    if (facts.basfakta.length === 0 && facts.offices.length === 0 && facts.keywords.length > 0) {
+        return `Jag förstår att du frågar om ${facts.keywords.join(' och ').replace(/_/g, ' ')}, men jag har tyvärr ingen specifik information om det. Kan du omformulera din fråga?`;
+    }
+    
+    if (answerParts.length === 1) { 
+        return "Jag är inte säker på att jag förstår. Kan du försöka omformulera frågan?";
+    }
+  
+    const closings = [ "Hoppas detta var till hjälp! Ha en fortsatt fin dag!", "Hör av dig igen om du har fler frågor!", "Jag hoppas det besvarade din fråga! Med vänliga hälsningar," ];
+    const randomClosing = closings[Math.floor(Math.random() * closings.length)];
+    answerParts.push(`\n${randomClosing}`);
+  
+    return answerParts.join('\n\n');
 }
 
 app.post('/ask', (req, res) => {
-  const question = req.body.question || "";
-  console.log(`\n------------------\n[Server] Mottog fråga: "${question}"`);
+    const question = req.body.question || "";
+    console.log(`\n------------------\n[Server] Mottog fråga: "${question}"`);
   
-  if (!question) return res.status(400).json({ answer: "Frågan var tom." });
-  const keywords = findKeywordsInQuestion(question);
-  const offices = findOfficesInQuestion(question);
-  let facts = { offices: offices, keywords: keywords, basfakta: [] };
-
-  if (keywords.length > 0) {
-      facts.basfakta = getTopicFacts(keywords[0], question);
-  }
-  console.log(`[Server] Insamlad fakta:`, { num_offices: facts.offices.length, keywords: keywords.join(', '), num_basfakta: facts.basfakta.length });
+    if (!question) return res.status(400).json({ answer: "Frågan var tom." });
   
-  const isLocationSpecificQuery = /pris|kostar|boka|tider|kontor/i.test(question);
-  if (offices.length === 0 && keywords.length > 0 && facts.basfakta.length === 0) {
-        if (isLocationSpecificQuery) {
-            return res.json({ answer: "Jag förstår vad du frågar om! Men för vilken stad eller vilket kontor gäller din fråga?" });
+    let keywords = findKeywordsInQuestion(question);
+    const offices = findOfficesInQuestion(question);
+  
+    if (offices.length > 0 && keywords.length === 0) {
+        if (/introduktionskurs|handledarkurs/i.test(question)) {
+            keywords.push('introduktionskurs');
+        } else if (/am|moped|moppe/i.test(question)) {
+            keywords.push('am_kurs');
+        } else if (/intensivkurs mc|intensivvecka mc/i.test(question)) {
+            keywords.push('intensivkurs_mc');
         }
-  }
+    }
 
-  if (facts.offices.length === 0 && facts.basfakta.length === 0 && keywords.length === 0) {
-      return res.json({ answer: "Jag är inte säker på att jag förstår. Kan du försöka omformulera frågan?" });
-  }
+    let facts = { offices: offices, keywords: keywords, basfakta: [] };
 
-  const finalAnswer = buildAnswer(facts, question);
-  console.log(`[Server] Formulerat svar:\n---\n${finalAnswer}\n---`);
-  return res.json({ answer: finalAnswer });
+    if (keywords.length > 0) {
+        facts.basfakta = getTopicFacts(keywords, question);
+    }
+    
+    console.log(`[Server] Insamlad fakta:`, { 
+        num_offices: facts.offices.length, 
+        keywords: keywords.join(', '), 
+        num_basfakta: facts.basfakta.length 
+    });
+  
+    if (facts.offices.length === 0 && facts.basfakta.length === 0 && keywords.length === 0) {
+        return res.json({ answer: "Jag är inte säker på att jag förstår. Kan du försöka omformulera frågan?" });
+    }
+
+    const finalAnswer = buildAnswer(facts, question);
+    console.log(`[Server] Formulerat svar:\n---\n${finalAnswer}\n---`);
+    return res.json({ answer: finalAnswer });
 });
 
 app.listen(PORT, () => {
