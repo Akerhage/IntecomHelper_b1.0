@@ -1,0 +1,72 @@
+{
+  "AM-kurs": [
+    {
+      "question": "Hej, Jag vill ta moppekort, bor i göteborg. Vad kostar en kurs och hur lång är den?",
+      "expected_keywords": ["4499 kr", "Göteborg"]
+    },
+    {
+      "question": "Vad har ni för am kurser i Eslöv?",
+      "expected_keywords": ["Eslöv", "4499 kr"]
+    },
+    {
+      "question": "behöver man körkortstillstånd för moped?",
+      "expected_keywords": ["Ja, du måste ha ett giltigt körkortstillstånd"]
+    },
+    {
+      "question": "hur gammal måste man vara för att få köra moppe?",
+      "expected_keywords": ["14 år och 9 månader", "15 år"]
+    },
+    {
+      "question": "Vad ingår i en am-kurs hos er?",
+      "expected_keywords": ["Teoriundervisning", "Manövrering", "körlektion"]
+    },
+    {
+      "question": "Får man övningsköra privat med moppe?",
+      "expected_keywords": ["inte tillåten", "godkänd utbildare"]
+    }
+  ],
+  "Introduktionskurs": [
+    {
+      "question": "Vad är en introduktionskurs?",
+      "expected_keywords": ["obligatorisk kurs", "övningsköra personbil privat"]
+    },
+    {
+      "question": "Hur länge är en handledarkurs giltig?",
+      "expected_keywords": ["giltig i 5 år"]
+    },
+    {
+      "question": "Måste både jag och min pappa gå på introkursen?",
+      "expected_keywords": ["både du som ska vara elev", "handledare måste gå kursen", "inte gå den vid samma tillfälle"]
+    },
+    {
+      "question": "Vad kostar en introduktionskurs i Malmö?",
+      "expected_keywords": ["299 kr", "Malmö"]
+    },
+    {
+      "question": "Hur lång tid tar en handledarutbildning?",
+      "expected_keywords": ["tre och en halv timme"]
+    },
+    {
+      "question": "Behöver man körkortstillstånd för att gå introkursen?",
+      "expected_keywords": ["behöver inte ha ett körkortstillstånd för att gå", "måste ha ett giltigt körkortstillstånd när ni ansöker"]
+    }
+  ],
+  "Intensivkurs MC": [
+    {
+      "question": "Hej, jag vill ta en intensivkurs för MC i Uppsala, vad kostar det?",
+      "expected_keywords": ["Uppsala", "15900 kr"]
+    },
+    {
+      "question": "Vad ingår i er intensivvecka för motorcykel?",
+      "expected_keywords": ["Digital teori", "Riskutbildning 1", "Riskutbildning 2"]
+    },
+    {
+      "question": "Vilka förkunskaper krävs för intensivkursen för MC?",
+      "expected_keywords": ["behärskar grunderna", "balans", "växling", "bromsning"]
+    },
+    {
+      "question": "Kan jag avboka en intensivkurs för MC?",
+      "expected_keywords": ["Senast 2 veckor innan kursstart"]
+    }
+  ]
+}
