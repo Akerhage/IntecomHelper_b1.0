@@ -6,11 +6,15 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "test": "chcp 65001 > nul && node autotest.js | clip",
     "reload": "curl -s http://localhost:3000/reload || true"
   },
   "dependencies": {
-    "express": "^4.18.2",
     "cors": "^2.8.5",
+    "express": "^4.18.2",
     "fuse.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "axios": "^1.7.2"
   }
 }
