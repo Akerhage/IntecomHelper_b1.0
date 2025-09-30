@@ -3,19 +3,23 @@
   "source_info": "Information om introduktionskurs/handledarkurs för privat övningskörning krävs för att övningsköra privat med någon. Både elev och handledare måste gå kursen om de inte gått tidigare (inom 5 år)",
   "private_driving_process": {
     "title": "Hur går jag till väga om jag vill köra privat?",
-    "steps": "För att få lov att köra privat ska både handledare och elev först och främst gå på en introduktionsutbildning/handledarkurs och därefter ansöka om ett handledarskap."
+    "steps": "För att få lov att köra privat ska både handledare och elev först och främst gå på en introduktionsutbildning/handledarkurs och därefter ansöka om ett handledarskap.",
+    "keywords": ["köra privat", "övningsköra privat", "handledare", "elev", "introduktionsutbildning", "handledarkurs", "handledarskap"]
   },
   "course_registration": {
     "title": "Hur anmäler jag mig till introduktionskurs/handledarkurs",
-    "instructions": "Handledarkursen anordnas av oss på MTS/MDA och bokning görs via vår hemsida under rubriken kurser. Där Ser du lediga kurser och bokar själv in antalet deltagare (handledare + elev) samt betalning görs i samband med bokning. Vid frågor kontakta ett av våra kontor på 010-333 32 31."
+    "instructions": "Handledarkursen anordnas av oss på MTS/MDA och bokning görs via vår hemsida under rubriken kurser. Där Ser du lediga kurser och bokar själv in antalet deltagare (handledare + elev) samt betalning görs i samband med bokning. Vid frågor kontakta ett av våra kontor på 010-333 32 31.",
+    "keywords": ["anmäla", "boka", "bokning", "introduktionskurs", "handledarkurs", "hemsida", "kurser", "betalning"]
   },
   "course_details": {
     "title": "Introduktionskurs/handledarkurs",
     "general_info": "Om du under din körkortsutbildning vill kunna övningsköra privat måste både du och din handledare gå handledarutbildningen. Kursen är 3 timmar lång och obligatorisk. Boka kursen hos oss så garanterar vi de bästa konferenslokalerna i stan och en fantastisk kursledare.",
+    "keywords": ["introduktionskurs", "handledarkurs", "längd", "tre timmar", "obligatorisk", "privat övningskörning"],
     "after_course": {
       "title": "Efter din introduktionskurs/handledarkurs",
       "procedure": "Efter att ni båda har gått handledarutbildningen går du som handledare in på Transportstyrelsens hemsida och ansöker om ett handledarbevis! Det tar i normalfallet en vecka från att du ansöker tills dess att du får ditt handledarbevis. Ansökan om handledarskap kostar inget extra. Det går även att ansöka om handledarbevis innan man gått kursen.",
-      "booking_info": "På vår bokningssida kan du se exakt när vi håller kurserna i just din stad samt vad kursen kostar per person. Du kan även se mer detaljer om din stad under ”Här finns vi” i menyn."
+      "booking_info": "På vår bokningssida kan du se exakt när vi håller kurserna i just din stad samt vad kursen kostar per person. Du kan även se mer detaljer om din stad under ”Här finns vi” i menyn.",
+      "keywords": ["efter kursen", "handledarbevis", "transportstyrelsen", "ansöka", "kostar", "pris", "vad kostar", "kostnad", "bokningssida", "stad", "malmö"]
     },
     "what_it_is": {
       "title": "Vad är introduktionskurs/handledarkurs?",
@@ -28,7 +32,8 @@
         "Du behöver INTE gå handledarutbildningen om du enbart ska övningsköra på trafikskola.",
         "Du behöver INTE heller gå handledarutbildning om du ska övningsköra andra fordon än personbil privat."
       ],
-      "age_requirement": "Du behöver vara över 15 år och 9 månader för att kunna gå kursen."
+      "age_requirement": "Du behöver vara över 15 år och 9 månader för att kunna gå kursen.",
+      "keywords": ["vad är", "introduktionskurs", "handledarkurs", "handledarutbildning", "obligatorisk kurs", "övningsköra personbil privat", "samtidigt", "behöver inte gå samtidigt", "pappa", "mamma", "längd", "tid", "hur lång tid", "tre och en halv timme", "ålder", "15 år", "9 månader"]
     }
   },
   "supervisor_requirements": {
@@ -40,7 +45,8 @@
         "Du ska ha fyllt 24 år",
         "Du ska ha ett giltigt och svenskt körkort alternativt ett körkort från ett EES-land",
         "Du ska ha haft B-körkort i minst fem år"
-      ]
+      ],
+      "keywords": ["krav", "handledare", "ålder", "24 år", "giltigt körkort", "b-körkort", "fem år"]
     },
     "cannot_be": {
       "title": "Däremot kan du INTE bli handledare:",
@@ -49,7 +55,8 @@
         "Om ditt körkort varit återkallat någon gång under de senaste tre åren på grund av rattfylleri, opålitlighet ur nykterhetssynpunkt eller grova brott.",
         "Om ditt körkort under de senaste tre åren gällt med villkor om alkolås.",
         "Om du redan registrerats som handledare för 15 elever."
-      ]
+      ],
+      "keywords": ["inte bli handledare", "återkallat", "rattfylleri", "alkolås", "15 elever"]
     }
   },
   "supervisor_certificate": {
@@ -63,9 +70,11 @@
         "Din email-adress.",
         "Elevens personnummer som BÅDE har gått handledarutbildningen.",
         "Ett godkänt körkortstillstånd."
-      ]
+      ],
+      "keywords": ["ansöka", "handledarbevis", "personnummer", "telefonnummer", "email-adress", "körkortstillstånd", "godkänt körkortstillstånd", "behöver man"]
     },
     "timeline_cost_validity": "Det tar i normalfallet en vecka från att du ansöker tills dess att du får ditt handledarbevis. Ansökan om handledarskap kostar inget extra. En Handledarutbildning är giltig i 5 år så om du ska ansöka om ett nytt handledarbevis inom denna tidsperiod behöver du INTE gå kursen på nytt.",
-    "important_note": "OBS! Handledarbeviset och handledarens körkort ska ALLTID finnas med i bilen när ni övningskör."
+    "important_note": "OBS! Handledarbeviset och handledarens körkort ska ALLTID finnas med i bilen när ni övningskör.",
+    "keywords": ["hur får jag", "handledarbevis", "transportstyrelsen", "ansöka", "kostar", "gratis", "giltig", "5 år", "giltighetstid", "hur länge"]
   }
 }
