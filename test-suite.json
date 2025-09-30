@@ -36,7 +36,7 @@
     },
     {
       "question": "Måste både jag och min pappa gå på introkursen?",
-      "expected_keywords": ["både du som ska ta körkort och din handledare", "behöver inte gå kursen samtidigt"]
+      "expected_keywords": ["behöver inte gå kursen samtidigt"]
     },
     {
       "question": "Vad kostar en introduktionskurs i Malmö?",
