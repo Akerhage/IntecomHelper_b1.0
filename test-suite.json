@@ -10,11 +10,11 @@
     },
     {
       "question": "behöver man körkortstillstånd för moped?",
-      "expected_keywords": ["Ja, du måste ha ett giltigt körkortstillstånd"]
+      "expected_keywords": ["För att få ett AM-körkort krävs det att:"]
     },
     {
       "question": "hur gammal måste man vara för att få köra moppe?",
-      "expected_keywords": ["14 år och 9 månader", "15 år"]
+      "expected_keywords": ["14 år och 9 månader", "minst tolv timmar"]
     },
     {
       "question": "Vad ingår i en am-kurs hos er?",
@@ -22,7 +22,7 @@
     },
     {
       "question": "Får man övningsköra privat med moppe?",
-      "expected_keywords": ["inte tillåten", "godkänd utbildare"]
+      "expected_keywords": ["inte tillåtet att övningsköra privat"]
     }
   ],
   "Introduktionskurs": [
@@ -36,7 +36,7 @@
     },
     {
       "question": "Måste både jag och min pappa gå på introkursen?",
-      "expected_keywords": ["både du som ska vara elev", "handledare måste gå kursen", "inte gå den vid samma tillfälle"]
+      "expected_keywords": ["både du som ska ta körkort och din handledare", "behöver inte gå kursen samtidigt"]
     },
     {
       "question": "Vad kostar en introduktionskurs i Malmö?",
@@ -48,7 +48,7 @@
     },
     {
       "question": "Behöver man körkortstillstånd för att gå introkursen?",
-      "expected_keywords": ["behöver inte ha ett körkortstillstånd för att gå", "måste ha ett giltigt körkortstillstånd när ni ansöker"]
+      "expected_keywords": ["godkänt körkortstillstånd"]
     }
   ],
   "Intensivkurs MC": [
@@ -58,15 +58,33 @@
     },
     {
       "question": "Vad ingår i er intensivvecka för motorcykel?",
-      "expected_keywords": ["Risk 1 Kurs MC", "Risk 2 Kurs MC"]
+      "expected_keywords": ["Risk 1 Kurs MC", "Risk 2 Kurs MC", "Digital teori"]
     },
     {
       "question": "Vilka förkunskaper krävs för intensivkursen för MC?",
-      "expected_keywords": ["behärskar grunderna", "balans", "växling", "bromsning"]
+      "expected_keywords": ["redan hunnit köra en del motorcykel", "trygg med att starta/stanna/växla"]
     },
     {
       "question": "Kan jag avboka en intensivkurs för MC?",
-      "expected_keywords": ["Senast 2 veckor innan kursstart"]
+      "expected_keywords": ["senast klockan 12:00 en vecka före bokad kursstart"]
+    }
+  ],
+  "Körkortstillstånd": [
+    {
+      "question": "Vad är ett körkortstillstånd?",
+      "expected_keywords": ["tillstånd från Transportstyrelsen", "för att få övningsköra och göra körkortsprov"]
+    },
+    {
+      "question": "Vilka krav finns för körkortstillstånd?",
+      "expected_keywords": ["personliga och medicinska krav", "synprövning"]
+    },
+    {
+      "question": "Hur ansöker jag om körkortstillstånd?",
+      "expected_keywords": ["e-tjänst på Transportstyrelsens webbplats", "ansökningsblankett"]
+    },
+    {
+      "question": "Vad kostar ett körkortstillstånd?",
+      "expected_keywords": ["är gratis", "kostnader för synundersökning"]
     }
   ]
 }
