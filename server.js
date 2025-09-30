@@ -1,8 +1,8 @@
-// server.js - Version 34.0 - NY STRATEGI: INTERN SÖKMOTOR
-// - GRUNDLÄGGANDE ARKITEKTURÄNDRING: AI-tolken är borttagen från det första steget.
-// - IMPLEMENTATION: Använder nu Fuse.js för att direkt göra en "fuzzy search" på all text i knowledge-databasen.
-// - MÅL: Att pålitligt hitta det mest relevanta textstycket som innehåller svaret på en fråga.
-// - Detta är första steget i en tvåstegsstrategi för att bygga en robust och pålitlig bot och bryta test-cyklerna.
+// server.js - Version 34.7 - NY STRATEGI: BALANSERAD RELEVANSSÖKNING
+// - JUSTERING: En balanserad 'threshold' (0.4) och finjusterade Fuse.js-parametrar.
+// - MÅL: Denna version är designad för att vara "lagom" strikt och förlitar sig på
+//   den kraftfulla kombinationen av viktade keywords och fokuserade textblock för att
+//   hitta det mest relevanta svaret utan att filtrera bort för många bra resultat.
 
 const express = require('express');
 const cors = require('cors');
@@ -20,73 +20,112 @@ app.use(express.json());
 let searchableFacts = [];
 let fuse;
 
-// Funktion för att rekursivt platta ut JSON-objekt till sökbara textsträngar
-function flattenObject(obj, path = '', result = []) {
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      const newPath = path ? `${path}.${key}` : key;
-      if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
-        flattenObject(obj[key], newPath, result);
-      } else if (typeof obj[key] === 'string') {
-        result.push({ path: newPath, text: obj[key] });
-      } else if (Array.isArray(obj[key])) {
-        // Hantera arrayer av strängar
-        obj[key].forEach(item => {
-          if (typeof item === 'string') {
-            result.push({ path: `${newPath}`, text: item });
-          }
-        });
-      }
+// Funktion för att skapa fokuserade, sökbara textblock med ärvd kontext
+function createSearchableBlocks(obj, result = [], context = []) {
+    let currentTitle = '';
+    let currentKeywords = [];
+
+    if (obj.title && typeof obj.title === 'string') {
+        currentTitle = obj.title;
     }
-  }
+    if (obj.keywords && Array.isArray(obj.keywords)) {
+        currentKeywords = obj.keywords;
+    }
+
+    const newContext = currentTitle ? [...context, currentTitle] : context;
+
+    for (const key in obj) {
+        if (key === 'title' || key === 'keywords' || key === 'section_title' || key === 'source_info') {
+            continue;
+        }
+
+        const value = obj[key];
+
+        if (typeof value === 'string') {
+            const combinedText = newContext.join(' - ') + '\n' + value;
+            result.push({ text: combinedText.trim(), keywords: currentKeywords });
+        } else if (Array.isArray(value) && value.every(item => typeof item === 'string')) {
+            const combinedText = newContext.join(' - ') + '\n' + value.join('\n');
+            result.push({ text: combinedText.trim(), keywords: currentKeywords });
+        } else if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+            createSearchableBlocks(value, result, newContext);
+        }
+    }
 }
 
 function loadAndIndexKnowledge() {
-  const knowledgePath = path.join(__dirname, 'knowledge');
-  try {
-    const files = fs.readdirSync(knowledgePath);
-    files.forEach(file => {
-      if (file.startsWith('basfakta_') && file.endsWith('.json')) {
-        const filePath = path.join(knowledgePath, file);
-        const rawData = fs.readFileSync(filePath, 'utf8');
-        const jsonData = JSON.parse(rawData);
-        
-        const facts = [];
-        flattenObject(jsonData, '', facts);
-        searchableFacts.push(...facts);
-      }
-    });
+    const knowledgePath = path.join(__dirname, 'knowledge');
+    searchableFacts = []; // Nollställ databasen
+    try {
+        const files = fs.readdirSync(knowledgePath);
+        files.forEach(file => {
+            if (file.startsWith('basfakta_') && file.endsWith('.json')) {
+                const filePath = path.join(knowledgePath, file);
+                const rawData = fs.readFileSync(filePath, 'utf8');
+                const jsonData = JSON.parse(rawData);
+                createSearchableBlocks(jsonData, searchableFacts);
+            }
+        });
 
-    // Skapa Fuse.js-indexet
-    const options = {
-      keys: ['text'],
-      includeScore: true,
-      threshold: 0.4, // Justera denna tröskel för att finjustera sökningen (lägre = striktare)
-      minMatchCharLength: 5,
-    };
-    fuse = new Fuse(searchableFacts, options);
+        const options = {
+            includeScore: true,
+            minMatchCharLength: 4,
+            threshold: 0.4, // Balanserad strikthet
+            ignoreLocation: true,
+            keys: [
+                { name: 'keywords', weight: 0.3 },
+                { name: 'text', weight: 0.7 }
+            ]
+        };
+        fuse = new Fuse(searchableFacts, options);
 
-    console.log(`[Server] Databas laddad och indexerad. Totalt ${searchableFacts.length} sökbara textstycken.`);
+        console.log(`[Server] Databas laddad och indexerad. Totalt ${searchableFacts.length} sökbara textblock.`);
 
-  } catch (error) {
-    console.error('[Server] Ett allvarligt fel inträffade vid inläsning/indexering av knowledge-filer:', error);
-  }
+    } catch (error) {
+        console.error('[Server] Ett allvarligt fel inträffade vid inläsning/indexering:', error);
+    }
 }
 
-// --- FÖRMÅGOR / HANDLERS ---
 function handleFuzzySearch(question) {
-    if (!fuse) return null;
-    
+    if (!fuse) {
+        console.error("[Server] Fuse.js index är inte tillgängligt.");
+        return null;
+    }
+
     const results = fuse.search(question);
-    
+
     if (results.length > 0) {
-        // Returnera den bäst matchande texten
+        console.log(`[Server] Sökning för "${question}" gav träff med poäng ${results[0].score}.`);
         return results[0].item.text;
     }
-    
+
+    console.log(`[Server] Ingen träff för frågan: "${question}"`);
     return null;
 }
 
+function buildAnswer(foundText) {
+    if (foundText) {
+        return { answer: foundText };
+    }
+    return { answer: "Jag kunde tyvärr inte hitta ett exakt svar på din fråga i min kunskapsdatabas." };
+}
 
-// --- SVARSBYGGARE ---
-function build
+app.post('/ask', (req, res) => {
+    const { question } = req.body;
+    if (!question) {
+        return res.status(400).json({ error: 'Fråga saknas i anropet.' });
+    }
+    try {
+        const foundText = handleFuzzySearch(question);
+        const response = buildAnswer(foundText);
+        res.json(response);
+    } catch (error) {
+        console.error('[Server] Fel vid hantering av /ask-request:', error);
+        res.status(500).json({ error: 'Ett internt serverfel inträffade.' });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Servern lyssnar på port ${PORT}`);
+    loadAndIndexKnowledge();
+});
