@@ -13,7 +13,7 @@ const app = express();
 const PORT = 3000;
 
 // --- KONFIGURATION ---
-const GEMINI_API_KEY = 'AIzaSyBH1qk79tRCF_E8hfc3Y_nGWFDggTTKm48';
+const GEMINI_API_KEY = 'INSERT API KEY';
 const MODEL_NAME = 'gemini-2.5-flash'; 
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent`;
 
