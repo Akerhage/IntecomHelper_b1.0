@@ -1,86 +1,112 @@
-// autotest.js - Vårt automatiska testverktyg (Version 2.2 - Korrekt paus)
-// - Paus på 7 sekunder för att respektera gränsen på 10 anrop/minut.
+// autotest.js - Version 2.7 - ROBUST KEYWORD-KONTROLL
+// - Fix: Gör checkKeywords-funktionen mer robust för att korrekt hantera priser
+//   och andra numeriska värden i testfallen.
 
 const fs = require('fs');
-const axios = require('axios');
+const path = require('path');
 
+const API_URL = 'http://localhost:3000/ask';
 const TEST_SUITE_FILE = './test-suite.json';
-const SERVER_URL = 'http://localhost:3000/ask';
+const SERVER_LOG_FILE = './server_log.txt';
 const LOG_FILE = './test_log.txt';
+const VERSION = '2.7';
 
-const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const log = (message) => {
+    console.log(message);
+    fs.appendFileSync(LOG_FILE, message + '\n');
+};
 
-let logOutput = '';
-function log(message) {
-  console.log(message);
-  logOutput += message + '\n';
-}
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function runTests() {
-  log(`--- STARTAR AUTOMATISK TEST-SVIT (v2.2) [${new Date().toLocaleString('sv-SE')}] ---`);
-  
-  let testSuite;
-  try {
-    const rawData = fs.readFileSync(TEST_SUITE_FILE, 'utf8');
-    testSuite = JSON.parse(rawData);
-  } catch (error) {
-    log(`\nFATALT FEL: Kunde inte läsa test-sviten från ${TEST_SUITE_FILE}`);
-    log(error.message);
-    fs.writeFileSync(LOG_FILE, logOutput, 'utf8');
-    return;
-  }
+const checkKeywords = (answer, keywords) => {
+    if (!answer || typeof answer !== 'string') return { pass: false, missing: keywords };
+    // Normalisera svaret för att bättre matcha siffror och tecken
+    const normalizedAnswer = answer.toLowerCase().replace(/[\s,.]/g, '');
+    
+    const missing = keywords.filter(kw => {
+        const normalizedKw = kw.toLowerCase().replace(/[\s,.]/g, '');
+        return !normalizedAnswer.includes(normalizedKw);
+    });
 
-  let totalTests = 0;
-  let passedTests = 0;
-  const allQuestions = [];
-  for (const expertName in testSuite) {
-      testSuite[expertName].forEach(test => {
-          allQuestions.push({ ...test, expertName });
-      });
-  }
-  totalTests = allQuestions.length;
+    return {
+        pass: missing.length === 0,
+        missing: missing
+    };
+};
 
-  for (let i = 0; i < allQuestions.length; i++) {
-      const test = allQuestions[i];
-      log(`\n--- Testar (${i + 1}/${totalTests}) - Expert: ${test.expertName} ---`);
-      log(`Fråga: "${test.question}"`);
+const runTest = async (testCase, index, total) => {
+    const { expert, question, expected_keywords } = testCase;
+    log(`\n--- Testar (${index}/${total}) - Expert: ${expert} ---`);
+    log(`Fråga: "${question}"`);
 
-      try {
-        const response = await axios.post(SERVER_URL, { question: test.question });
-        const answer = response.data.answer.toLowerCase();
-        
-        const allKeywordsFound = test.expected_keywords.every(keyword => answer.includes(keyword.toLowerCase()));
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question })
+        });
 
-        if (allKeywordsFound) {
-          passedTests++;
-          log(`  [PASS]`);
-        } else {
-          log(`  [FAIL]`);
-          log(`    --> Fick svar: "${response.data.answer.replace(/\n/g, ' ')}"`);
-          log(`    --> Saknade nyckelord: [${test.expected_keywords.filter(kw => !answer.includes(kw.toLowerCase())).join(', ')}]`);
+        if (!response.ok) {
+            log(`  [FAIL]`);
+            log(`    --> Servern svarade med status ${response.status}`);
+            return false;
         }
-      } catch (error) {
+
+        const data = await response.json();
+        const { answer } = data;
+        const result = checkKeywords(answer, expected_keywords);
+
+        if (result.pass) {
+            log(`  [PASS]`);
+            return true;
+        } else {
+            const cleanAnswer = (answer || "Inget svar").replace(/(\r\n|\n|\r)/gm, " ");
+            log(`  [FAIL]`);
+            log(`    --> Fick svar: "${cleanAnswer}"`);
+            log(`    --> Saknade nyckelord: [${result.missing.join(', ')}]`);
+            return false;
+        }
+    } catch (error) {
         log(`  [ERROR]`);
-        if (error.response) {
-            log(`    --> Servern svarade med status: ${error.response.status}`);
-        } else if (error.request) {
-            log(`    --> Ingen respons från servern. Är du säker på att den är igång med 'npm start'?`);
-        } else {
-            log(`    --> Ett fel inträffade: ${error.message}`);
-        }
-      }
-      
-      if (i < allQuestions.length - 1) {
-          log('    --> Pausar i 7 sekunder...');
-          await wait(7000); 
-      }
-  }
+        log(`    --> Kunde inte ansluta till servern: ${error.message}`);
+        return false;
+    }
+};
 
-  log('\n--- TESTER AVSLUTADE ---');
-  log(`Resultat: ${passedTests} / ${totalTests} godkända tester.`);
-  
-  fs.writeFileSync(LOG_FILE, logOutput, 'utf8');
-  log(`\nFullständig logg har sparats till: ${LOG_FILE}`);
-}
+const main = async () => {
+    const {default: clipboardy} = await import('clipboardy');
+    const timestamp = new Date().toLocaleString('sv-SE', { timeZone: 'Europe/Stockholm' }).replace(',','');
+    fs.writeFileSync(LOG_FILE, `--- STARTAR AUTOMATISK TEST-SVIT (v${VERSION}) [${timestamp}] ---\n`);
 
-runTests();
+    let testSuite;
+    try {
+        testSuite = JSON.parse(fs.readFileSync(TEST_SUITE_FILE, 'utf8'));
+    } catch (error) {
+        log('Kunde inte läsa test-suite.json. Avbryter.');
+        return;
+    }
+
+    let passedCount = 0;
+    for (let i = 0; i < testSuite.length; i++) {
+        const pass = await runTest(testSuite[i], i + 1, testSuite.length);
+        if (pass) passedCount++;
+        await delay(100);
+    }
+
+    log('\n--- TESTER AVSLUTADE ---');
+    log(`Resultat: ${passedCount} / ${testSuite.length} godkända tester.`);
+    log(`\nFullständig logg har sparats till: ${LOG_FILE}`);
+
+    try {
+        const testLogContent = fs.readFileSync(LOG_FILE, 'utf8');
+        const serverLogContent = fs.existsSync(SERVER_LOG_FILE) ? fs.readFileSync(SERVER_LOG_FILE, 'utf8') : 'SERVER-LOGG SAKNAS.\n';
+        const combinedContent = `--- SERVER-LOGG ---\n${serverLogContent}\n\n--- TEST-RESULTAT ---\n${testLogContent}`;
+        clipboardy.writeSync(combinedContent);
+        console.log('\n\x1b[32m%s\x1b[0m', '[AUTOTEST] Server- och testloggar har kopierats till urklipp!');
+    } catch (error) {
+        console.log('\n\x1b[31m%s\x1b[0m', '[AUTOTEST] Kunde inte kopiera loggar till urklipp.');
+        console.error(error);
+    }
+};
+
+main();
