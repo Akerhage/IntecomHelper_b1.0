@@ -1,20 +1,18 @@
 {
   "name": "intercom-free-proxy",
   "version": "2.0.0",
-  "private": true,
-  "type": "commonjs",
+  "description": "Enkel Node.js-server för att hantera kunskapsdatabas för Intercom.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "chcp 65001 > nul && node autotest.js | clip",
-    "reload": "curl -s http://localhost:3000/reload || true"
+    "test": "node autotest.js"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "fuse.js": "^7.0.0"
   },
-  "devDependencies": {
-    "axios": "^1.7.2"
-  }
+  "author": "Akerhage",
+  "license": "ISC"
 }
