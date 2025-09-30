@@ -53,12 +53,12 @@
   ],
   "Intensivkurs MC": [
     {
-      "question": "Hej, jag vill ta en intensivkurs för MC i Uppsala, vad kostar det?",
-      "expected_keywords": ["Uppsala", "15900 kr"]
+      "question": "Hej, jag vill ta en intensivkurs för MC i Göteborg, vad kostar det?",
+      "expected_keywords": ["Göteborg", "21999 kr"]
     },
     {
       "question": "Vad ingår i er intensivvecka för motorcykel?",
-      "expected_keywords": ["Digital teori", "Riskutbildning 1", "Riskutbildning 2"]
+      "expected_keywords": ["Risk 1 Kurs MC", "Risk 2 Kurs MC"]
     },
     {
       "question": "Vilka förkunskaper krävs för intensivkursen för MC?",
