@@ -1,90 +1,102 @@
-{
-  "AM-kurs": [
-    {
-      "question": "Hej, Jag vill ta moppekort, bor i göteborg. Vad kostar en kurs och hur lång är den?",
-      "expected_keywords": ["4499 kr", "Göteborg"]
-    },
-    {
-      "question": "Vad har ni för am kurser i Eslöv?",
-      "expected_keywords": ["Eslöv", "4499 kr"]
-    },
-    {
-      "question": "behöver man körkortstillstånd för moped?",
-      "expected_keywords": ["För att få ett AM-körkort krävs det att:"]
-    },
-    {
-      "question": "hur gammal måste man vara för att få köra moppe?",
-      "expected_keywords": ["14 år och 9 månader", "minst tolv timmar"]
-    },
-    {
-      "question": "Vad ingår i en am-kurs hos er?",
-      "expected_keywords": ["Teoriundervisning", "Manövrering", "körlektion"]
-    },
-    {
-      "question": "Får man övningsköra privat med moppe?",
-      "expected_keywords": ["inte tillåtet att övningsköra privat"]
-    }
-  ],
-  "Introduktionskurs": [
-    {
-      "question": "Vad är en introduktionskurs?",
-      "expected_keywords": ["obligatorisk kurs", "övningsköra personbil privat"]
-    },
-    {
-      "question": "Hur länge är en handledarkurs giltig?",
-      "expected_keywords": ["giltig i 5 år"]
-    },
-    {
-      "question": "Måste både jag och min pappa gå på introkursen?",
-      "expected_keywords": ["behöver inte gå kursen samtidigt"]
-    },
-    {
-      "question": "Vad kostar en introduktionskurs i Malmö?",
-      "expected_keywords": ["299 kr", "Malmö"]
-    },
-    {
-      "question": "Hur lång tid tar en handledarutbildning?",
-      "expected_keywords": ["tre och en halv timme"]
-    },
-    {
-      "question": "Behöver man körkortstillstånd för att gå introkursen?",
-      "expected_keywords": ["godkänt körkortstillstånd"]
-    }
-  ],
-  "Intensivkurs MC": [
-    {
-      "question": "Hej, jag vill ta en intensivkurs för MC i Göteborg, vad kostar det?",
-      "expected_keywords": ["Göteborg", "21999 kr"]
-    },
-    {
-      "question": "Vad ingår i er intensivvecka för motorcykel?",
-      "expected_keywords": ["Risk 1 Kurs MC", "Risk 2 Kurs MC", "Digital teori"]
-    },
-    {
-      "question": "Vilka förkunskaper krävs för intensivkursen för MC?",
-      "expected_keywords": ["redan hunnit köra en del motorcykel", "trygg med att starta/stanna/växla"]
-    },
-    {
-      "question": "Kan jag avboka en intensivkurs för MC?",
-      "expected_keywords": ["senast klockan 12:00 en vecka före bokad kursstart"]
-    }
-  ],
-  "Körkortstillstånd": [
-    {
-      "question": "Vad är ett körkortstillstånd?",
-      "expected_keywords": ["tillstånd från Transportstyrelsen", "för att få övningsköra och göra körkortsprov"]
-    },
-    {
-      "question": "Vilka krav finns för körkortstillstånd?",
-      "expected_keywords": ["personliga och medicinska krav", "synprövning"]
-    },
-    {
-      "question": "Hur ansöker jag om körkortstillstånd?",
-      "expected_keywords": ["e-tjänst på Transportstyrelsens webbplats", "ansökningsblankett"]
-    },
-    {
-      "question": "Vad kostar ett körkortstillstånd?",
-      "expected_keywords": ["är gratis", "kostnader för synundersökning"]
-    }
-  ]
-}
+[
+  {
+    "expert": "AM-kurs",
+    "question": "Hej, Jag vill ta moppekort, bor i göteborg. Vad kostar en kurs och hur lång är den?",
+    "expected_keywords": ["4499 kr", "Göteborg"]
+  },
+  {
+    "expert": "AM-kurs",
+    "question": "Vad har ni för am kurser i Eslöv?",
+    "expected_keywords": ["Eslöv", "4499 kr"]
+  },
+  {
+    "expert": "AM-kurs",
+    "question": "behöver man körkortstillstånd för moped?",
+    "expected_keywords": ["För att få ett AM-körkort krävs det att:"]
+  },
+  {
+    "expert": "AM-kurs",
+    "question": "hur gammal måste man vara för att få köra moppe?",
+    "expected_keywords": ["14 år och 9 månader", "minst tolv timmar"]
+  },
+  {
+    "expert": "AM-kurs",
+    "question": "Vad ingår i en am-kurs hos er?",
+    "expected_keywords": ["Teoriundervisning", "Manövrering", "körlektion"]
+  },
+  {
+    "expert": "AM-kurs",
+    "question": "Får man övningsköra privat med moppe?",
+    "expected_keywords": ["inte tillåtet att övningsköra privat"]
+  },
+  {
+    "expert": "Introduktionskurs",
+    "question": "Vad är en introduktionskurs?",
+    "expected_keywords": ["obligatorisk kurs", "övningsköra personbil privat"]
+  },
+  {
+    "expert": "Introduktionskurs",
+    "question": "Hur länge är en handledarkurs giltig?",
+    "expected_keywords": ["giltig i 5 år"]
+  },
+  {
+    "expert": "Introduktionskurs",
+    "question": "Måste både jag och min pappa gå på introkursen?",
+    "expected_keywords": ["behöver inte gå kursen samtidigt"]
+  },
+  {
+    "expert": "Introduktionskurs",
+    "question": "Vad kostar en introduktionskurs i Malmö?",
+    "expected_keywords": ["299 kr", "Malmö"]
+  },
+  {
+    "expert": "Introduktionskurs",
+    "question": "Hur lång tid tar en handledarutbildning?",
+    "expected_keywords": ["tre och en halv timme"]
+  },
+  {
+    "expert": "Introduktionskurs",
+    "question": "Behöver man körkortstillstånd för att gå introkursen?",
+    "expected_keywords": ["godkänt körkortstillstånd"]
+  },
+  {
+    "expert": "Intensivkurs MC",
+    "question": "Hej, jag vill ta en intensivkurs för MC i Göteborg, vad kostar det?",
+    "expected_keywords": ["Göteborg", "21999 kr"]
+  },
+  {
+    "expert": "Intensivkurs MC",
+    "question": "Vad ingår i er intensivvecka för motorcykel?",
+    "expected_keywords": ["Risk 1 Kurs MC", "Risk 2 Kurs MC", "Digital teori"]
+  },
+  {
+    "expert": "Intensivkurs MC",
+    "question": "Vilka förkunskaper krävs för intensivkursen för MC?",
+    "expected_keywords": ["redan hunnit köra en del motorcykel", "trygg med att starta/stanna/växla"]
+  },
+  {
+    "expert": "Intensivkurs MC",
+    "question": "Kan jag avboka en intensivkurs för MC?",
+    "expected_keywords": ["senast klockan 12:00 en vecka före bokad kursstart"]
+  },
+  {
+    "expert": "Körkortstillstånd",
+    "question": "Vad är ett körkortstillstånd?",
+    "expected_keywords": ["tillstånd från Transportstyrelsen", "för att få övningsköra och göra körkortsprov"]
+  },
+  {
+    "expert": "Körkortstillstånd",
+    "question": "Vilka krav finns för körkortstillstånd?",
+    "expected_keywords": ["personliga och medicinska krav", "synprövning"]
+  },
+  {
+    "expert": "Körkortstillstånd",
+    "question": "Hur ansöker jag om körkortstillstånd?",
+    "expected_keywords": ["e-tjänst på Transportstyrelsens webbplats", "ansökningsblankett"]
+  },
+  {
+    "expert": "Körkortstillstånd",
+    "question": "Vad kostar ett körkortstillstånd?",
+    "expected_keywords": ["är gratis", "kostnader för synundersökning"]
+  }
+]
