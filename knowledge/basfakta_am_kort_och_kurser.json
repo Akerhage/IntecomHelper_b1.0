@@ -14,17 +14,20 @@
       "Du har gjort ett godkänt kunskapsprov på Trafikverket.",
       "Du inte har något körkort från ett annat EES-land. Om du har ett sådant körkort går det att byta ut mot ett svenskt"
     ],
-    "application_note": "Du kan snabbt och enkelt ansöka om att körkortstillstånd via tjänsten Ansök om körkortstillstånd grupp 1). Tjänsten kräver e-legitimation. Det går även att beställa en blankett via tjänsten Beställ blankett."
+    "application_note": "Du kan snabbt och enkelt ansöka om att körkortstillstånd via tjänsten Ansök om körkortstillstånd grupp 1). Tjänsten kräver e-legitimation. Det går även att beställa en blankett via tjänsten Beställ blankett.",
+    "keywords": ["am-körkort", "moped klass 1", "eu-moped", "krav", "villkor", "körkortstillstånd", "ålder", "kunskapsprov", "trafikverket", "behörighet am", "registreringsskylt", "traktorkort", "moped", "moppekort", "behöver", "giltighet"]
   },
   "am_course_layout": {
     "title": "AM-Kurs Upplägg",
     "description": "Utbildningen består av både teori och praktiska delar så som övningskörning. För att få göra de praktiska delarna ska du ha fyllt 14 år och 9 månader och ha ett körkortstillstånd. Mopedutbildningen ska ske hos en behörig utbildare och den är minst tolv timmar lång. Den består av minst fyra timmars praktisk träning. Totalt kan det bli mer än tolv timmar, beroende på hur du klarar de teoretiska och praktiska momenten.",
     "post_training": "När utbildaren bedömt att du har uppnått kursplanens mål och rapporterat att du har gått utbildningen, kan kunskapsprovet bokas hos Trafikverket. Detta kan du fråga din utbildare om.",
-    "validity": "Utbildningen för AM gäller i fem år."
+    "validity": "Utbildningen för AM gäller i fem år.",
+    "keywords": ["am-kurs", "upplägg", "mopedutbildning", "teori", "övningskörning", "körkortstillstånd", "ålderskrav", "utbildare", "kurslängd", "kunskapsprov", "giltighetstid", "giltig", "hur gammal", "ålder", "länge", "14 år", "9 månader", "tolv timmar", "gammal", "köra moppe", "moppe"]
   },
   "private_practice_driving": {
     "title": "AM Övningskörning Privat",
-    "rule": "Det är inte tillåtet att övningsköra privat utan enbart hos utbildaren."
+    "rule": "Det är inte tillåtet att övningsköra privat utan enbart hos utbildaren.",
+    "keywords": ["övningsköra privat", "privat övningskörning", "handledare", "moped", "moppe", "får man"]
   },
   "our_moped_course": {
     "title": "Ta ditt mopedkörkort",
@@ -32,30 +35,15 @@
     "course_structure": "Utbildningen består av teoripass, 180 minuters träning på övningsbanan och en avslutande trafiklektion i samband med självstudier.",
     "availability": "Kurser erbjuds året runt, så länge väder och väglag tillåter det. Välkommen till oss!",
     "booking_tip": "Om din lokala trafikskola är fullbokad, kolla våra andra kontor.",
-    "completion_process": "När AM-kursens sista del, trafikkörningen är godkänd rapporterar vi in eleven till Transportstyrelsen. Eleven kan då när denne är 15 år gammal skriva kunskapsprovet för AM. Vid avklarat kunskapsprov har eleven sitt AM-körkort."
+    "completion_process": "När AM-kursens sista del, trafikkörningen är godkänd rapporterar vi in eleven till Transportstyrelsen. Eleven kan då när denne är 15 år gammal skriva kunskapsprovet för AM. Vid avklarat kunskapsprov har eleven sitt AM-körkort.",
+    "keywords": ["mopedkörkort", "trafikutbildning", "mopedskola", "teoripass", "övningsbana", "trafiklektion", "transportstyrelsen", "kunskapsprov", "boka kurs", "am-kurs", "ingår", "vad ingår"]
   },
   "am_course_locations": {
     "title": "Vi utbildar för AM i följande städer",
     "cities": [
-      "Stockholm",
-      "Göteborg",
-      "Kungsbacka",
-      "Umeå",
-      "Malmö",
-      "Lund",
-      "Helsingborg",
-      "Kristianstad",
-      "Hässleholm",
-      "Ängelholm",
-      "Trelleborg",
-      "Eslöv",
-      "Landskrona",
-      "Växjö",
-      "Kalmar",
-      "Ystad",
-      "Höllviken",
-      "Vellinge"
-    ]
+      "Stockholm", "Göteborg", "Kungsbacka", "Umeå", "Malmö", "Lund", "Helsingborg", "Kristianstad", "Hässleholm", "Ängelholm", "Trelleborg", "Eslöv", "Landskrona", "Växjö", "Kalmar", "Ystad", "Höllviken", "Vellinge"
+    ],
+    "keywords": ["am-utbildning", "städer", "trafikskolor", "lokala kontor", "hitta trafikskola", "stockholm", "göteborg", "kungsbacka", "umeå", "malmö", "lund", "helsingborg", "kristianstad", "hässleholm", "ängelholm", "trelleborg", "eslöv", "landskrona", "växjö", "kalmar", "ystad", "höllviken", "vellinge", "kurs", "kurser"]
   },
   "general_course_structure": {
     "title": "Våra AM-kurser ser ungefär likadana ut i landet.",
@@ -67,6 +55,7 @@
       "Privat körlektion ute i trafik 80 min/160min",
       "Lån av Hjälm och utrustning."
     ],
-    "price": "Pris för AM-Kurs: 4 499 kr på alla skolor utan Österåkers pris ligger på 5799kr"
+    "price": "Pris för AM-Kurs: 4 499 kr på alla skolor utan Österåkers pris ligger på 5799kr",
+    "keywords": ["kursupplägg", "am-kurs", "teoriundervisning", "frågor online", "manövrering", "körlektion", "pris", "kostnad", "utrustning", "hjälm", "österåker", "stockholm", "göteborg", "kungsbacka", "umeå", "malmö", "lund", "helsingborg", "kristianstad", "hässleholm", "ängelholm", "trelleborg", "eslöv", "landskrona", "växjö", "kalmar", "ystad", "höllviken", "vellinge", "ingår", "vad ingår", "kostar", "lång", "hur lång"]
   }
 }
