@@ -4,17 +4,21 @@
   "license_categories": {
     "title": "Körkort för motorcykel",
     "intro": "Det finns tre olika körkortsbehörigheter för tvåhjuliga motorcyklar: lätt motorcykel (A1), mellanstor motorcykel (A2) och tung motorcykel (A).",
+    "keywords": ["körkort", "motorcykel", "mc", "behörighet", "a1", "a2", "a"],
     "a1": {
       "name": "A1 – Lätt motorcykel",
-      "description": "Med körkortsbehörigheten A1 får du köra tvåhjuliga motorcyklar där motorn har en slagvolym av högst 125 kubikcentimeter motorn har en nettoeffekt på högst 11 kilowatt (kW) förhållandet mellan nettoeffekten och tjänstevikten inte är över 0,1 kW/kg."
+      "description": "Med körkortsbehörigheten A1 får du köra tvåhjuliga motorcyklar där motorn har en slagvolym av högst 125 kubikcentimeter motorn har en nettoeffekt på högst 11 kilowatt (kW) förhållandet mellan nettoeffekten och tjänstevikten inte är över 0,1 kW/kg.",
+      "keywords": ["a1", "lätt motorcykel", "125cc", "11kw", "slagvolym", "nettoeffekt"]
     },
     "a2": {
       "name": "A2 – Mellanstor motorcykel",
-      "description": "Med körkortsbehörigheten A2 får du köra tvåhjuliga motorcyklar där motorn har en nettoeffekt på högst 35 kW motoreffekten har inte strypts från en nettoeffekt som ursprungligen varit högre än 70kW. förhållandet mellan nettoeffekten och tjänstevikten inte är över 0,2 kW/kg."
+      "description": "Med körkortsbehörigheten A2 får du köra tvåhjuliga motorcyklar där motorn har en nettoeffekt på högst 35 kW motoreffekten har inte strypts från en nettoeffekt som ursprungligen varit högre än 70kW. förhållandet mellan nettoeffekten och tjänstevikten inte är över 0,2 kW/kg.",
+      "keywords": ["a2", "mellanstor motorcykel", "35kw", "strypt", "nettoeffekt"]
     },
     "a": {
       "name": "A – Tung motorcykel",
-      "description": "Med körkortsbehörigheten A får du köra alla två- och trehjuliga motorcyklar."
+      "description": "Med körkortsbehörigheten A får du köra alla två- och trehjuliga motorcyklar.",
+      "keywords": ["a", "tung motorcykel", "obegränsad", "alla motorcyklar"]
     }
   },
   "multi_wheel_motorcycles": {
@@ -25,19 +29,23 @@
       "Du som har ett körkort för lätt motorcykel (A1) eller mellanstor (A2) får köra trehjuliga motorcyklar med en nettoeffekt på högst 15 kW.",
       "Om motorcykeln har en högre nettoeffekt krävs det ett körkort för tung motorcykel (A) eller personbil (B).",
       "Du måste också ha fyllt 21 år för att köra tung trehjulig motorcykel."
-    ]
+    ],
+    "keywords": ["trehjulig", "fyrhjulig", "motorcykel", "mc", "regler", "b-körkort", "ålder", "21 år"]
   },
   "risk_education": {
     "title": "Riskutbildning motorcykel",
     "description": "Du måste göra riskutbildning 1 oh 2 innan du gör kunskaps- och körprovet.",
+    "keywords": ["riskutbildning", "mc", "riskettan", "risktvåan", "obligatorisk", "kunskapsprov", "körprov"],
     "parts": [
       {
         "part": 1,
-        "description": "Del 1 handlar om alkohol och droger, trötthet i trafiken och andra riskfyllda beteenden."
+        "description": "Del 1 handlar om alkohol och droger, trötthet i trafiken och andra riskfyllda beteenden.",
+        "keywords": ["riskettan", "risk 1", "alkohol", "droger", "trötthet", "riskfyllda beteenden"]
       },
       {
         "part": 2,
-        "description": "Del 2 handlar bland annat om hastighet, säkerhet och körning vid olika väg- och väderförhållanden. Manöverbana ingår i den här delen."
+        "description": "Del 2 handlar bland annat om hastighet, säkerhet och körning vid olika väg- och väderförhållanden. Manöverbana ingår i den här delen.",
+        "keywords": ["risktvåan", "risk 2", "hastighet", "säkerhet", "halkbana", "manöverbana"]
       }
     ]
   },
@@ -55,6 +63,7 @@
       "Ängelholm",
       "Hässleholm",
       "Göteborg"
-    ]
+    ],
+    "keywords": ["mc-utbildning", "städer", "trafikskolor", "malmö", "stockholm", "österåker", "helsingborg", "kristianstad", "landskrona", "trelleborg", "lund", "ystad", "ängelholm", "hässleholm", "göteborg"]
   }
 }
