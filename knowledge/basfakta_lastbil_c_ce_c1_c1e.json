@@ -1,29 +1,36 @@
 {
   "section_title": "BASFAKTA - Lastbil (C, CE, C1, C1E)",
   "source_info": "Information från Transportstyrelsens sida och vår hemsida.",
+  "keywords": ["lastbil", "c", "ce", "c1", "c1e", "tung lastbil", "behörighet", "lastbilskörkort"],
   "license_categories": {
     "title": "Körkort för Lastbil",
     "intro": "Det finns fyra olika körkortsbehörigheter för tunga lastbilar: C1, C1E, C och CE. Skillnaden ligger i hur tunga lastbilar och påkopplade släpvagnar du får köra.",
+    "keywords": ["behörigheter", "tunga lastbilar", "c1", "c1e", "c", "ce", "skillnad", "vikt"],
     "c1": {
       "name": "C1 – Medeltung lastbil",
-      "description": "Med behörigheten C1 får du köra personbilar och medeltunga lastbilar med en totalvikt på högst 7 500 kg. Du får också dra en lätt släpvagn med totalvikt på högst 750 kg."
+      "description": "Med behörigheten C1 får du köra personbilar och medeltunga lastbilar med en totalvikt på högst 7 500 kg. Du får också dra en lätt släpvagn med totalvikt på högst 750 kg.",
+      "keywords": ["c1", "medeltung lastbil", "personbil", "totalvikt", "7500 kg", "lätt släpvagn", "750 kg"]
     },
     "c1e": {
       "name": "C1E – Medeltung lastbil med tungt släp",
-      "description": "Med behörigheten C1E får du köra samma fordon som med behörigheten C1 och du får dessutom dra en eller flera släp om bilens och släpens sammanlagda totalvikt inte är högre än 12 000 kg."
+      "description": "Med behörigheten C1E får du köra samma fordon som med behörigheten C1 och du får dessutom dra en eller flera släp om bilens och släpens sammanlagda totalvikt inte är högre än 12 000 kg.",
+      "keywords": ["c1e", "medeltung lastbil", "tungt släp", "släpvagn", "totalvikt", "12000 kg"]
     },
     "c": {
       "name": "C – Tung lastbil",
-      "description": "Med behörigheten C får du köra tunga lastbilar och personbilar utan viktgräns. Du får också dra ett lätt släp med totalvikt på högst 750 kg."
+      "description": "Med behörigheten C får du köra tunga lastbilar och personbilar utan viktgräns. Du får också dra ett lätt släp med totalvikt på högst 750 kg.",
+      "keywords": ["c", "tung lastbil", "personbil", "viktgräns", "lätt släp", "750 kg"]
     },
     "ce": {
       "name": "CE – Tung lastbil med tungt släp",
-      "description": "Med behörigheten CE får du köra samma fordon som med behörigheten C och du får dessutom dra en eller flera"
+      "description": "Med behörigheten CE får du köra samma fordon som med behörigheten C och du får dessutom dra en eller flera",
+      "keywords": ["ce", "tung lastbil", "tungt släp", "släpvagn", "flera släp"]
     }
   },
   "professional_driver_info": {
     "title": "Ska du utbilda dig till yrkesförare?",
-    "text": "Om du planerar att utbilda dig till yrkesförare behöver du känna till vad som gäller om exempelvis färdskrivare och yrkesförarutbildning."
+    "text": "Om du planerar att utbilda dig till yrkesförare behöver du känna till vad som gäller om exempelvis färdskrivare och yrkesförarutbildning.",
+    "keywords": ["yrkesförare", "utbildning", "färdskrivare", "yrkesförarutbildning", "ykb"]
   },
   "ce_license_requirements": {
     "title": "För att få ett CE-körkort krävs det att:",
@@ -34,7 +41,8 @@
       "Du har fyllt 21 år (eller 18 år om du utbildat dig för att godstransporter*).",
       "Du har gjort ett godkänt körkortsprov (kunskapsprov och körprov).",
       "Du har inget körkort från något annat EES-land. Om du har ett sådant körkort går det att byta ut mot ett svenskt."
-    ]
+    ],
+    "keywords": ["krav", "ce-körkort", "c-behörighet", "körkortstillstånd", "permanent bosatt", "ålder", "21 år", "18 år", "godstransporter", "körkortsprov", "kunskapsprov", "körprov", "ees-land"]
   },
   "practice_driving": {
     "private": {
@@ -45,12 +53,14 @@
         "Ha fyllt 20 år.",
         "Ha ett körkort med behörighet B eller tidigare ha haft körkort för behörighet CE."
       ],
-      "rules": "När ni övningskör måste handledaren ha med sig handledarbeviset. Den grönvita skylten ÖVNINGSKÖR ska vara väl synlig. Det är handledaren som är ansvarig och räknas som förare vid övningskörningen."
+      "rules": "När ni övningskör måste handledaren ha med sig handledarbeviset. Den grönvita skylten ÖVNINGSKÖR ska vara väl synlig. Det är handledaren som är ansvarig och räknas som förare vid övningskörningen.",
+      "keywords": ["övningsköra", "privat", "ce", "handledare", "ålder", "20 år", "b-körkort", "övningskör", "skylt", "ansvarig"]
     },
     "with_instructor": {
       "title": "Övningsköra hos en utbildare",
       "age_rule": "Om du utbildar dig till yrkesförare (yrkesförarkompetens) kan du övningsköra och ta körkort för tung lastbil med släp redan när du har fyllt 18 år. Om du är yngre än 20 år får du inte övningsköra privat utan endast hos",
-      "contact_prompt": "Har du några frågor som rör kraven för utbildning till tung lastbilsförare så är du varmt välkommen att höra av dig till oss– vi svarar gärna på frågor!"
+      "contact_prompt": "Har du några frågor som rör kraven för utbildning till tung lastbilsförare så är du varmt välkommen att höra av dig till oss– vi svarar gärna på frågor!",
+      "keywords": ["övningsköra", "utbildare", "trafikskola", "yrkesförare", "yrkesförarkompetens", "ålder", "18 år"]
     }
   },
   "training_locations": {
@@ -66,6 +76,7 @@
       "title": "Kontaktuppgifter för all tung trafik",
       "phone": "010-188 83 26",
       "email": "tungtrafik@trafikskolan.com"
-    }
+    },
+    "keywords": ["utbildning", "ce", "lastbil", "städer", "malmö", "hässleholm", "stockholm", "kristianstad", "göteborg", "kontakt", "telefon", "email", "tung trafik"]
   }
 }
