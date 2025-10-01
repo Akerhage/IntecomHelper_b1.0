@@ -3,17 +3,21 @@
   "source_info": "Information från Transportstyrelsens sida om Personbil och lätt lastbil, behörighet B",
   "license_types": {
     "general": "Ska du köra personbil eller lätt lastbil behöver du ett B-körkort. Om du vill köra bil med ett tyngre släp behöver du ett körkort med utökad B-behörighet (B96) eller ett BE-körkort.",
+    "keywords": ["personbil", "lätt lastbil", "b-körkort", "släp", "b96", "be-körkort"],
     "b": {
       "name": "B – Personbil och lätt lastbil",
-      "description": "Med körkortsbehörigheten B får du bland annat köra personbilar och lätta lastbilar med en totalvikt på högst 3 500 kg. Med vanlig B-behörighet får man koppla på ett lätt släp. Släpet räknas som lätt om den sammanlagda totalvikten (för bilen och släpet tillsammans) inte är över 3 500 kg eller släpets totalvikt inte är mer än 750 kg. Om släpet väger mer än 750 kg får inte bilens och släpets totalvikt vara över 3 500 kg."
+      "description": "Med körkortsbehörigheten B får du bland annat köra personbilar och lätta lastbilar med en totalvikt på högst 3 500 kg. Med vanlig B-behörighet får man koppla på ett lätt släp. Släpet räknas som lätt om den sammanlagda totalvikten (för bilen och släpet tillsammans) inte är över 3 500 kg eller släpets totalvikt inte är mer än 750 kg. Om släpet väger mer än 750 kg får inte bilens och släpets totalvikt vara över 3 500 kg.",
+      "keywords": ["b-behörighet", "personbil", "lätt lastbil", "totalvikt", "3500 kg", "lätt släp", "750 kg"]
     },
     "b96": {
       "name": "B96 – Utökad B-behörighet",
-      "description": "Med utökad B-behörighet (B96) får du dra ett släp som väger mer än 750 kg i totalvikt. Bilens och släpets sammanlagda totalvikt får då inte vara över 4 250 kg."
+      "description": "Med utökad B-behörighet (B96) får du dra ett släp som väger mer än 750 kg i totalvikt. Bilens och släpets sammanlagda totalvikt får då inte vara över 4 250 kg.",
+      "keywords": ["b96", "utökad b-behörighet", "släp", "totalvikt", "4250 kg"]
     },
     "be": {
       "name": "BE – Personbil med tungt släp",
-      "description": "Med behörigheten BE får du köra personbilar eller lätta lastbilar med en totalvikt på högst 3 500 kg och en eller flera släp kopplade till bilen. Släpets eller släpens sammanlagda totalvikt får dock inte vara över 3 500 kg. BE-behörigheten har inte någon begränsning för bilens och släpets sammanlagda totalvikter."
+      "description": "Med behörigheten BE får du köra personbilar eller lätta lastbilar med en totalvikt på högst 3 500 kg och en eller flera släp kopplade till bilen. Släpets eller släpens sammanlagda totalvikt får dock inte vara över 3 500 kg. BE-behörigheten har inte någon begränsning för bilens och släpets sammanlagda totalvikter.",
+      "keywords": ["be-behörighet", "tungt släp", "personbil", "lätt lastbil", "totalvikt", "3500 kg"]
     }
   },
   "b_license_requirements": {
@@ -31,11 +35,13 @@
     "notes": [
       "* Om du har B-körkort med villkor automat (villkor A. eller 78. på baksidan av körkortet) och vill häva villkoret om automat behöver du inte ha ett körkortstillstånd.",
       "** Byta ut ett körkort från ett EES-land till ett svenskt."
-    ]
+    ],
+    "keywords": ["b-körkort", "personbil", "lätt lastbil", "krav", "körkortstillstånd", "18 år", "riskutbildning", "körkortsprov", "ees-land", "automat"]
   },
   "practice_driving": {
     "title": "Övningsköra med personbil och lätt lastbil",
     "general_requirements": "För att få övningsköra för personbil och lätt lastbil ska du ha ett körkortstillstånd för grupp 1. Om du ska övningsköra privat behöver du även ha en godkänd handledare.",
+    "keywords": ["övningsköra", "personbil", "lätt lastbil", "körkortstillstånd", "handledare"],
     "age_requirements": {
       "title": "Hur gammal måste jag vara för att få övningsköra?",
       "rules": [
@@ -43,11 +49,13 @@
         "ha fyllt 16 år om du bara ska övningsköra med personbil",
         "ha fyllt 17 år 6 månader om du ska övningsköra med lätt lastbil",
         "ha fyllt 17 år 6 månader om du ska övningsköra med lätt släpvagn."
-      ]
+      ],
+      "keywords": ["ålder", "gammal", "övningsköra", "16 år", "17 år 6 månader", "personbil", "lätt lastbil", "släpvagn"]
     },
     "private_practice": {
       "title": "Övningsköra privat",
-      "rules": "Om du ska övningsköra privat med personbil och lätt lastbil måste du ha en handledare. För att ni ska få övningsköra behöver ni ha gått en introduktionsutbildning någon gång under de senaste fem åren. När ni övningskör måste handledaren ha med sig handledarbeviset. Den grönvita skylten ÖVNINGSKÖR ska vara väl synlig bakifrån. Det är handledaren som är ansvarig och räknas som förare vid övningskörningen."
+      "rules": "Om du ska övningsköra privat med personbil och lätt lastbil måste du ha en handledare. För att ni ska få övningsköra behöver ni ha gått en introduktionsutbildning någon gång under de senaste fem åren. När ni övningskör måste handledaren ha med sig handledarbeviset. Den grönvita skylten ÖVNINGSKÖR ska vara väl synlig bakifrån. Det är handledaren som är ansvarig och räknas som förare vid övningskörningen.",
+      "keywords": ["övningsköra privat", "handledare", "introduktionsutbildning", "handledarbevis", "övningskör-skylt", "ansvarig"]
     }
   },
   "our_process_info": {
@@ -55,31 +63,38 @@
     "title": "Ta ditt bilkörkort (B-körkort)",
     "welcome_text": "Välkommen till ditt första steg på resan mot att ta körkort med behörighet B! Hos oss erbjuder vi en personlig och anpassad utbildning för både manuellt och automatväxlad körning för att tillgodose alla elevers önskemål. Våra erfarna instruktörer är redo att utrusta dig med nödvändiga kunskaper och färdigheter för att bli en säker och kompetent förare. Vi är en certifierad trafikskola som följer högsta utbildningsstandarder enligt Transportstyrelsens riktlinjer. Oavsett om du börjar från grunden eller bara behöver förbättra dina färdigheter, kan vi hjälpa dig att nå ditt mål. Låt oss vara din guide på vägen mot körkortet!",
     "registration": "För att få övningsköra och kunna boka körlektioner måste du vara inskriven som elev på trafikskolan. Du skriver in dig genom att ladda ner appen Mitt Körkort och registrerar ett konto där med ditt mobilnummer. Läraren gör därefter en individuell utbildningsplan som baseras på dina förkunskaper, behov och förväntningar. Har du till exempel aldrig kört förut börjar ni med att du får lära känna bilen och manövrera den. När du lärt dig detta kommer du att fortsätta köra i varierad trafik under skiftande förhållanden. För att kunna bedöma säkerheten och upptäcka fel och brister på ditt fordon får du dessutom lära dig att utföra en säkerhetskontroll.",
+    "keywords": ["b-körkort", "bilkörkort", "manuell", "automat", "trafikskola", "registrera", "mitt körkort", "appen", "utbildningsplan", "säkerhetskontroll"],
     "practice_driving_requirements": {
       "title": "B-körkort – krav för övningskörning",
-      "text": "För att ta körkort med B-behörighet i Sverige måste du först uppfylla ålderskravet, du kan börja övningsköra vid 16 år, men körkortet utfärdas först när du fyllt 18 år. Du behöver även ett körkortstillstånd från Transportstyrelsen, som du får genom att lämna en hälsodeklaration och eventuellt genomgå en läkarundersökning. Ett annat viktigt krav är att du ska ha varit folkbokförd i Sverige eller ha studerat i Sverige i minst sex månader innan du kan ta körprovet. Detta säkerställer att du har tillräcklig erfarenhet av de svenska trafikförhållandena. Dessa krav är viktiga för att garantera att alla förare på svenska vägar har nödvändig kunskap och erfarenhet för att bidra till trafiksäkerheten."
+      "text": "För att ta körkort med B-behörighet i Sverige måste du först uppfylla ålderskravet, du kan börja övningsköra vid 16 år, men körkortet utfärdas först när du fyllt 18 år. Du behöver även ett körkortstillstånd från Transportstyrelsen, som du får genom att lämna en hälsodeklaration och eventuellt genomgå en läkarundersökning. Ett annat viktigt krav är att du ska ha varit folkbokförd i Sverige eller ha studerat i Sverige i minst sex månader innan du kan ta körprovet. Detta säkerställer att du har tillräcklig erfarenhet av de svenska trafikförhållandena. Dessa krav är viktiga för att garantera att alla förare på svenska vägar har nödvändig kunskap och erfarenhet för att bidra till trafiksäkerheten.",
+      "keywords": ["krav", "övningskörning", "b-behörighet", "ålderskrav", "16 år", "18 år", "körkortstillstånd", "hälsodeklaration", "folkbokförd"]
     },
     "our_help": {
       "title": "Vi hjälper dig ut på vägarna",
-      "text": "Hur många körlektioner du behöver innan du är redo för uppkörning är individuellt. Vissa väljer att övningsköra privat med en godkänd handledare till en början medan andra väljer att endast köra på trafikskola. Vilka behov och förutsättningar du än har hjälper vi dig att bli en trygg förare som kan lösa de situationer som uppstår i trafiken på ett smidigt och naturligt sätt."
+      "text": "Hur många körlektioner du behöver innan du är redo för uppkörning är individuellt. Vissa väljer att övningsköra privat med en godkänd handledare till en början medan andra väljer att endast köra på trafikskola. Vilka behov och förutsättningar du än har hjälper vi dig att bli en trygg förare som kan lösa de situationer som uppstår i trafiken på ett smidigt och naturligt sätt.",
+      "keywords": ["körlektioner", "antal", "uppkörning", "övningsköra privat", "trafikskola", "trygg förare"]
     }
   },
   "automatic_license_info": {
     "title": "Information om automat-körkort för bil och fördelar/nackdelar med det:",
     "intro": "Vi stöttar dig hela vägen till ditt automatkörkort Allt eftersom fler och fler nya bilar (framförallt elbilar) är automatväxlade blir det mer populärt att ta automatkörkort.",
     "pros_cons": "Fördelen med att ta automatkörkort är att du inte behöver lägga tid och pengar på att lära dig växla upp, växla ned och dragläge och istället kan lägga mer fokus på körningen och trafiken runt omkring. Nackdelen är att ditt körkort inte tillåter dig köra manuellt växlade bilar.",
+    "keywords": ["automatkörkort", "automat", "fördelar", "nackdelar", "växla", "dragläge"],
     "advantages": {
       "title": "Fördelarna med automatkörkort",
-      "text": "Att växla manuellt när man kör bil är ytterligare ett moment att hålla koll på som många upplever som svårt. I en automatväxlad bil sköter bilen växlingen av sig själv och du har endast två pedaler att hålla koll på – gas och broms. Detta är dessutom bekvämt framförallt vid körning i stan där du ofta behöver starta, stoppa och växla vid övergångsställen och rödljus. En annan fördel med att ta automatkörkort är att processen oftast blir billigare och går snabbare. En av de stora utmaningarna för många som tar körkort är just växlingen, det tar en stund att få in det. Om du hellre hoppar över den delen kommer du lära dig köra bilen snabbt och enkelt. Då kan du istället fokusera på att lära dig trafikregler, vägmärken samt hur du ska bete dig i trafiken. Det sparar dig många timmars träning och körlektioner. Dessutom bara växer andelen automatväxlade bilar. I och med att elbilar blivit allt mer populära spär det ytterligare på fördelarna med automatkörkort eftersom elbilar av naturliga skäl enbart existerar utan växlar. Idag är de flesta nya bilar som säljs i Sverige automatväxlade och du kan du alltid välja en automatväxlad bil när du ska hyra bil."
+      "text": "Att växla manuellt när man kör bil är ytterligare ett moment att hålla koll på som många upplever som svårt. I en automatväxlad bil sköter bilen växlingen av sig själv och du har endast två pedaler att hålla koll på – gas och broms. Detta är dessutom bekvämt framförallt vid körning i stan där du ofta behöver starta, stoppa och växla vid övergångsställen och rödljus. En annan fördel med att ta automatkörkort är att processen oftast blir billigare och går snabbare. En av de stora utmaningarna för många som tar körkort är just växlingen, det tar en stund att få in det. Om du hellre hoppar över den delen kommer du lära dig köra bilen snabbt och enkelt. Då kan du istället fokusera på att lära dig trafikregler, vägmärken samt hur du ska bete dig i trafiken. Det sparar dig många timmars träning och körlektioner. Dessutom bara växer andelen automatväxlade bilar. I och med att elbilar blivit allt mer populära spär det ytterligare på fördelarna med automatkörkort eftersom elbilar av naturliga skäl enbart existerar utan växlar. Idag är de flesta nya bilar som säljs i Sverige automatväxlade och du kan du alltid välja en automatväxlad bil när du ska hyra bil.",
+      "keywords": ["fördelar", "automatkörkort", "enklare", "billigare", "snabbare", "elbilar"]
     },
     "changing_mind": {
       "title": "Vad händer om jag skulle ångra mig mitt i min körkortsprocess?",
       "question": "Kanske vill jag inte längre ta körkort för automat utan vill övergå till manuell, går det?",
-      "answer": "Självklart, du kan alltid ändra dig under din utbildning. Du behöver inte göra om allt bara för att du helt plötsligt vill ta manuellt körkort istället. Tvärtom har du förmodligen med dig många fördelar, som bland annat körsäkerhet och trygghet bakom ratten. Du kommer att känna dig van på vägen och med trafiken. Om du redan hunnit komma en bra bit på din resa mot körkortet och sedan väljer att ta manuellt körkort istället för automat kommer det inte vara några problem. De nya momenten du behöver öva på är framförallt dragläge samt att växla upp respektive ned. Om du redan tagit ditt automatkörkort och därmed klarat kunskapsprovet, riskettan och risktvåan behöver du inte göra om dessa. Det enda du behöver göra på nytt är förarprovet."
+      "answer": "Självklart, du kan alltid ändra dig under din utbildning. Du behöver inte göra om allt bara för att du helt plötsligt vill ta manuellt körkort istället. Tvärtom har du förmodligen med dig många fördelar, som bland annat körsäkerhet och trygghet bakom ratten. Du kommer att känna dig van på vägen och med trafiken. Om du redan hunnit komma en bra bit på din resa mot körkortet och sedan väljer att ta manuellt körkort istället för automat kommer det inte vara några problem. De nya momenten du behöver öva på är framförallt dragläge samt att växla upp respektive ned. Om du redan tagit ditt automatkörkort och därmed klarat kunskapsprovet, riskettan och risktvåan behöver du inte göra om dessa. Det enda du behöver göra på nytt är förarprovet.",
+      "keywords": ["ångra sig", "byta", "automat till manuell", "manuell", "förarprov", "riskettan", "risktvåan"]
     },
     "pricing": {
       "title": "Andra priser för automatkörkort?",
-      "text": "Det är oftast samma priser för att övningsköra med automatväxlad bil som med manuell, men skillnaden är att det oftast är enklare utan växling. Därmed behövs oftast inte lika många körlektioner och på så vis blir totalpriset oftast lägre. Dessutom behöver du inte lära dig delar som innefattar växling och dragläge, något som annars kan ta ytterligare några körlektioner. Om du vill veta mer exakt vilket pris du kan förvänta dig kan du boka in en testlektion med våra erfarna trafiklärare. Då kommer du få köra en lektion till ett rabatterat pris. Efter lektionen kommer din trafiklärare kunna göra en grov bedömning utifrån hur du kör, dina erfarenheter och förutsättningar. Tillsammans gör ni en bra plan och ett schema."
+      "text": "Det är oftast samma priser för att övningsköra med automatväxlad bil som med manuell, men skillnaden är att det oftast är enklare utan växling. Därmed behövs oftast inte lika många körlektioner och på så vis blir totalpriset oftast lägre. Dessutom behöver du inte lära dig delar som innefattar växling och dragläge, något som annars kan ta ytterligare några körlektioner. Om du vill veta mer exakt vilket pris du kan förvänta dig kan du boka in en testlektion med våra erfarna trafiklärare. Då kommer du få köra en lektion till ett rabatterat pris. Efter lektionen kommer din trafiklärare kunna göra en grov bedömning utifrån hur du kör, dina erfarenheter och förutsättningar. Tillsammans gör ni en bra plan och ett schema.",
+      "keywords": ["priser", "automatkörkort", "manuell", "kostnad", "billigare", "testlektion"]
     },
     "summary": {
       "title": "Överväg för- och nackdelar med automatkörkort",
@@ -89,7 +104,8 @@
           "Enklare – Du kan fokusera mer på trafiken och allt som sker runtomkring bilen, i stället för växlingen.",
           "Billigare – Genom att slippa lära dig dragläge och växling och samtidigt köra en enklare bil kan du minska antalet körlektioner och därmed kostanden för ditt körkort.",
           "Vanligare – Allt fler bilar är idag automatväxlade, så nyttan med ett manuellt körkort blir mindre och mindre."
-        ]
+        ],
+        "keywords": ["fördelar", "automatkörkort", "enklare", "billigare", "vanligare"]
       },
       "disadvantages": {
         "title": "Nackdelar",
@@ -97,7 +113,8 @@
           "Du får endast köra automatväxlade bilar.",
           "Du kan gå miste om jobbtillfällen som kräver körkort för manuellt växlad bil.",
           "Det blir svårare att låna kompisens bil."
-        ]
+        ],
+        "keywords": ["nackdelar", "automatkörkort", "endast automat", "jobbtillfällen"]
       }
     }
   }
