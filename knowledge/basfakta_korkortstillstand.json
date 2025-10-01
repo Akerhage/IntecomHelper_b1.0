@@ -2,91 +2,112 @@
   "section_title": "BASFAKTA - Körkortstillstånd",
   "source_info": "Information från Transportstyrelsens sida om Körkortstillstånd",
   "application_link": "https://www.transportstyrelsen.se/sv/vagtrafik/e-tjanster-och-blanketter/e-tjansterinom-vagtrafik/?tab=korkort&eservice=korkortstillstand(grupp1)-ansok",
+  "keywords": ["körkortstillstånd", "ansöka", "ansökan", "giltighet", "krav"],
   "general_info": {
     "necessity": "Du behöver ett giltigt körkortstillstånd för att få övningsköra och göra körkortsprov. Det gäller både första gången du tar körkort, om du behöver nytt körkortstillstånd efter återkallelse eller om du redan har körkort men ska ta en ny körkortsbehörighet. Du behöver också nytt körkortstillstånd för att övningsköra MC även om du har ett körkort för personbil.",
-    "groups": "Körkortstillstånd är uppdelat i tre grupper, vilken grupp du ska söka för beror på vilken behörighet du vill ta eller söka tillbaka."
+    "groups": "Körkortstillstånd är uppdelat i tre grupper, vilken grupp du ska söka för beror på vilken behörighet du vill ta eller söka tillbaka.",
+    "keywords": ["körkortstillstånd", "giltigt", "övningsköra", "körkortsprov", "återkallelse", "ny behörighet", "mc", "personbil", "grupper"]
   },
   "application_process": {
     "group1": {
       "name": "Grupp 1 (Traktor, AM, A1, A2, A, B och BE)",
-      "requirements": "Om du vill ansöka om körkortstillstånd för grupp 1 (Traktor, AM, A1, A2, A, B och BE) behöver du även skicka in en hälsodeklaration och ett grundläggande synintyg. Hälsodeklarationen är ett formulär med frågor om din hälsa som du svarar på själv. Väljer du att ansöka via e-tjänsten fyller du i hälsodeklarationen direkt. Många optiker kan skicka in synintyget digitalt till oss. Synintyget får inte vara utfärdat tidigare än två månader före ansökan."
+      "requirements": "Om du vill ansöka om körkortstillstånd för grupp 1 (Traktor, AM, A1, A2, A, B och BE) behöver du även skicka in en hälsodeklaration och ett grundläggande synintyg. Hälsodeklarationen är ett formulär med frågor om din hälsa som du svarar på själv. Väljer du att ansöka via e-tjänsten fyller du i hälsodeklarationen direkt. Många optiker kan skicka in synintyget digitalt till oss. Synintyget får inte vara utfärdat tidigare än två månader före ansökan.",
+      "keywords": ["ansöka", "grupp 1", "traktor", "am", "a1", "a2", "a", "b", "be", "hälsodeklaration", "synintyg", "optiker", "e-tjänst"]
     },
     "group2_3": {
       "name": "Grupp 2 (C1, C1E, C och CE) & Grupp 3 (D1, D1E, D och DE)",
-      "requirements": "Ansöker du om körkortstillstånd för grupp 2 (C1, C1E, C och CE) alternativt grupp 3 (D1, D1E, D och DE) behöver du även skicka in ett läkarintyg avseende högre behörigheter. Läkarintyget får inte vara utfärdat tidigare än två månader före ansökan."
+      "requirements": "Ansöker du om körkortstillstånd för grupp 2 (C1, C1E, C och CE) alternativt grupp 3 (D1, D1E, D och DE) behöver du även skicka in ett läkarintyg avseende högre behörigheter. Läkarintyget får inte vara utfärdat tidigare än två månader före ansökan.",
+      "keywords": ["ansöka", "grupp 2", "grupp 3", "c1", "c1e", "c", "ce", "d1", "d1e", "d", "de", "lastbil", "buss", "läkarintyg", "högre behörigheter"]
     }
   },
   "post_application": {
     "title": "Vad händer när jag ansökt om körkortstillstånd?",
     "processing_time": "Vi prövar din ansökan utifrån personliga och medicinska krav. Om alla de kraven är uppfyllda och alla handlingar kommit in, tar det i normalfallet upptill fyra veckor att få körkortstillståndet.",
     "delivery": "Om du har en digital brevlåda kommer ditt körkortstillstånd att skickas dit. Du kan också se ditt körkortstillstånd på Mina sidor.",
-    "investigation": "I vissa fall kan det framkomma något i den personliga och medicinska prövningen som gör att din ansökan behöver utredas. En utredning kan innebära att du behöver skicka in ett läkarintyg eller att vi behöver hämta information från andra myndigheter, till exempel polisen. Ansökningar som kräver utredning kommer på grund av högt tryck att ta längre tid att hantera."
+    "investigation": "I vissa fall kan det framkomma något i den personliga och medicinska prövningen som gör att din ansökan behöver utredas. En utredning kan innebära att du behöver skicka in ett läkarintyg eller att vi behöver hämta information från andra myndigheter, till exempel polisen. Ansökningar som kräver utredning kommer på grund av högt tryck att ta längre tid att hantera.",
+    "keywords": ["handläggningstid", "efter ansökan", "prövning", "krav", "fyra veckor", "digital brevlåda", "mina sidor", "utredning", "läkarintyg", "polisen"]
   },
   "faq": {
     "title": "Frågor och svar gällande körkortstillstånd",
+    "keywords": ["frågor", "svar", "faq", "vanliga frågor"],
     "questions": [
       {
         "question": "Hur ansöker jag om körkortstillstånd för moped klass I, motorcykel och personbil?",
-        "answer": "Vill du ta körkort för moped klass I, motorcykel, personbil och lätt lastbil, personbil med tungt släp samt traktor (AM, A1, A2, A, B, BE och traktorkort) ska du ansöka om körkortstillstånd för grupp I. Du ansöker snabbt och enkelt via vår e-tjänst. Därefter behöver du också skicka in ett synintyg till oss. Synintyget får inte vara utfärdat tidigare än två månader före ansökan."
+        "answer": "Vill du ta körkort för moped klass I, motorcykel, personbil och lätt lastbil, personbil med tungt släp samt traktor (AM, A1, A2, A, B, BE och traktorkort) ska du ansöka om körkortstillstånd för grupp I. Du ansöker snabbt och enkelt via vår e-tjänst. Därefter behöver du också skicka in ett synintyg till oss. Synintyget får inte vara utfärdat tidigare än två månader före ansökan.",
+        "keywords": ["ansöka", "moped klass I", "motorcykel", "personbil", "grupp 1", "am", "a1", "a2", "a", "b", "be", "e-tjänst", "synintyg"]
       },
       {
         "question": "Hur ansöker jag om körkortstillstånd för lastbil eller buss?",
-        "answer": "Vill du ta körkort för tung lastbil eller buss (C1, C1E, C, CE, D1, D1E, D och DE) ska du ansöka om körkortstillstånd för grupp 2 eller 3, beroende på vilken behörighet du vill ta körkort för. I grupp 2 ingår behörigheterna Traktor, AM, A1, A2, A, B, BE, C1, C1E, C och CE medan det i grupp 3 även tillkommer D1, D, D1E och DE. Du ansöker snabbt och enkelt i vår via vår e-tjänst. Därefter behöver du också skicka in ett läkarintyg Läkarintyget får inte vara utfärdat tidigare än två månader före ansökan."
+        "answer": "Vill du ta körkort för tung lastbil eller buss (C1, C1E, C, CE, D1, D1E, D och DE) ska du ansöka om körkortstillstånd för grupp 2 eller 3, beroende på vilken behörighet du vill ta körkort för. I grupp 2 ingår behörigheterna Traktor, AM, A1, A2, A, B, BE, C1, C1E, C och CE medan det i grupp 3 även tillkommer D1, D, D1E och DE. Du ansöker snabbt och enkelt i vår via vår e-tjänst. Därefter behöver du också skicka in ett läkarintyg Läkarintyget får inte vara utfärdat tidigare än två månader före ansökan.",
+        "keywords": ["ansöka", "lastbil", "buss", "c1", "c", "d1", "d", "grupp 2", "grupp 3", "e-tjänst", "läkarintyg"]
       },
       {
         "question": "Hur ansöker jag om körkortstillstånd via blankett?",
         "answer": "Om du inte kan ansöka om körkortstillstånd via vår e-tjänst kan du istället beställa en ansökningsblankett via vår blankettsida för körkort. Om du beställer ansökningsblankett för körkortstillstånd grupp 1 får du även hem en hälsodeklaration och ett synintyg, gäller det grupp 2 eller 3 får du utöver ansökningsblanketten hem ett läkarintyg avseende högre körkortsbehörigheter.",
-        "address": "Ansökan skickas ifylld med post till Transportstyrelsen 701 97 Örebro"
+        "address": "Ansökan skickas ifylld med post till Transportstyrelsen 701 97 Örebro",
+        "keywords": ["ansöka", "blankett", "papper", "beställa", "e-tjänst", "hälsodeklaration", "synintyg", "läkarintyg", "adress", "skicka"]
       },
       {
         "question": "Kan jag ta flera behörigheter på samma körkortstillstånd?",
-        "answer": "Ja, under tiden körkortstillståndet är giltigt kan du ta de behörigheter som ingår i gruppen. Exempelvis om du ansöker om Körkortstillstånd för grupp 1 och tar behörighet AM. 1 år senare vill du även ta behörighet B. Om körkortstillståndet fortfarande är giltigt behöver du inte ansöka om ett nytt körkortstillstånd. Du kan se om du har ett giltigt körkortstillstånd på Mina sidor."
+        "answer": "Ja, under tiden körkortstillståndet är giltigt kan du ta de behörigheter som ingår i gruppen. Exempelvis om du ansöker om Körkortstillstånd för grupp 1 och tar behörighet AM. 1 år senare vill du även ta behörighet B. Om körkortstillståndet fortfarande är giltigt behöver du inte ansöka om ett nytt körkortstillstånd. Du kan se om du har ett giltigt körkortstillstånd på Mina sidor.",
+        "keywords": ["flera behörigheter", "samma körkortstillstånd", "giltighet", "giltigt", "nytt", "mina sidor"]
       },
       {
         "question": "Vad kostar ett körkortstillstånd?",
-        "answer": "Det kostar inget att ansöka om körkortstillstånd."
+        "answer": "Det kostar inget att ansöka om körkortstillstånd.",
+        "keywords": ["kostnad", "pris", "avgift", "kosta", "gratis"]
       },
       {
         "question": "Hur gammal måste jag vara för att kunna söka körkortstillstånd?",
-        "answer": "Det finns ingen åldersgräns för att ansöka. Däremot finns det åldersgräns för att få övningsköra och ta körkort."
+        "answer": "Det finns ingen åldersgräns för att ansöka. Däremot finns det åldersgräns för att få övningsköra och ta körkort.",
+        "keywords": ["ålder", "åldersgräns", "gammal", "söka", "ansöka"]
       },
       {
         "question": "Hur länge gäller ett körkortstillstånd?",
-        "answer": "Ett körkortstillstånd gäller i fem år och kan inte förlängas. Om du vill övningsköra eller göra ett förarprov efter att körkortstillståndet slutat gälla, behöver du ansöka om ett nytt."
+        "answer": "Ett körkortstillstånd gäller i fem år och kan inte förlängas. Om du vill övningsköra eller göra ett förarprov efter att körkortstillståndet slutat gälla, behöver du ansöka om ett nytt.",
+        "keywords": ["giltighetstid", "gäller", "hur länge", "fem år", "5 år", "förlänga", "nytt"]
       },
       {
         "question": "Kan jag förlänga mitt körkortstillstånd?",
-        "answer": "Nej, ett körkortstillstånd kan inte förlängas. Om du vill övningsköra eller göra ett förarprov efter att körkortstillståndet slutat gälla, behöver du ansöka om ett nytt."
+        "answer": "Nej, ett körkortstillstånd kan inte förlängas. Om du vill övningsköra eller göra ett förarprov efter att körkortstillståndet slutat gälla, behöver du ansöka om ett nytt.",
+        "keywords": ["förlänga", "giltighetstid", "nytt", "ansöka"]
       },
       {
         "question": "Om jag har tappat bort eller råkat förstöra mitt körkortstillstånd, måste jag ansöka igen?",
-        "answer": "Nej, du kan beställa en kopia på ditt körkortstillstånd genom vår e-tjänst"
+        "answer": "Nej, du kan beställa en kopia på ditt körkortstillstånd genom vår e-tjänst",
+        "keywords": ["tappat", "borta", "förstört", "kopia", "beställa", "e-tjänst"]
       },
       {
         "question": "Hur lång är handläggningstiden vid ansökan om körkortstillstånd?",
-        "answer": "Vi prövar din ansökan utifrån personliga och medicinska krav. Om alla de kraven är uppfyllda och alla handlingar kommit in, tar det i normala fall upptill fyra veckor att få körkortstillståndet. Om du har en digital brevlåda kommer ditt körkortstillstånd att skickas dit. Du kan också se ditt körkortstillstånd på Mina sidor. I vissa fall kan det framkomma något i den personliga och medicinska prövningen som gör att din ansökan behöver utredas. En utredning kan innebära att du behöver skicka in ett läkarintyg eller att vi behöver hämta information från andra myndigheter, till exempel polisen. Ansökningar som kräver utredning kommer på grund av högt tryck att ta längre tid att hantera än i normala fall."
+        "answer": "Vi prövar din ansökan utifrån personliga och medicinska krav. Om alla de kraven är uppfyllda och alla handlingar kommit in, tar det i normala fall upptill fyra veckor att få körkortstillståndet. Om du har en digital brevlåda kommer ditt körkortstillstånd att skickas dit. Du kan också se ditt körkortstillstånd på Mina sidor. I vissa fall kan det framkomma något i den personliga och medicinska prövningen som gör att din ansökan behöver utredas. En utredning kan innebära att du behöver skicka in ett läkarintyg eller att vi behöver hämta information från andra myndigheter, till exempel polisen. Ansökningar som kräver utredning kommer på grund av högt tryck att ta längre tid att hantera än i normala fall.",
+        "keywords": ["handläggningstid", "tid", "hur lång tid", "fyra veckor", "4 veckor", "utredning", "väntetid"]
       },
       {
         "question": "Hur vet jag om min ansökan har kommit in?",
-        "answer": "Du kan logga in på Mina sidor för att se om vi har tagit emot din ansökan. Här kan du även se om du har ett giltigt körkortstillstånd."
+        "answer": "Du kan logga in på Mina sidor för att se om vi har tagit emot din ansökan. Här kan du även se om du har ett giltigt körkortstillstånd.",
+        "keywords": ["status", "ansökan", "kommit in", "mottagen", "mina sidor", "logga in"]
       },
       {
         "question": "Varför fungerar inte e-tjänsten \"Ansöka om körkortstillstånd\" med mitt BankID?",
         "answer": "E-tjänsten kräver e-legitimation. Det finns banker som erbjuder begränsat Mobilt BankID till minderåriga och de kan inte användas för att logga in i e-tjänsten. Istället kan du ansöka om körkortstillstånd via en blankett. Blanketten beställer du hem till dig och skickar sedan in den till oss. Om du beställer ansökningsblankett för körkortstillstånd grupp 1 får du även hem en hälsodeklaration och ett synintyg, gäller det grupp 2 eller 3 får du utöver ansökningsblanketten hem ett läkarintyg avseende högre körkortsbehörigheter.",
         "form_order_title": "Beställa blankett",
-        "address": "Blanketten skickas till: Transportstyrelsen 701 97 Örebro"
+        "address": "Blanketten skickas till: Transportstyrelsen 701 97 Örebro",
+        "keywords": ["e-tjänst", "bankid", "mobilt bankid", "fungerar inte", "problem", "minderårig", "blankett"]
       },
       {
         "question": "Kan ni prioritera mitt ärende?",
-        "answer": "Nej, vi kan inte prioritera ärenden. Vi hanterar ärenden i den ordning som de är mottagna."
+        "answer": "Nej, vi kan inte prioritera ärenden. Vi hanterar ärenden i den ordning som de är mottagna.",
+        "keywords": ["prioritera", "företräde", "kö", "snabbare", "bråttom"]
       },
       {
         "question": "Behöver jag ansöka om nytt körkortstillstånd efter återkallelse?",
-        "answer": "Efter återkallelse krävs i vissa fall nytt körkortstillstånd och om du även fått ditt körkort återkallat kan det även krävas nytt förarprov. Information om vad som gäller för dig finns i ditt beslut om återkallelse. Tänk på att ansöka om körkortstillstånd 6 månader innan spärrtiden löper ut om det är så att du behöver ansöka om nytt körkortstillstånd efter återkallelse."
+        "answer": "Efter återkallelse krävs i vissa fall nytt körkortstillstånd och om du även fått ditt körkort återkallat kan det även krävas nytt förarprov. Information om vad som gäller för dig finns i ditt beslut om återkallelse. Tänk på att ansöka om körkortstillstånd 6 månader innan spärrtiden löper ut om det är så att du behöver ansöka om nytt körkortstillstånd efter återkallelse.",
+        "keywords": ["återkallelse", "återkallat", "nytt körkortstillstånd", "förarprov", "spärrtid"]
       },
       {
         "question": "Behöver jag ett giltigt körkortstillstånd om jag vill häva villkor automat?",
-        "answer": "Nej, så länge villkoret inte beror på medicinska skäl krävs inget körkortstillstånd."
+        "answer": "Nej, så länge villkoret inte beror på medicinska skäl krävs inget körkortstillstånd.",
+        "keywords": ["häva villkor", "automat", "villkor", "medicinska skäl"]
       },
       {
         "question": "Behöver jag ha en giltig svensk ID-handling?",
@@ -101,7 +122,8 @@
             "EU-pass, och",
             "pass utfärdat av Färöarna, Förenade kungariket, Island, Liechtenstein, Norge eller Schweiz. (TSFS 2021:62"
           ]
-        }
+        },
+        "keywords": ["id-handling", "legitimation", "styrka identitet", "synintyg", "läkarintyg", "pass", "nationellt id-kort", "körkort"]
       }
     ]
   }
