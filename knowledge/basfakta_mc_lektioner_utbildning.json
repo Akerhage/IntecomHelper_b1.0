@@ -4,43 +4,53 @@
   "general_info": {
     "title": "Ta ditt MC körkort hos oss!",
     "intro": "Välkommen till Sveriges största MC-utbildare! Hos oss får du bästa expertisen på vägen mot ditt motorcykelkörkort (A1, A2, A). Med över 20 erfarna instruktörer har vi under 15 år hjälpt tusentals, både tjejer och killar, att nå fantastiska resultat – och ge dem en oförglömlig frihetskänsla.",
+    "keywords": ["mc-körkort", "motorcykelkörkort", "a1", "a2", "a", "mc-utbildare"],
     "for_beginners": {
       "title": "Nybörjare? Aldrig kört MC tidigare?",
-      "recommendation": "Är du helt nybörjare rekommenderar vi att du bokar din första lektion som 80min-singel-lektion eller att du bokar din DUO-lektion på Stora Holm. Vi kan i vissa fall om vi har lite luckor ta bort en plats på våra DUO-lektioner för din första lektion. Kontakta då receptionen Ullevi för en sådan bokningsförfrågan."
+      "recommendation": "Är du helt nybörjare rekommenderar vi att du bokar din första lektion som 80min-singel-lektion eller att du bokar din DUO-lektion på Stora Holm. Vi kan i vissa fall om vi har lite luckor ta bort en plats på våra DUO-lektioner för din första lektion. Kontakta då receptionen Ullevi för en sådan bokningsförfrågan.",
+      "keywords": ["nybörjare", "mc", "första lektionen", "duo-lektion", "stora holm", "ullevi"]
     },
     "punctuality": {
       "title": "Var i tid till dina lektioner!",
-      "instruction": "Tänk på att alltid vara ombytt och klar den tid som lektionen börjar. Kommer du sent på en DUO-lektion finns risk att läraren har behövt starta lektionen utan dig tillsammans med den andra eleven."
+      "instruction": "Tänk på att alltid vara ombytt och klar den tid som lektionen börjar. Kommer du sent på en DUO-lektion finns risk att läraren har behövt starta lektionen utan dig tillsammans med den andra eleven.",
+      "keywords": ["kom i tid", "sen", "lektionstid", "duo-lektion"]
     }
   },
   "location_specific_info": {
     "gothenburg": {
       "title": "MC i Göteborg",
       "lesson_types": "En körlektion i Göteborg på MC är antingen 80 minuter eller 100 minuter DUO och går att boka på Stora Holm, Mölnlycke eller på Ullevi.",
+      "keywords": ["mc", "göteborg", "körlektion", "80 minuter", "100 minuter", "duo", "stora holm", "mölnlycke", "ullevi"],
       "single_lesson": {
         "title": "MC-lektion 80 minuter Göteborg",
-        "description": "En 80 minuters lektion är alltid en elev och en lärare. Dessa lektioner erbjuds vissa tider på Ullevi och Stora Holm. Mölnlycke kör endast 80 minuter. Det går att boka 80min singel-lektioner på alla kontor, Mölnlyckes kontor erbjuder endast 80 minuters lektioner."
+        "description": "En 80 minuters lektion är alltid en elev och en lärare. Dessa lektioner erbjuds vissa tider på Ullevi och Stora Holm. Mölnlycke kör endast 80 minuter. Det går att boka 80min singel-lektioner på alla kontor, Mölnlyckes kontor erbjuder endast 80 minuters lektioner.",
+        "keywords": ["mc-lektion", "80 minuter", "singel-lektion", "göteborg", "ullevi", "stora holm", "mölnlycke"]
       },
       "duo_lesson": {
         "title": "MC-lektion 100 minuter (DUO-lektion) Göteborg",
-        "description": "Vi kör oftast 100 minuter DUO-pass (2 elever per lärare). André och Peter startar vid Ullevi-kontoret, Samuel och Armin startar direkt ute på Stora Holm. 80 minuters lektion finns oftast mellan 07:00-08:20 på Ullevi och Stora Holm. En 100min DUO-lektion är perfekt för att få så mycket träning som möjlig med lågfart, högfart, bromsning och manövrering. Här får ni varsin motorcykel och kan köra på banan under 100min. Det går, om båda eleverna önskar, att ni kör ut en sväng i trafiken också! I trafiken kan endast en elev åt gången köra. Den andra eleven sitter då bakom läraren och ni har kommunikationsutrustning på er under tiden. Genom att vara två elever kan man lära sig mycket genom att också observera hur den andra kör."
+        "description": "Vi kör oftast 100 minuter DUO-pass (2 elever per lärare). André och Peter startar vid Ullevi-kontoret, Samuel och Armin startar direkt ute på Stora Holm. 80 minuters lektion finns oftast mellan 07:00-08:20 på Ullevi och Stora Holm. En 100min DUO-lektion är perfekt för att få så mycket träning som möjlig med lågfart, högfart, bromsning och manövrering. Här får ni varsin motorcykel och kan köra på banan under 100min. Det går, om båda eleverna önskar, att ni kör ut en sväng i trafiken också! I trafiken kan endast en elev åt gången köra. Den andra eleven sitter då bakom läraren och ni har kommunikationsutrustning på er under tiden. Genom att vara två elever kan man lära sig mycket genom att också observera hur den andra kör.",
+        "keywords": ["mc-lektion", "100 minuter", "duo-lektion", "göteborg", "ullevi", "stora holm", "lågfart", "högfart", "manövrering"]
       },
       "stora_holm": {
         "title": "MC-Lektioner på Stora Holm (Göteborg)",
-        "description": "Våra manöverpass i Göteborg sker ute vid Stora Holm, boka in dig på Armin eller Samuel för att direkt starta ute på manöverbanan. Vi har inget eget kontor på Stora Holm så all kontakt angående riskutbildningar där för MC går via Ullevi-kontoret. Här finns parkering för bil, utrustning och MC."
+        "description": "Våra manöverpass i Göteborg sker ute vid Stora Holm, boka in dig på Armin eller Samuel för att direkt starta ute på manöverbanan. Vi har inget eget kontor på Stora Holm så all kontakt angående riskutbildningar där för MC går via Ullevi-kontoret. Här finns parkering för bil, utrustning och MC.",
+        "keywords": ["mc-lektioner", "stora holm", "göteborg", "manöverbana", "riskutbildningar", "parkering"]
       },
       "ullevi": {
         "title": "MC-Lektioner på Ullevi (Göteborg)",
-        "description": "Om lektionen startar från Ullevi tar det ca 25min ut till Stora Holm. Är det två elever (100min DUO-pass) bokade får oftast ena eleven köra MC ut till manöverbanan och den andra eleven får köra hem. Eleven som inte kör sitter då bakom läraren och även här får man lära sig genom diverse instruktioner. Väl på Stora Holm hinner ni båda köra ca 20-40min (beroende på trafiken) på varsin motorcykel på manöverbanan (om ni åkt dit). Önskas 80min lektioner finns det 07:00-08:20 vissa dagar. En 80min-lektion med start Ullevi är perfekt för dig som önskar stadskörning men även vanlig trafikkörning."
+        "description": "Om lektionen startar från Ullevi tar det ca 25min ut till Stora Holm. Är det två elever (100min DUO-pass) bokade får oftast ena eleven köra MC ut till manöverbanan och den andra eleven får köra hem. Eleven som inte kör sitter då bakom läraren och även här får man lära sig genom diverse instruktioner. Väl på Stora Holm hinner ni båda köra ca 20-40min (beroende på trafiken) på varsin motorcykel på manöverbanan (om ni åkt dit). Önskas 80min lektioner finns det 07:00-08:20 vissa dagar. En 80min-lektion med start Ullevi är perfekt för dig som önskar stadskörning men även vanlig trafikkörning.",
+        "keywords": ["mc-lektioner", "ullevi", "göteborg", "stora holm", "duo-pass", "stadskörning", "trafikkörning"]
       },
       "molnlycke": {
         "title": "MC-Lektioner i Mölnlycke (Göteborg)",
-        "description": "Här kör vi 80min-lektioner endast, perfekt för dig som önskar köra exempelvis landsväg eller trafik. Här är det också kanon om du är nybörjare då vi har en stor yta i närheten där du kan lära dig grunderna såsom start, växling och manövrering. Ni hinner inte åka ut till Stora Holm här på 80min. Du som kör dina lektioner i Mölnlycke behöver boka in lektioner på Stora Holm för att lära dig grunderna för manöverbanan som är en del av körprovet senare. Hur många lektioner som krävs är högst individuellt och inte något som går att svara på i förväg."
+        "description": "Här kör vi 80min-lektioner endast, perfekt för dig som önskar köra exempelvis landsväg eller trafik. Här är det också kanon om du är nybörjare då vi har en stor yta i närheten där du kan lära dig grunderna såsom start, växling och manövrering. Ni hinner inte åka ut till Stora Holm här på 80min. Du som kör dina lektioner i Mölnlycke behöver boka in lektioner på Stora Holm för att lära dig grunderna för manöverbanan som är en del av körprovet senare. Hur många lektioner som krävs är högst individuellt och inte något som går att svara på i förväg.",
+        "keywords": ["mc-lektioner", "mölnlycke", "göteborg", "80min", "nybörjare", "landsväg", "manöverbana"]
       }
     },
     "stockholm": {
       "title": "MC-Lektioner i Stockholm",
-      "description": "Drömmer du om att ta MC-körkort? På My Driving Academy Österåker erbjuder vi en trygg och effektiv utbildning för dig som vill ta A1, A2 eller A-körkort. Våra erfarna MC-lärare hjälper dig genom hela processen, från grundläggande manövrering till att bli en säker och självständig motorcyklist i trafiken. Våra körlektioner är anpassade efter din nivå och dina mål, oavsett om du är nybörjare eller har tidigare erfarenhet. Tillsammans med en erfaren trafiklärare planerar du din utbildning och får träna i en trygg och strukturerad miljö. Vi erbjuder flexibla bokningar och med vårt upplägg får du den praktiska träningen och vägledningen du behöver för att ta ditt körkort på ett smidigt och effektivt sätt."
+      "description": "Drömmer du om att ta MC-körkort? På My Driving Academy Österåker erbjuder vi en trygg och effektiv utbildning för dig som vill ta A1, A2 eller A-körkort. Våra erfarna MC-lärare hjälper dig genom hela processen, från grundläggande manövrering till att bli en säker och självständig motorcyklist i trafiken. Våra körlektioner är anpassade efter din nivå och dina mål, oavsett om du är nybörjare eller har tidigare erfarenhet. Tillsammans med en erfaren trafiklärare planerar du din utbildning och får träna i en trygg och strukturerad miljö. Vi erbjuder flexibla bokningar och med vårt upplägg får du den praktiska träningen och vägledningen du behöver för att ta ditt körkort på ett smidigt och effektivt sätt.",
+      "keywords": ["mc-lektioner", "stockholm", "österåker", "mc-körkort", "a1", "a2", "a", "nybörjare"]
     }
   },
   "intensive_course": {
@@ -49,6 +59,7 @@
     "experience": "Vi lovar att det kommer att bli en fantastisk rolig vecka tillsammans med instruktörer samt en fin gemenskap med de övriga kursdeltagarna.",
     "pre_course_test": "Innan veckan startar (ca 2 till 3 veckor innan) bokas du in dig på en testlektion för att säkerställa att du har rätt nivå för att tillgodogöra dig all den kunskap en intensivutbildning för MC innebär.",
     "expectations": "Du måste också förbereda sig på att det tidvis kommer att bli kämpigt, svettigt och blött. Vi kör nämligen oavsett väder, i regn och rusk eller om det är 30 grader varmt.",
+    "keywords": ["intensivkurs", "mc", "motorcykel", "förkunskaper", "testlektion", "starta", "stanna", "växla"],
     "inclusions": {
       "title": "Vad ingår i priset för intensivvecka MC?",
       "items": [
@@ -58,23 +69,28 @@
         "Risk 2 Kurs MC (Hålls torsdag morgon under intensivveckan).",
         "Digital teori via appen Mitt Körkort.",
         "Lån av MC + Uppvärmning inför körprovet."
-      ]
+      ],
+      "keywords": ["ingår", "intensivvecka", "mc", "testlektion", "risk 1", "risk 2", "digital teori", "lån av mc", "uppvärmning"]
     },
     "course_details": "Varje intensivvecka har 4 – 8 platser. Du väljer själv om du vill ha din egen MC-utrustning eller om du lånar gratis av oss. Utbildningskontroll ingår och genomförs under veckan när alla momenten är godkända. När kursavgiften är betald får du tillgång till teorimaterialet på Mitt Körkort. Du kan behöva chatta till supporten för att aktivera den via appen Mitt Körkort. Inne i vår app kommer du även att kunna se alla dina inbokade kursmoment. Vänligen kontakta supporten för att få hjälp att boka in alla moment samt körprovet. Tänk på att själv ansvara för att boka in teoriprovet så snart som möjligt efter din intensivvecka.",
     "sufficiency_question": {
       "question": "Räcker det att gå intensivveckan?",
-      "answer": "Extra lektioner reserveras in vid köp av kursen, kontakta supporten för det. Fler lektioner än de som ingår i priset för intensivveckan kommer förmodligen att behövas innan och framför allt efter kursstart. Räkna därför med att du kan behöva ca 5st lektioner extra. Vi bokar/reserverar in lektioner mellan testlektionen och intensivveckan. Vi bokar/reserverar in lektioner mellan sista dagen för intensivveckan fram till körprovet. Läraren gör en bedömning efter testlektionen samt efter intensivveckans sista dag kring vad som behövs för just dig. De extra lektioner som reserverats/bokats men som inte behövs kan då avbokas/återbetalas. Körkortstillstånd krävs för att kunna genomföra kursen och boka prov på Trafikverket."
+      "answer": "Extra lektioner reserveras in vid köp av kursen, kontakta supporten för det. Fler lektioner än de som ingår i priset för intensivveckan kommer förmodligen att behövas innan och framför allt efter kursstart. Räkna därför med att du kan behöva ca 5st lektioner extra. Vi bokar/reserverar in lektioner mellan testlektionen och intensivveckan. Vi bokar/reserverar in lektioner mellan sista dagen för intensivveckan fram till körprovet. Läraren gör en bedömning efter testlektionen samt efter intensivveckans sista dag kring vad som behövs för just dig. De extra lektioner som reserverats/bokats men som inte behövs kan då avbokas/återbetalas. Körkortstillstånd krävs för att kunna genomföra kursen och boka prov på Trafikverket.",
+      "keywords": ["räcker det", "intensivvecka", "extra lektioner", "körkortstillstånd"]
     },
     "license_and_booking": {
       "title": "Körkortstillstånd och provbokning för MC intensivveckan",
-      "requirements": "Körkortstillstånd krävs för att delta samt för att boka proven. Tänk därför på att ansöka om detta i god tid så vi kan planera allt i förväg för dig. Du har själv ansvar att boka teoriprovet, boka detta snarast! Provdatumet för teoriprovet måste vara efter veckans avslut, då du skall ha genomfört både Risk1 och Risk2 innan du skriver provet på Trafikverket. Körprovet bokar vi ca 2-3v efter intensivveckan, kräver att du har körkortstillstånd, saknas detta kan vi inte garantera att körprovet kan tajmas in då Trafikverkets tider inte är något vi kan styra."
+      "requirements": "Körkortstillstånd krävs för att delta samt för att boka proven. Tänk därför på att ansöka om detta i god tid så vi kan planera allt i förväg för dig. Du har själv ansvar att boka teoriprovet, boka detta snarast! Provdatumet för teoriprovet måste vara efter veckans avslut, då du skall ha genomfört både Risk1 och Risk2 innan du skriver provet på Trafikverket. Körprovet bokar vi ca 2-3v efter intensivveckan, kräver att du har körkortstillstånd, saknas detta kan vi inte garantera att körprovet kan tajmas in då Trafikverkets tider inte är något vi kan styra.",
+      "keywords": ["körkortstillstånd", "provbokning", "mc", "intensivvecka", "teoriprov", "körprov", "trafikverket"]
     },
     "cancellation_policy": {
       "title": "Avbokning MC intensivvecka:",
       "rule": "Eventuellt återbud på kursen måste lämnas senast klockan 12:00 en vecka före bokad kursstart. Full avgift tas ut vid för sen avbokning samt för uteblivna kursdeltagare. Teorin (1800kr) anses vara förbrukad direkt efter köp och betalas inte tillbaka.",
+      "keywords": ["avbokning", "mc", "intensivvecka", "återbud", "senast", "12:00", "en vecka"],
       "sickness": {
         "title": "Vid sjukdom:",
-        "rule": "Om du kan uppvisa ett sjukintyg inom 7 dagar från ditt sena återbud bokar vi kostnadsfritt om dig på en ny intensivvecka."
+        "rule": "Om du kan uppvisa ett sjukintyg inom 7 dagar från ditt sena återbud bokar vi kostnadsfritt om dig på en ny intensivvecka.",
+        "keywords": ["sjukdom", "sjukintyg", "avbokning", "intensivvecka"]
       }
     }
   },
@@ -83,6 +99,7 @@
     "bikes": "Vi använder oss uteslutande av lättkörda och moderna BMW & Yamaha MT hojar som övningsmotorcyklar, som vi även har i 3 olika höjder. Alla våra hojar är av senaste modell och byts årligen.",
     "maneuver_training": "När det gäller vår manöverutbildning (lågfart, högfart, broms) så använder vi oss av lokala mc banor.",
     "risk_education_offer": "Vi erbjuder givetvis både Riskettan och Risktvåan utbildningar.",
-    "gear": "Vid varje övningstillfälle tillhandahåller vi er fullständig skyddsutrustning från topp till tå kostnadsfritt, men vill Ni använda egen skyddsutrustning går det bra."
+    "gear": "Vid varje övningstillfälle tillhandahåller vi er fullständig skyddsutrustning från topp till tå kostnadsfritt, men vill Ni använda egen skyddsutrustning går det bra.",
+    "keywords": ["utrustning", "mc", "motorcyklar", "bmw", "yamaha", "manöverutbildning", "riskettan", "risktvåan"]
   }
 }
