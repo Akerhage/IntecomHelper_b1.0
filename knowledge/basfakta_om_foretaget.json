@@ -3,27 +3,31 @@
   "source_note": "Texten kommer från vår hemsida, innehåller organisationsnummer osv.",
   "company_merger": {
     "description": "Mårtenssons Trafikskola (MTS) och My Driving Academy (MDA) slogs ihop men använder båda namnen beroende på vart i landet man befinner sig. Vi är samma företag och har kontor från Ystad till Umeå. En av Sveriges största trafikskola. Vi är Sveriges största körskola som har kontor från Ystad till Umeå. Tidigare var detta två företag, My Driving Academy och Mårtenssons Trafikskola. Vi slogs ihop för ca 2 år sedan och har fortfarande kvar båda namnen. Men det är samma företag och samma regler.",
-    "keywords": ["mårtenssons trafikskola", "mts", "my driving academy", "mda", "slogs ihop", "sammanslagning", "samma företag", "ystad", "umeå", "sveriges största"],
     "pricing_variation": "Då prisläget i landet är olika så skiljer sig därför priserna något beroende på vilket kontor det gäller.",
-    "keywords_pricing": ["priser", "prisläge", "kostnad", "kontor", "skiljer", "olika"],
     "chatbot_requirement": "Därför är det viktigt att chatt-botten förstår vart eleven vill köra någonstans, det är också viktigt att veta om eleven menar bil, moped, mc, lastbil osv för att kunna plocka rätt prislista på rätt ställe.",
-    "keywords_chatbot": ["chatt-bot", "prislista", "stad", "kontor", "bil", "moped", "mc", "lastbil", "fordon"]
+    "keywords": [
+      "mårtenssons trafikskola", "mts", "my driving academy", "mda", "slogs ihop", "sammanslagning", "samma företag", "ystad", "umeå", "sveriges största",
+      "priser", "prisläge", "kostnad", "kontor", "skiljer", "olika",
+      "chatt-bot", "prislista", "stad", "bil", "moped", "mc", "lastbil", "fordon"
+    ]
   },
   "my_driving_academy_history": {
     "title": "My Driving Academy- Hur det startades",
-    "keywords": ["my driving academy", "mda", "historia", "startades", "bakgrund", "grundades"],
     "origin": "Varje respektabel tech-startup har bildats i någons garage, och My Driving Academy kan ju inte vara sämre. Kanske inte ett garage, men i en mörk tråkig källarlokal i utkanten av Stockholm.",
-    "keywords_origin": ["garage", "källarlokal", "stockholm", "startades"],
     "idea": "Iden bakom bolaget kom redan 2013 då kompisarna Fabian, Jörgen och Håkan genomled en handledarkurs med sina döttrar i en klassisk trafikskolelokal, långt ifrån centrum, med blaskigt kaffe i plastmuggar och med samma gamla lärare som när de själv tog körkort 30 år tidigare.",
-    "keywords_idea": ["idé", "fabian", "jörgen", "håkan", "handledarkurs", "2013"],
     "vision": "Att ta körkort ska ju vara roligt. Att ta körkort ska ju vara enkelt och smidigt. INTE ÅNGESTLADDAT.",
-    "keywords_vision": ["vision", "roligt", "enkelt", "smidigt", "ångestladdat"],
     "mission": "Av ett team med erfarenhet och inspiration från andra konsumentbranscher bildades My Driving Academy för att göra hela resan till körkortet så smidigt, enkelt och roligt som möjligt. Det är egentligen inte så konstigt. Vi sätter kunden i fokus. Låter kunden göra så mycket som möjligt digitalt i mobilen. Och när kunden behöver professionellt stöd så erbjuder vi det i moderna och inspirerande bilar, lokaler och med de bästa trafiklärarna.",
-    "keywords_mission": ["mission", "kunden i fokus", "digitalt", "mobilen", "bästa trafiklärarna"],
     "results": "Resultatet? Gå in på RECO eller Google Reviews och kolla själv! Över 70% klarar proven på första försöket och sparar både tid och pengar på att undvika onödiga körlektioner och teorimaterial. Klart de är nöjda!",
-    "keywords_results": ["resultat", "reco", "google reviews", "omdömen", "recensioner", "första försöket", "nöjda"],
     "growth": "På kort tid har My Driving Academy blivit Sveriges största trafikskola med ca 250 lärare fördelade på 40 skolor över hela landet som alla bedrivs med samma filosofi (förutom att namnet i Södra Sverige är Mårtenssons Trafikskola).",
-    "keywords_growth": ["sveriges största", "tillväxt", "250 lärare", "40 skolor", "mårtenssons trafikskola"]
+    "keywords": [
+      "my driving academy", "mda", "historia", "startades", "bakgrund", "grundades",
+      "garage", "källarlokal", "stockholm",
+      "idé", "fabian", "jörgen", "håkan", "handledarkurs", "2013",
+      "vision", "roligt", "enkelt", "smidigt", "ångestladdat",
+      "mission", "kunden i fokus", "digitalt", "mobilen", "bästa trafiklärarna",
+      "resultat", "reco", "google reviews", "omdömen", "recensioner", "första försöket", "nöjda",
+      "sveriges största", "tillväxt", "250 lärare", "40 skolor", "mårtenssons trafikskola"
+    ]
   },
   "company_details": [
     {
